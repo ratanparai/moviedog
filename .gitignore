@@ -11,3 +11,8 @@
 /build
 /captures
 .externalNativeBuild
+app/.classpath
+.project
+.settings/org.eclipse.buildship.core.prefs
+app/.project
+app/.settings/org.eclipse.buildship.core.prefs
