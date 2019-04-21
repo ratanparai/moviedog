@@ -27,4 +27,9 @@ dependencies {
     implementation 'androidx.leanback:leanback:1.0.0-beta01'
     implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
     implementation 'com.github.bumptech.glide:glide:3.8.0'
+
+    // Unit testing dependencies.
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'com.google.truth:truth:0.44'
+    testImplementation 'org.mockito:mockito-core:2.8.9'
 }
