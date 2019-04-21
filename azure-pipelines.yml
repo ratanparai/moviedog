@@ -10,4 +10,4 @@ steps:
     gradleOptions: '-Xmx3072m'
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
-    tasks: 'assembleDebug'
+    tasks: 'build'
