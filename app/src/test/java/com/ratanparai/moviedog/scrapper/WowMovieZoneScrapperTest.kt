@@ -1,10 +1,12 @@
 package com.ratanparai.moviedog.scrapper
 
 import com.google.common.truth.Truth.assertThat
+import org.junit.Ignore
 import org.junit.Test
 
 class WowMovieZoneScrapperTest {
 
+    @Ignore
     @Test
     fun shouldGetHtmlWhenSearchPageRequested() {
         // Arrange
