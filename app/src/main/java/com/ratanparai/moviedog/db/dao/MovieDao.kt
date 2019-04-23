@@ -2,8 +2,9 @@ package com.ratanparai.moviedog.db.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
+import androidx.room.Insert
 import androidx.room.Query
-import com.ratanparai.moviedog.Movie
+import com.ratanparai.moviedog.db.entity.Movie
 
 @Dao
 interface MovieDao {
@@ -15,4 +16,7 @@ interface MovieDao {
 
     @Query("SELECT * FROM movies WHERE imdbId = :imdbId")
     fun getMovie(imdbId : String) : LiveData<Movie>
+
+    @Insert
+    fun insertMovie(movie: Movie): Long
 }

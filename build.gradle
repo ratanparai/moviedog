@@ -7,11 +7,12 @@ buildscript {
         roomVersion = '1.1.1'
         archLifecycleVersion = '1.1.1'
         coroutines = '0.26.1'
+        lifecycleVersion = '2.1.0-alpha04'
     }
     repositories {
         google()
         jcenter()
-        
+
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.3.1'
@@ -25,7 +26,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+
     }
 }
 

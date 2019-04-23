@@ -1,7 +1,6 @@
 package com.ratanparai.moviedog.db.repository
 
 import com.ratanparai.moviedog.db.dao.MovieDao
-import com.ratanparai.moviedog.scrapper.DekhvhaiScrapper
 
 class MovieRepository private constructor(private val movieDao : MovieDao){
 

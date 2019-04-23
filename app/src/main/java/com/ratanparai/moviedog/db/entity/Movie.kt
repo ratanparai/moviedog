@@ -11,17 +11,7 @@ data class Movie (
     val description : String,
     val imdbId : String,
     val cardImage : String,
-    val backgroundImage : String?,
     val videoUrl : String,
-    val contentType : String?,
-    val live : Boolean?,
-    val width : Int,
-    val height : Int,
-    val audioChannelConfig : String?,
-    val purchasePrice : String?,
-    val rentalPrice : String?,
-    val ratingStyle: Int?,
-    val ratingScore: Double,
     val productionYear : Int,
     val duration: Int
 )

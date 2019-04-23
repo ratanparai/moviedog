@@ -43,6 +43,9 @@ dependencies {
     kapt "android.arch.persistence.room:compiler:$rootProject.roomVersion"
     androidTestImplementation "android.arch.persistence.room:testing:$rootProject.roomVersion"
 
+    implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycleVersion"
+
     // Unit testing dependencies.
     testImplementation 'junit:junit:4.12'
     testImplementation 'com.google.truth:truth:0.44'
