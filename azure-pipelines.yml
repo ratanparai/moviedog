@@ -9,5 +9,5 @@ steps:
     gradleWrapperFile: 'gradlew'
     gradleOptions: '-Xmx3072m'
     publishJUnitResults: true
-    testResultsFiles: '**/testReleaseUnitTest/TEST-*.xml'
+    testResultsFiles: '**/testDebugUnitTest/TEST-*.xml'
     tasks: 'build'
