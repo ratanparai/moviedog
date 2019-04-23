@@ -9,6 +9,7 @@ data class Movie (
     @PrimaryKey @ColumnInfo(name = "id") val id: String,
     val title : String,
     val description : String,
+    val imdbId : String,
     val cardImage : String,
     val backgroundImage : String?,
     val videoUrl : String,

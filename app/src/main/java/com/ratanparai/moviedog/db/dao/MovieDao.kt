@@ -9,4 +9,10 @@ import com.ratanparai.moviedog.Movie
 interface MovieDao {
     @Query("SELECT * FROM movies ORDER BY title")
     fun getMovies() : LiveData<List<Movie>>
+
+    @Query("SELECT * FROM movies WHERE id = :movieId")
+    fun getMovie(movieId : Int) : LiveData<Movie>
+
+    @Query("SELECT * FROM movies WHERE imdbId = :imdbId")
+    fun getMovie(imdbId : String) : LiveData<Movie>
 }
