@@ -8,6 +8,7 @@ buildscript {
         archLifecycleVersion = '1.1.1'
         coroutines = '0.26.1'
         lifecycleVersion = '2.1.0-alpha04'
+        espressoVersion = '3.1.0-alpha4'
     }
     repositories {
         google()

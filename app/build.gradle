@@ -18,6 +18,7 @@ android {
         applicationId "com.ratanparai.moviedog"
         minSdkVersion 26
         targetSdkVersion 28
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         versionCode 1
         versionName "1.0"
     }
@@ -50,4 +51,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     testImplementation 'com.google.truth:truth:0.44'
     testImplementation 'org.mockito:mockito-core:2.8.9'
+
+    androidTestImplementation "androidx.test.espresso:espresso-contrib:$rootProject.espressoVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.espressoVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-intents:$rootProject.espressoVersion"
 }
