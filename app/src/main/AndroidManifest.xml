@@ -34,6 +34,11 @@
         <activity android:name=".DetailsActivity"/>
         <activity android:name=".PlaybackActivity"/>
         <activity android:name=".BrowseErrorActivity"/>
+
+        <provider android:name=".provider.VideoProvider"
+                  android:authorities="com.ratanparai.moviedog"
+                  android:exported="true"
+                  tools:ignore="ExportedContentProvider"/>
     </application>
 
 </manifest>
