@@ -3,9 +3,9 @@ package com.ratanparai.moviedog.provider
 import android.app.SearchManager
 import android.content.ContentProvider
 import android.content.ContentValues
+import android.content.UriMatcher
 import android.database.Cursor
 import android.net.Uri
-import android.content.UriMatcher
 import android.util.Log
 import com.ratanparai.moviedog.db.AppDatabase
 import com.ratanparai.moviedog.db.dao.MovieDao
