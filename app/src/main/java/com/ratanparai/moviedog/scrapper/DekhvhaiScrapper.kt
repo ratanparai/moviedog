@@ -1,10 +1,9 @@
 package com.ratanparai.moviedog.scrapper
 
-import com.ratanparai.moviedog.Movie
+import com.ratanparai.moviedog.db.entity.Movie
 import org.jsoup.Jsoup
-import org.jsoup.nodes.Element
 import java.io.IOException
-import java.util.ArrayList
+import java.util.*
 import java.util.concurrent.TimeUnit
 
 class DekhvhaiScrapper {
@@ -53,9 +52,24 @@ class DekhvhaiScrapper {
 
             val yearInInt = Integer.parseInt(year)
 
+            var duration = (TimeUnit.HOURS.toMillis(getHourFromTime(movieTime)) + TimeUnit.MINUTES.toMillis(getMinuteFromTime(movieTime))).toInt()
+
 
             val href1 = select.attr("href")
             println(href1)
+
+            var movie = Movie(
+                id = "1",
+                cardImage = cardImage,
+                description = description,
+                duration = duration,
+                productionYear = yearInInt,
+                title = title,
+                videoUrl = href1,
+                imdbId = ""
+            )
+
+            results.add(movie)
 
         } catch (e: IOException) {
             e.printStackTrace()
@@ -76,15 +90,15 @@ class DekhvhaiScrapper {
         return titleWithYear.substring(titleWithYear.indexOf("(") + 1, titleWithYear.indexOf(")"))
     }
 
-    fun getHourFromTime(time: String): Int {
+    fun getHourFromTime(time: String): Long {
 
         val stringHour = time.substring(0, time.indexOf("H")).trim { it <= ' ' }
-        return Integer.parseInt(stringHour)
+        return stringHour.toLong()
     }
 
-    fun getMinuteFromTime(time: String): Int {
+    fun getMinuteFromTime(time: String): Long {
         val stringMinute = time.substring(time.indexOf("H") + 1, time.indexOf("M")).trim { it <= ' ' }
-        return Integer.parseInt(stringMinute)
+        return stringMinute.toLong()
     }
 
 }

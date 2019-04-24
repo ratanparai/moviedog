@@ -5,10 +5,14 @@ import android.content.ContentProvider
 import android.content.ContentValues
 import android.content.UriMatcher
 import android.database.Cursor
+import android.database.MatrixCursor
 import android.net.Uri
+import android.provider.BaseColumns
 import android.util.Log
 import com.ratanparai.moviedog.db.AppDatabase
 import com.ratanparai.moviedog.db.dao.MovieDao
+import com.ratanparai.moviedog.db.entity.Movie
+import com.ratanparai.moviedog.scrapper.DekhvhaiScrapper
 
 class VideoProvider : ContentProvider() {
 
@@ -16,14 +20,29 @@ class VideoProvider : ContentProvider() {
 
 
     private lateinit var movieDao: MovieDao
+
+    private lateinit var dekhvhaiScrapper: DekhvhaiScrapper
+
     private lateinit var uriMatcher: UriMatcher
 
     private val AUTHORITY = "com.ratanparai.moviedog"
     private val SEARCH_SUGGEST = 1
 
+    private val queryProjection = arrayOf(
+        BaseColumns._ID,
+        SearchManager.SUGGEST_COLUMN_TEXT_1,
+        SearchManager.SUGGEST_COLUMN_TEXT_2,
+        SearchManager.SUGGEST_COLUMN_RESULT_CARD_IMAGE,
+        SearchManager.SUGGEST_COLUMN_PRODUCTION_YEAR,
+        SearchManager.SUGGEST_COLUMN_DURATION,
+        SearchManager.SUGGEST_COLUMN_INTENT_ACTION,
+        SearchManager.SUGGEST_COLUMN_INTENT_DATA_ID
+    )
+
     override fun onCreate(): Boolean {
         movieDao = AppDatabase.getInstance(context).movieDao()
         uriMatcher = buildUriMatcher()
+        dekhvhaiScrapper = DekhvhaiScrapper()
         return true
     }
 
@@ -48,8 +67,30 @@ class VideoProvider : ContentProvider() {
         }
     }
 
-    private fun search(lastPathSegment: String?): Cursor? {
-        TODO("Not Implemented")
+    private fun search(query: String?): Cursor? {
+        if(query != null) {
+            val movies = dekhvhaiScrapper.search(query)
+            val matrixCursor = MatrixCursor(queryProjection)
+
+            for (movie in movies) {
+                matrixCursor.addRow(convertMovieIntoRow(movie))
+            }
+            return matrixCursor
+        }
+        return null
+    }
+
+    private fun convertMovieIntoRow(movie: Movie): Array<Any> {
+        return arrayOf(
+            movie.id,
+            movie.title,
+            movie.description,
+            movie.cardImage,
+            movie.productionYear,
+            movie.duration,
+            "GLOBALSEARCH",
+            movie.id
+        )
     }
 
     private fun buildUriMatcher(): UriMatcher {

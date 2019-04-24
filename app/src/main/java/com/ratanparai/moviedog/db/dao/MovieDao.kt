@@ -1,5 +1,6 @@
 package com.ratanparai.moviedog.db.dao
 
+import android.database.Cursor
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
