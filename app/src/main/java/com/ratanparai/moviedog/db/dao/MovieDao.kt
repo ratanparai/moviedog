@@ -13,7 +13,7 @@ interface MovieDao {
     fun getMovies() : List<Movie>
 
     @Query("SELECT * FROM movies WHERE id = :movieId")
-    fun getMovieById(movieId : String) : Movie
+    fun getMovieById(movieId : Int) : Movie
 
     @Query("SELECT * FROM movies WHERE imdbId = :imdbId")
     fun getMovieByImdbId(imdbId : String) : Movie

@@ -4,11 +4,9 @@ import com.ratanparai.moviedog.db.entity.Movie
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 import java.io.IOException
-import java.util.*
 import java.util.concurrent.TimeUnit
-import kotlin.collections.ArrayList
 
-class DekhvhaiScrapper {
+class DekhvhaiScrapper: Scrapper {
 
     val DEKHVHAI_SEARCH_URL = "http://dekhvhai.com/msearch.php?q=&searchquery=%s&q=M"
 
@@ -61,7 +59,7 @@ class DekhvhaiScrapper {
             println(href1)
 
             var movie = Movie(
-                id = "1",
+                id = 1,
                 cardImage = cardImage,
                 description = description,
                 duration = duration,
@@ -81,6 +79,33 @@ class DekhvhaiScrapper {
 
         return results
 
+    }
+
+    fun getMovie(document: Document): Movie {
+        var titleWithYear = document.select(".subheader-maintitle").text()
+        var title = getOnlyTitleFromTitleAndYear(titleWithYear)
+        var year = getOnlyYearFromTitleAndYear(titleWithYear).toInt()
+
+        val description = document.select(".portfolio-item-desc-inner > p").text()
+
+        val movieTime =
+            document.select("#sidebar-widget > div:nth-child(1) > div > div > table > tbody > tr:nth-child(6) > td:nth-child(2)").text()
+        var duration = getDurationInMiliseconds(movieTime)
+
+        var videoUrl = document.select("#sidebar-widget > div:nth-child(1) > div > div > a:nth-child(6)").attr("href")
+
+        val cardImage =
+            document.select("#page_header > div.ph-content-wrap > div > div > div > div.col-md-2 > div > a > img")
+                .attr("src")
+
+        return Movie(
+            title = title,
+            description = description,
+            videoUrl = videoUrl,
+            productionYear = year,
+            duration = duration,
+            cardImage = cardImage
+        )
     }
 
     fun getListOfMovieLinksFromSearchResult(document: Document): List<String>{
@@ -111,6 +136,14 @@ class DekhvhaiScrapper {
     fun getMinuteFromTime(time: String): Long {
         val stringMinute = time.substring(time.indexOf("H") + 1, time.indexOf("M")).trim { it <= ' ' }
         return stringMinute.toLong()
+    }
+
+    fun getDurationInMiliseconds(time: String): Int{
+        return getDurationInMiliseconds(getHourFromTime(time), getMinuteFromTime(time))
+    }
+
+    fun getDurationInMiliseconds(hour: Long, minute: Long): Int{
+        return (TimeUnit.HOURS.toMillis(hour) + TimeUnit.MINUTES.toMillis(minute)).toInt()
     }
 
 }
