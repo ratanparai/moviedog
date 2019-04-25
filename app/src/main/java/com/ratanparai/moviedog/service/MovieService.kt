@@ -30,4 +30,9 @@ class MovieService(private val context: Context) {
 
         return movieDao.searchByTitle(query)
     }
+
+    fun getMovieById(id : Int): Movie {
+        val movieDao = AppDatabase.getInstance(context).movieDao()
+        return movieDao.getMovieById(id)
+    }
 }

@@ -14,7 +14,7 @@ class DekhvhaiScrapperTest {
     @Before
     fun loadHtml() {
         val searchResultFile = ClassLoader.getSystemResource("HarryPotter_Dekhvhai.data").readText()
-        val deathlyHalosFile = ClassLoader.getSystemResource("Deathly_Hallows_Part_2_Dekhvhai.data").readText()
+        val deathlyHalosFile = ClassLoader.getSystemResource("deathly_halows_dekhvhai.data").readText()
 
         dekhvhai = Jsoup.parse(searchResultFile, "UTF-8")
         deathlyHalos = Jsoup.parse(deathlyHalosFile, "UTF-8")
