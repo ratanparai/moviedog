@@ -7,20 +7,34 @@ import android.util.Log
 import android.view.KeyEvent
 import androidx.fragment.app.FragmentActivity
 import com.ratanparai.moviedog.R
+import com.ratanparai.moviedog.db.AppDatabase
 import com.ratanparai.moviedog.utilities.EXTRA_MOVIE_ID
 
 class PlaybackActivity: FragmentActivity() {
 
     private val TAG = "PlaybackActivity"
 
+    private lateinit var playbackFragment: PlaybackFragment
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_playback)
+        val fragment = supportFragmentManager.findFragmentByTag(getString(R.string.playback_tag))
+        if (fragment is PlaybackFragment) {
+            playbackFragment = fragment
+        }
     }
 
     override fun onStop() {
         super.onStop()
+
+        val currentProgress = playbackFragment.getCurrentProgress()
+        val id = playbackFragment.getMovieId()
+        val movieDao = AppDatabase.getInstance(this).movieDao()
+
+        movieDao.updatePlayProgress(id, currentProgress)
+
         finish()
     }
 

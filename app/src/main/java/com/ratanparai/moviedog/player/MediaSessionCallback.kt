@@ -9,6 +9,11 @@ class MediaSessionCallback(val glue: PlaybackTransportControlGlue<*>, val activi
 
     private val TAG = "MediaSessionCallback"
 
+    override fun onPrepare() {
+        super.onPrepare()
+        glue.seekTo(50000)
+    }
+
     override fun onPlay() {
         Log.d(TAG, "MediaSessionCallback: onPlay()")
         glue.play()

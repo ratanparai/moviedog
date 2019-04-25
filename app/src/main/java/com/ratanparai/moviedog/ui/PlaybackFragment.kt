@@ -20,7 +20,9 @@ class PlaybackFragment: VideoSupportFragment() {
     private val TAG = "PlaybackFragment"
 
     private val playWhenReadyPlayerCallback: PlaybackGlue.PlayerCallback = PlayWhenReadyPlayerCallback()
+    private lateinit var playerGlue: VideoPlayerGlue<MediaPlayerAdapter>
 
+    private var movieIdToPlay: Int = -1
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,10 +31,17 @@ class PlaybackFragment: VideoSupportFragment() {
 
         val movieId = activity?.intent?.getIntExtra(EXTRA_MOVIE_ID, -1)
 
+        movieIdToPlay = movieId!!
+
         if(movieId == -1) {
             Log.w(TAG, "Invalid movieId, cannot playback.")
             throw IllegalArgumentException("Invalid movieId $movieId")
         }
+
+        val movieService = MovieService(context!!)
+
+
+        val movie = movieService.getMovieById(movieId!!)
 
         val mediaSession = MediaSessionCompat(context, TAG)
         mediaSession.setFlags(
@@ -43,10 +52,10 @@ class PlaybackFragment: VideoSupportFragment() {
         MediaControllerCompat.setMediaController(context as Activity, mediaSession.controller)
 
         // val playerGlue = PlaybackTransportControlGlue(activity, MediaPlayerAdapter(activity))
-        val playerGlue = VideoPlayerGlue(context!!, MediaPlayerAdapter(context), mediaSession.controller)
+        playerGlue = VideoPlayerGlue(context!!, MediaPlayerAdapter(context), mediaSession.controller, movie.progress)
 
         playerGlue.host = VideoSupportFragmentGlueHost(this)
-        playerGlue.addPlayerCallback(playWhenReadyPlayerCallback)
+        // playerGlue.addPlayerCallback(playWhenReadyPlayerCallback)
 
         /**
          * Delegates media commands sent from the assistant to the glue. <br>
@@ -58,24 +67,33 @@ class PlaybackFragment: VideoSupportFragment() {
         mediaSession.setCallback(mediaSessionCallback)
 
 
-        val movieService = MovieService(context!!)
 
 
-        val movie = movieService.getMovieById(movieId!!)
 
-
-        playMedia(playerGlue, movie)
+        playMedia(movie)
 
     }
 
+    fun getCurrentProgress(): Long {
+        return playerGlue.currentPosition
+    }
+
+    fun getMovieId(): Int {
+        return movieIdToPlay
+    }
+
     private fun playMedia(
-        playerGlue: VideoPlayerGlue<MediaPlayerAdapter>,
         movie: Movie
     ) {
         Log.d(TAG, "Streaming URL: ${movie.videoUrl}")
         playerGlue.subtitle = movie.description
         playerGlue.title = movie.title
+
         playerGlue.playerAdapter.setDataSource(Uri.parse(movie.videoUrl))
+        playerGlue.seekTo(movie.progress)
+        playerGlue.playerAdapter.seekTo(movie.progress)
+
+        playerGlue.playWhenPrepared()
     }
 
     private class PlayWhenReadyPlayerCallback : PlaybackGlue.PlayerCallback() {

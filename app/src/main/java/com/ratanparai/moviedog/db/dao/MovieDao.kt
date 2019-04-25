@@ -23,4 +23,7 @@ interface MovieDao {
 
     @Query("SELECT * FROM movies WHERE title LIKE '%' || :title || '%'")
     fun searchByTitle(title: String): List<Movie>
+
+    @Query("UPDATE movies SET progress = :progress WHERE id = :id")
+    fun updatePlayProgress(id:Int, progress: Long)
 }

@@ -14,5 +14,6 @@ data class Movie (
     val cardImage : String,
     val videoUrl : String,
     val productionYear : Int,
-    val duration: Int
+    val duration: Int,
+    val progress: Long = 0
 )

@@ -12,10 +12,11 @@ import androidx.leanback.widget.ArrayObjectAdapter
 import androidx.leanback.widget.PlaybackControlsRow
 import java.util.concurrent.TimeUnit
 
-class VideoPlayerGlue<T : PlayerAdapter>(context: Context, adapter: T, mediaController: MediaControllerCompat) :
+class VideoPlayerGlue<T : PlayerAdapter>(context: Context, adapter: T, mediaController: MediaControllerCompat, val startProgress: Long) :
     PlaybackTransportControlGlue<T>(context, adapter) {
 
     private val TAG = "VideoPlayerGlue"
+    private var firstTime = true
 
     private val TEN_SECONDS = TimeUnit.SECONDS.toMillis(10)
     private val THIRTY_SECONDS = TimeUnit.SECONDS.toMillis(30)
@@ -26,6 +27,22 @@ class VideoPlayerGlue<T : PlayerAdapter>(context: Context, adapter: T, mediaCont
 
     private val fastForwardAction: PlaybackControlsRow.FastForwardAction = PlaybackControlsRow.FastForwardAction(context)
     private val rewindAction: PlaybackControlsRow.RewindAction = PlaybackControlsRow.RewindAction(context)
+
+    override fun onUpdateProgress() {
+        Log.d(TAG, "Progress updated with : $currentPosition")
+        super.onUpdateProgress()
+    }
+
+
+
+    override fun play() {
+        super.play()
+        if (firstTime) {
+            seekTo(startProgress)
+            firstTime = false
+        }
+
+    }
 
     override fun onKey(v: View?, keyCode: Int, event: KeyEvent?): Boolean {
         if (event!!.action == KeyEvent.ACTION_DOWN) {
