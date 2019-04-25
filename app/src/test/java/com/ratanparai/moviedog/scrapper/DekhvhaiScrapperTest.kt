@@ -13,8 +13,8 @@ class DekhvhaiScrapperTest {
 
     @Before
     fun loadHtml() {
-        val searchResultFile = ClassLoader.getSystemResource("HarryPotter_Dekhvhai.html").readText()
-        val deathlyHalosFile = ClassLoader.getSystemResource("Deathly_Hallows_Part_2_Dekhvhai.html").readText()
+        val searchResultFile = ClassLoader.getSystemResource("HarryPotter_Dekhvhai.data").readText()
+        val deathlyHalosFile = ClassLoader.getSystemResource("Deathly_Hallows_Part_2_Dekhvhai.data").readText()
 
         dekhvhai = Jsoup.parse(searchResultFile, "UTF-8")
         deathlyHalos = Jsoup.parse(deathlyHalosFile, "UTF-8")
@@ -70,8 +70,8 @@ class DekhvhaiScrapperTest {
 
     @Test
     fun shouldLoadHtmlFileAsJsoupDocument() {
-        //val file = File("html/HarryPotter_Dekhvhai.html")
-        val file = ClassLoader.getSystemResource("HarryPotter_Dekhvhai.html").readText()
+        //val file = File("html/HarryPotter_Dekhvhai.data")
+        val file = ClassLoader.getSystemResource("HarryPotter_Dekhvhai.data").readText()
 
         val document = Jsoup.parse(file, "UTF-8")
 
