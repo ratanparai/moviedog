@@ -96,7 +96,7 @@ class DekhvhaiScrapper: Scrapper {
             document.select("#sidebar-widget > div:nth-child(1) > div > div > table > tbody > tr:nth-child(6) > td:nth-child(2)").text()
         var duration = getDurationInMiliseconds(movieTime)
 
-        var videoUrl = document.select("#sidebar-widget > div:nth-child(1) > div > div > a:nth-child(6)").attr("href")
+        var videoUrl = document.select("#sidebar-widget > div:nth-child(1) > div > div > a:nth-child(5)").attr("href")
 
         val cardImage =
             document.select("#page_header > div.ph-content-wrap > div > div > div > div.col-md-2 > div > a > img")
