@@ -2,7 +2,6 @@ package com.ratanparai.moviedog
 
 import com.google.common.truth.Truth.assertThat
 import com.ratanparai.moviedog.utilities.MD5
-import org.apache.commons.codec.digest.DigestUtils
 import org.junit.Test
 
 class MD5HashTest {
