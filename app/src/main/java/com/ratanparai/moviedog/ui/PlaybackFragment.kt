@@ -1,7 +1,9 @@
 package com.ratanparai.moviedog.ui
 
+import android.app.Activity
 import android.net.Uri
 import android.os.Bundle
+import android.support.v4.media.session.MediaControllerCompat
 import android.support.v4.media.session.MediaSessionCompat
 import android.util.Log
 import androidx.leanback.app.VideoFragmentGlueHost
@@ -11,11 +13,18 @@ import androidx.leanback.media.MediaPlayerAdapter
 import androidx.leanback.media.PlaybackGlue
 import androidx.leanback.media.PlaybackTransportControlGlue
 import com.ratanparai.moviedog.db.AppDatabase
+import com.ratanparai.moviedog.db.entity.Movie
+import com.ratanparai.moviedog.player.MediaSessionCallback
+import com.ratanparai.moviedog.player.VideoPlayerGlue
 import com.ratanparai.moviedog.service.MovieService
 import com.ratanparai.moviedog.utilities.EXTRA_MOVIE_ID
 
 class PlaybackFragment: VideoSupportFragment() {
     private val TAG = "PlaybackFragment"
+
+    private val playWhenReadyPlayerCallback: PlaybackGlue.PlayerCallback = PlayWhenReadyPlayerCallback()
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,8 +37,28 @@ class PlaybackFragment: VideoSupportFragment() {
             throw IllegalArgumentException("Invalid movieId $movieId")
         }
 
-        val playerGlue = PlaybackTransportControlGlue(activity, MediaPlayerAdapter(activity))
+        val mediaSession = MediaSessionCompat(context, TAG)
+        mediaSession.setFlags(
+            MediaSessionCompat.FLAG_HANDLES_MEDIA_BUTTONS or MediaSessionCompat.FLAG_HANDLES_TRANSPORT_CONTROLS
+        )
+        mediaSession.isActive = true
+
+        MediaControllerCompat.setMediaController(context as Activity, mediaSession.controller)
+
+        // val playerGlue = PlaybackTransportControlGlue(activity, MediaPlayerAdapter(activity))
+        val playerGlue = VideoPlayerGlue(context!!, MediaPlayerAdapter(context), mediaSession.controller)
+
         playerGlue.host = VideoSupportFragmentGlueHost(this)
+        playerGlue.addPlayerCallback(playWhenReadyPlayerCallback)
+
+        /**
+         * Delegates media commands sent from the assistant to the glue. <br>
+         * Note that Play/Pause are handled via key code input, not MediaSession.
+         */
+        // TODO: MediaSessionCallback
+
+        val mediaSessionCallback = MediaSessionCallback(playerGlue, activity!!)
+        mediaSession.setCallback(mediaSessionCallback)
 
 
         val movieService = MovieService(context!!)
@@ -38,10 +67,25 @@ class PlaybackFragment: VideoSupportFragment() {
         val movie = movieService.getMovieById(movieId!!)
 
 
+        playMedia(playerGlue, movie)
+
+    }
+
+    private fun playMedia(
+        playerGlue: VideoPlayerGlue<MediaPlayerAdapter>,
+        movie: Movie
+    ) {
         playerGlue.subtitle = movie.description
         playerGlue.title = movie.title
         playerGlue.playerAdapter.setDataSource(Uri.parse(movie.videoUrl))
-        playerGlue.play()
+    }
 
+    private class PlayWhenReadyPlayerCallback : PlaybackGlue.PlayerCallback() {
+        override fun onPreparedStateChanged(glue: PlaybackGlue) {
+            super.onPreparedStateChanged(glue)
+            if (glue.isPrepared) {
+                glue.play()
+            }
+        }
     }
 }
