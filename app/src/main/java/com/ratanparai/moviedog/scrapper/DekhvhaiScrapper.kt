@@ -81,6 +81,10 @@ class DekhvhaiScrapper: Scrapper {
 
     }
 
+    fun getSearchUrl(query: String): String {
+        return String.format(DEKHVHAI_SEARCH_URL, query)
+    }
+
     fun getMovie(document: Document): Movie {
         var titleWithYear = document.select(".subheader-maintitle").text()
         var title = getOnlyTitleFromTitleAndYear(titleWithYear)
@@ -112,7 +116,7 @@ class DekhvhaiScrapper: Scrapper {
         val result = ArrayList<String>()
         val elements = document.select("#tabs_i2-pane1 > div > a")
         for (elem in elements) {
-            result.add(elem.attr("href"))
+            result.add(elem.attr("abs:href"))
         }
 
         return result

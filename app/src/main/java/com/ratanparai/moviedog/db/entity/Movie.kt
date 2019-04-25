@@ -2,9 +2,10 @@ package com.ratanparai.moviedog.db.entity
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
+import androidx.room.Index
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "movies")
+@Entity(tableName = "movies", indices = [Index(value = ["title"], unique = true)])
 data class Movie (
     @PrimaryKey(autoGenerate = true) @ColumnInfo(name = "id") val id: Int = 0,
     val title : String,

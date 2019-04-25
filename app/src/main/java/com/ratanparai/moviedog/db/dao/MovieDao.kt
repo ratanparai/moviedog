@@ -20,4 +20,7 @@ interface MovieDao {
 
     @Insert
     fun insertMovie(movie: Movie): Long
+
+    @Query("SELECT * FROM movies WHERE title LIKE '%' || :title || '%'")
+    fun searchByTitle(title: String): List<Movie>
 }

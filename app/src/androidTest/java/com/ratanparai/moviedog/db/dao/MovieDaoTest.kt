@@ -67,6 +67,12 @@ class MovieDaoTest {
         assertThat(movieDao.getMovieByImdbId("t5678").title, equalTo("Harry Potter"))
     }
 
+    @Test
+    fun searchShouldWork() {
+        val movie = movieDao.searchByTitle("Harry")
+        assertThat(movie.size, `is`(not(equalTo(0))))
+    }
+
     private fun seedDatabase() {
         var movie = com.ratanparai.moviedog.db.entity.Movie(
             1,
@@ -80,4 +86,6 @@ class MovieDaoTest {
         )
         movieDao.insertMovie(movie)
     }
+
+
 }
