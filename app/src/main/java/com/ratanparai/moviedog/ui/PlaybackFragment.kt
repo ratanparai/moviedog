@@ -6,13 +6,10 @@ import android.os.Bundle
 import android.support.v4.media.session.MediaControllerCompat
 import android.support.v4.media.session.MediaSessionCompat
 import android.util.Log
-import androidx.leanback.app.VideoFragmentGlueHost
 import androidx.leanback.app.VideoSupportFragment
 import androidx.leanback.app.VideoSupportFragmentGlueHost
 import androidx.leanback.media.MediaPlayerAdapter
 import androidx.leanback.media.PlaybackGlue
-import androidx.leanback.media.PlaybackTransportControlGlue
-import com.ratanparai.moviedog.db.AppDatabase
 import com.ratanparai.moviedog.db.entity.Movie
 import com.ratanparai.moviedog.player.MediaSessionCallback
 import com.ratanparai.moviedog.player.VideoPlayerGlue
@@ -75,6 +72,7 @@ class PlaybackFragment: VideoSupportFragment() {
         playerGlue: VideoPlayerGlue<MediaPlayerAdapter>,
         movie: Movie
     ) {
+        Log.d(TAG, "Streaming URL: ${movie.videoUrl}")
         playerGlue.subtitle = movie.description
         playerGlue.title = movie.title
         playerGlue.playerAdapter.setDataSource(Uri.parse(movie.videoUrl))
