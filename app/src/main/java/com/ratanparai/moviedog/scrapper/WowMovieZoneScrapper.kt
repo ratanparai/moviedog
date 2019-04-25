@@ -4,7 +4,7 @@ import com.ratanparai.moviedog.db.entity.Movie
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 
-class WowMovieZoneScrapper {
+class WowMovieZoneScrapper: Scrapper {
     val SEARCH_URL = "http://172.27.27.84/ajax_search?search_value=%s"
 
     fun getSearchResult(query : String): Document? {

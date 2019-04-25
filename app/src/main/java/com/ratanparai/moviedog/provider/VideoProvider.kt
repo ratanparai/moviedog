@@ -12,7 +12,7 @@ import android.util.Log
 import com.ratanparai.moviedog.db.AppDatabase
 import com.ratanparai.moviedog.db.dao.MovieDao
 import com.ratanparai.moviedog.db.entity.Movie
-import com.ratanparai.moviedog.scrapper.DekhvhaiScrapper
+import com.ratanparai.moviedog.service.MovieService
 
 class VideoProvider : ContentProvider() {
 
@@ -21,7 +21,7 @@ class VideoProvider : ContentProvider() {
 
     private lateinit var movieDao: MovieDao
 
-    private lateinit var dekhvhaiScrapper: DekhvhaiScrapper
+    private lateinit var movieService: MovieService
 
     private lateinit var uriMatcher: UriMatcher
 
@@ -42,7 +42,8 @@ class VideoProvider : ContentProvider() {
     override fun onCreate(): Boolean {
         movieDao = AppDatabase.getInstance(context).movieDao()
         uriMatcher = buildUriMatcher()
-        dekhvhaiScrapper = DekhvhaiScrapper()
+        movieService = MovieService(context)
+
         return true
     }
 
@@ -69,7 +70,7 @@ class VideoProvider : ContentProvider() {
 
     private fun search(query: String?): Cursor? {
         if(query != null) {
-            val movies = dekhvhaiScrapper.search(query)
+            val movies = movieService.search(query)
             val matrixCursor = MatrixCursor(queryProjection)
 
             for (movie in movies) {

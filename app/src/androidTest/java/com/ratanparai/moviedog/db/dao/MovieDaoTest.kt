@@ -46,7 +46,7 @@ class MovieDaoTest {
     @Test
     fun shouldBeAbleToInsertDataIntoDatabase() {
         var movie = com.ratanparai.moviedog.db.entity.Movie(
-            "2",
+            2,
             "Spiderman",
             "description",
             "t5679",
@@ -59,7 +59,7 @@ class MovieDaoTest {
 
         assertThat(movieDao.getMovies().size, equalTo(2))
 
-        assertThat(movieDao.getMovieById("2").title, equalTo("Spiderman"))
+        assertThat(movieDao.getMovieById(2).title, equalTo("Spiderman"))
     }
 
     @Test
@@ -67,9 +67,15 @@ class MovieDaoTest {
         assertThat(movieDao.getMovieByImdbId("t5678").title, equalTo("Harry Potter"))
     }
 
+    @Test
+    fun searchShouldWork() {
+        val movie = movieDao.searchByTitle("Harry")
+        assertThat(movie.size, `is`(not(equalTo(0))))
+    }
+
     private fun seedDatabase() {
         var movie = com.ratanparai.moviedog.db.entity.Movie(
-            "1",
+            1,
             "Harry Potter",
             "description",
             "t5678",
@@ -80,4 +86,6 @@ class MovieDaoTest {
         )
         movieDao.insertMovie(movie)
     }
+
+
 }
