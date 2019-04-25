@@ -28,13 +28,6 @@ class VideoPlayerGlue<T : PlayerAdapter>(context: Context, adapter: T, mediaCont
     private val fastForwardAction: PlaybackControlsRow.FastForwardAction = PlaybackControlsRow.FastForwardAction(context)
     private val rewindAction: PlaybackControlsRow.RewindAction = PlaybackControlsRow.RewindAction(context)
 
-    override fun onUpdateProgress() {
-        Log.d(TAG, "Progress updated with : $currentPosition")
-        super.onUpdateProgress()
-    }
-
-
-
     override fun play() {
         super.play()
         if (firstTime) {
