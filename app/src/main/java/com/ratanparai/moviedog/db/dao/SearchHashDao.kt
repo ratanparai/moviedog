@@ -12,4 +12,7 @@ interface SearchHashDao {
 
     @Query("SELECT * FROM searchHash WHERE url = :searchUrl")
     fun getByUrl(searchUrl: String): SearchHash?
+
+    @Query("UPDATE searchHash SET md5hash = :hash WHERE id = :id")
+    fun updateHash(id: Int, hash: String)
 }
