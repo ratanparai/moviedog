@@ -1,9 +1,23 @@
 package com.ratanparai.moviedog.scrapper
 
 import com.google.common.truth.Truth.assertThat
+import org.jsoup.Jsoup
+import org.jsoup.nodes.Document
+import org.junit.Before
 import org.junit.Test
+import java.io.File
 
 class DekhvhaiScrapperTest {
+
+    private lateinit var dekhvhai: Document
+
+    @Before
+    fun loadHtml() {
+        val file = ClassLoader.getSystemResource("HarryPotter_Dekhvhai.html").readText()
+
+        dekhvhai = Jsoup.parse(file, "UTF-8")
+    }
+
     @Test
     fun shouldGetCorrectTitleFromTitleAndYear() {
         // Arrange
@@ -51,4 +65,25 @@ class DekhvhaiScrapperTest {
         assertThat(actual).isEqualTo(expected)
 
     }
+
+    @Test
+    fun shouldLoadHtmlFileAsJsoupDocument() {
+        //val file = File("html/HarryPotter_Dekhvhai.html")
+        val file = ClassLoader.getSystemResource("HarryPotter_Dekhvhai.html").readText()
+
+        val document = Jsoup.parse(file, "UTF-8")
+
+        assertThat(document).isNotNull()
+    }
+
+    @Test
+    fun getMovieUrlsToBrowse() {
+        val scrapper = DekhvhaiScrapper()
+        val movieLinks = scrapper.getListOfMovieLinksFromSearchResult(dekhvhai)
+        assertThat(movieLinks.size).isEqualTo(4)
+
+        assertThat(movieLinks[0]).isEqualTo("http://dekhvhai.com/movie.php?imdbid=tt1201607&cat=English%20Movie")
+
+    }
+
 }

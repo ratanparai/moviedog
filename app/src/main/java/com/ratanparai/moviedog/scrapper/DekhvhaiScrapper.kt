@@ -2,9 +2,11 @@ package com.ratanparai.moviedog.scrapper
 
 import com.ratanparai.moviedog.db.entity.Movie
 import org.jsoup.Jsoup
+import org.jsoup.nodes.Document
 import java.io.IOException
 import java.util.*
 import java.util.concurrent.TimeUnit
+import kotlin.collections.ArrayList
 
 class DekhvhaiScrapper {
 
@@ -79,6 +81,16 @@ class DekhvhaiScrapper {
 
         return results
 
+    }
+
+    fun getListOfMovieLinksFromSearchResult(document: Document): List<String>{
+        val result = ArrayList<String>()
+        val elements = document.select("#tabs_i2-pane1 > div > a")
+        for (elem in elements) {
+            result.add(elem.attr("href"))
+        }
+
+        return result
     }
 
 
