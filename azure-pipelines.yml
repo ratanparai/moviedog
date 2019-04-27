@@ -18,3 +18,9 @@ steps:
     targetFolder: '$(build.artifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
+
+- task: GitHubRelease@0
+  displayName: 'GitHub release (create)'
+  inputs:
+    gitHubConnection: github/ratanparai
+    assets: '$(build.artifactStagingDirectory)/**/*.apk'
