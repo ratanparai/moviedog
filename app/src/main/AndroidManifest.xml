@@ -48,9 +48,6 @@
                     android:resource="@xml/searchable" />
         </activity>
 
-        <activity android:name=".DetailsActivity"/>
-        <activity android:name=".PlaybackActivity"/>
-        <activity android:name=".BrowseErrorActivity"/>
         <activity android:name=".ui.PlaybackActivity"/>
 
         <provider android:name=".provider.VideoProvider"

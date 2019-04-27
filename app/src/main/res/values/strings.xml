@@ -24,4 +24,6 @@
     <string name="dismiss_error">Dismiss</string>
 
     <string name="playback_tag">PLAYBACK_TAG</string>
+
+    <string name="not_implemented">Not Implemented Yet!</string>
 </resources>
