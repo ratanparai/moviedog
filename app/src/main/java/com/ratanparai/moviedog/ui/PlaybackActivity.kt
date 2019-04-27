@@ -26,18 +26,6 @@ class PlaybackActivity: FragmentActivity() {
         }
     }
 
-    override fun onStop() {
-        super.onStop()
-
-        val currentProgress = playbackFragment.getCurrentProgress()
-        val id = playbackFragment.getMovieId()
-        val movieDao = AppDatabase.getInstance(this).movieDao()
-
-        movieDao.updatePlayProgress(id, currentProgress)
-
-        finish()
-    }
-
     override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
         Log.d(TAG, "Key Pressed $keyCode")
         return super.onKeyDown(keyCode, event)
