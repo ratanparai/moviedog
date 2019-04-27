@@ -14,6 +14,8 @@ import com.ratanparai.moviedog.utilities.MD5
 
 class MovieService(private val context: Context) {
 
+    private val TAG = "MovieService"
+
     fun search(query: String): List<Movie> {
         val dekhvhaiScrapper = DekhvhaiScrapper()
         val bdPlexScrapper = BdPlexScrapper()
@@ -40,6 +42,8 @@ class MovieService(private val context: Context) {
         }
 
         val movieLinks = scrapper.getListOfMovieLinksFromSearchResult(document)
+
+        Log.d(TAG, "Scrapping ${movieLinks.size} movies!")
 
 
         for (link in movieLinks) {
