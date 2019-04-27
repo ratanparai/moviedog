@@ -5,10 +5,10 @@ import android.os.Handler
 import android.util.Log
 import android.widget.Toast
 import androidx.leanback.app.BrowseFragment
-import androidx.leanback.widget.ArrayObjectAdapter
-import androidx.leanback.widget.HeaderItem
-import androidx.leanback.widget.ListRowPresenter
-import androidx.leanback.widget.SectionRow
+import androidx.leanback.widget.*
+import com.ratanparai.moviedog.db.AppDatabase
+import com.ratanparai.moviedog.db.dao.MovieDao
+import com.ratanparai.moviedog.presenter.CardPresenter
 
 /**
  * Loads a grid of cards with movies to browse.
@@ -17,9 +17,14 @@ class MainFragment : BrowseFragment() {
 
     private lateinit var rowsAdapter: ArrayObjectAdapter
 
+    private lateinit var movieDao: MovieDao
+
+
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         Log.i(TAG, "onCreate")
         super.onActivityCreated(savedInstanceState)
+
+        movieDao = AppDatabase.getInstance(context).movieDao()
 
         setupUi()
         setupRowAdapter()
@@ -27,7 +32,6 @@ class MainFragment : BrowseFragment() {
 
     private fun setupRowAdapter() {
         rowsAdapter = ArrayObjectAdapter(ListRowPresenter())
-        adapter = rowsAdapter
 
         Handler().postDelayed({
             createRows()
@@ -37,7 +41,23 @@ class MainFragment : BrowseFragment() {
 
     private fun createRows() {
 
-        rowsAdapter.add(SectionRow(HeaderItem("Continue Watching")))
+        // rowsAdapter.add(SectionRow(HeaderItem("Continue Watching")))
+
+        val movies = movieDao.getMovies()
+
+        val rowsAdapter = ArrayObjectAdapter(ListRowPresenter())
+        val cardPresenter = CardPresenter()
+        val listRowAdapter = ArrayObjectAdapter(cardPresenter)
+
+        for (movie in movies) {
+            listRowAdapter.add(movie)
+        }
+
+        val header = HeaderItem("All Movies")
+
+        rowsAdapter.add(ListRow(header, listRowAdapter))
+
+        adapter = rowsAdapter
 
     }
 
