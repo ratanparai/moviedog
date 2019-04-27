@@ -1,10 +1,12 @@
 package com.ratanparai.moviedog.player
 
+import android.app.Activity
 import android.content.Context
 import android.support.v4.media.session.MediaControllerCompat
 import android.util.Log
 import android.view.KeyEvent
 import android.view.View
+import android.view.WindowManager
 import androidx.leanback.media.PlaybackTransportControlGlue
 import androidx.leanback.media.PlayerAdapter
 import androidx.leanback.widget.Action
@@ -58,6 +60,15 @@ class VideoPlayerGlue<T : PlayerAdapter>(context: Context, adapter: T, mediaCont
 
         return super.onKey(v, keyCode, event)
 
+    }
+
+    override fun onPlayStateChanged() {
+        super.onPlayStateChanged()
+        if(isPlaying) {
+            (context as Activity).window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+        } else {
+            (context as Activity).window.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+        }
     }
 
     override fun onUpdateProgress() {
