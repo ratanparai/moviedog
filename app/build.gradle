@@ -37,6 +37,10 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
     implementation 'com.github.bumptech.glide:glide:3.8.0'
 
+    implementation 'com.google.android.exoplayer:exoplayer:2.6.1'
+    implementation 'com.google.android.exoplayer:extension-mediasession:2.6.1'
+    implementation 'com.google.android.exoplayer:extension-leanback:2.6.1'
+
     implementation 'org.jsoup:jsoup:1.11.3'
 
     // Room components

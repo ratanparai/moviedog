@@ -8,10 +8,16 @@ import android.support.v4.media.session.MediaSessionCompat
 import android.util.Log
 import androidx.leanback.app.VideoSupportFragment
 import androidx.leanback.app.VideoSupportFragmentGlueHost
-import androidx.leanback.media.MediaPlayerAdapter
-import androidx.leanback.media.PlaybackGlue
+import androidx.leanback.media.PlaybackTransportControlGlue
+import com.google.android.exoplayer2.ExoPlayerFactory
+import com.google.android.exoplayer2.SimpleExoPlayer
+import com.google.android.exoplayer2.ext.leanback.LeanbackPlayerAdapter
+import com.google.android.exoplayer2.ext.mediasession.MediaSessionConnector
+import com.google.android.exoplayer2.source.ExtractorMediaSource
+import com.google.android.exoplayer2.trackselection.DefaultTrackSelector
+import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory
+import com.google.android.exoplayer2.util.Util
 import com.ratanparai.moviedog.db.entity.Movie
-import com.ratanparai.moviedog.player.MediaSessionCallback
 import com.ratanparai.moviedog.player.VideoPlayerGlue
 import com.ratanparai.moviedog.service.MovieService
 import com.ratanparai.moviedog.utilities.EXTRA_MOVIE_ID
@@ -19,8 +25,12 @@ import com.ratanparai.moviedog.utilities.EXTRA_MOVIE_ID
 class PlaybackFragment: VideoSupportFragment() {
     private val TAG = "PlaybackFragment"
 
-    private val playWhenReadyPlayerCallback: PlaybackGlue.PlayerCallback = PlayWhenReadyPlayerCallback()
-    private lateinit var playerGlue: VideoPlayerGlue<MediaPlayerAdapter>
+    private lateinit var playerGlue: PlaybackTransportControlGlue<LeanbackPlayerAdapter>
+    private lateinit var exoPlayer: SimpleExoPlayer
+
+    private lateinit var movieService: MovieService
+
+    private var movie: Movie? = null
 
     private var movieIdToPlay: Int = -1
 
@@ -38,48 +48,56 @@ class PlaybackFragment: VideoSupportFragment() {
             throw IllegalArgumentException("Invalid movieId $movieId")
         }
 
-        val movieService = MovieService(context!!)
+        movieService = MovieService(context!!)
 
+        movie = movieService.getMovieById(movieId)
 
-        val movie = movieService.getMovieById(movieId!!)
+    }
 
-        val mediaSession = MediaSessionCompat(context, TAG)
-        mediaSession.setFlags(
-            MediaSessionCompat.FLAG_HANDLES_MEDIA_BUTTONS or MediaSessionCompat.FLAG_HANDLES_TRANSPORT_CONTROLS
-        )
-        mediaSession.isActive = true
+    override fun onStart() {
+        super.onStart()
+        Log.d(TAG, "Starting player")
+        initializePlayer()
+    }
 
-        MediaControllerCompat.setMediaController(context as Activity, mediaSession.controller)
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG, "releasing player")
+        releasePlayer()
+    }
 
-        // val playerGlue = PlaybackTransportControlGlue(activity, MediaPlayerAdapter(activity))
-        playerGlue = VideoPlayerGlue(context!!, MediaPlayerAdapter(context), mediaSession.controller, movie.progress)
+    override fun onPause() {
+        super.onPause()
 
+        Log.d(TAG, "Calling onPause()")
+
+        if(playerGlue.isPlaying) {
+            playerGlue.pause()
+        }
+
+        releasePlayer()
+
+    }
+
+    private fun initializePlayer() {
+        val mediaSession = MediaSessionCompat(context, TAG).apply {
+            isActive = true
+            MediaControllerCompat.setMediaController(context as Activity, controller)
+        }
+
+        val trackSelector = DefaultTrackSelector()
+        exoPlayer = ExoPlayerFactory.newSimpleInstance(context, trackSelector)
+
+        MediaSessionConnector(mediaSession).apply {
+            setPlayer(exoPlayer, null)
+        }
+
+        val playerAdapter = LeanbackPlayerAdapter(context, exoPlayer, 500)
+
+        playerGlue = VideoPlayerGlue(context!!, playerAdapter, mediaSession.controller, movieService, movieIdToPlay)
         playerGlue.host = VideoSupportFragmentGlueHost(this)
-        // playerGlue.addPlayerCallback(playWhenReadyPlayerCallback)
-
-        /**
-         * Delegates media commands sent from the assistant to the glue. <br>
-         * Note that Play/Pause are handled via key code input, not MediaSession.
-         */
-        // TODO: MediaSessionCallback
-
-        val mediaSessionCallback = MediaSessionCallback(playerGlue, activity!!)
-        mediaSession.setCallback(mediaSessionCallback)
-
-
-
-
-
-        playMedia(movie)
-
-    }
-
-    fun getCurrentProgress(): Long {
-        return playerGlue.currentPosition
-    }
-
-    fun getMovieId(): Int {
-        return movieIdToPlay
+        playerGlue.playWhenPrepared()
+        playMedia(movie!!)
     }
 
     private fun playMedia(
@@ -89,19 +107,23 @@ class PlaybackFragment: VideoSupportFragment() {
         playerGlue.subtitle = movie.description
         playerGlue.title = movie.title
 
-        playerGlue.playerAdapter.setDataSource(Uri.parse(movie.videoUrl))
-        playerGlue.seekTo(movie.progress)
+        prepareMediaForPlaying(movie)
+
         playerGlue.playerAdapter.seekTo(movie.progress)
 
         playerGlue.playWhenPrepared()
     }
 
-    private class PlayWhenReadyPlayerCallback : PlaybackGlue.PlayerCallback() {
-        override fun onPreparedStateChanged(glue: PlaybackGlue) {
-            super.onPreparedStateChanged(glue)
-            if (glue.isPrepared) {
-                glue.play()
-            }
-        }
+    private fun prepareMediaForPlaying(movie: Movie) {
+        val userAgent = Util.getUserAgent(context, "MovieDog")
+        val mediaSource = ExtractorMediaSource
+            .Factory(DefaultDataSourceFactory(context, userAgent))
+            .createMediaSource(Uri.parse(movie.videoUrl))
+
+        exoPlayer.prepare(mediaSource)
+    }
+
+    private fun releasePlayer() {
+        exoPlayer.release()
     }
 }

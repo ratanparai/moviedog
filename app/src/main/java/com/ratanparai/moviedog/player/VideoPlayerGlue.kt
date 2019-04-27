@@ -10,13 +10,13 @@ import androidx.leanback.media.PlayerAdapter
 import androidx.leanback.widget.Action
 import androidx.leanback.widget.ArrayObjectAdapter
 import androidx.leanback.widget.PlaybackControlsRow
+import com.ratanparai.moviedog.service.MovieService
 import java.util.concurrent.TimeUnit
 
-class VideoPlayerGlue<T : PlayerAdapter>(context: Context, adapter: T, mediaController: MediaControllerCompat, val startProgress: Long) :
+class VideoPlayerGlue<T : PlayerAdapter>(context: Context, adapter: T, mediaController: MediaControllerCompat, val movieService: MovieService, val movieId: Int) :
     PlaybackTransportControlGlue<T>(context, adapter) {
 
     private val TAG = "VideoPlayerGlue"
-    private var firstTime = true
 
     private val TEN_SECONDS = TimeUnit.SECONDS.toMillis(10)
     private val THIRTY_SECONDS = TimeUnit.SECONDS.toMillis(30)
@@ -28,21 +28,13 @@ class VideoPlayerGlue<T : PlayerAdapter>(context: Context, adapter: T, mediaCont
     private val fastForwardAction: PlaybackControlsRow.FastForwardAction = PlaybackControlsRow.FastForwardAction(context)
     private val rewindAction: PlaybackControlsRow.RewindAction = PlaybackControlsRow.RewindAction(context)
 
-    override fun play() {
-        super.play()
-        if (firstTime) {
-            seekTo(startProgress)
-            firstTime = false
-        }
-
-    }
 
     override fun onKey(v: View?, keyCode: Int, event: KeyEvent?): Boolean {
         if (event!!.action == KeyEvent.ACTION_DOWN) {
 
             val repeatCount = event.repeatCount
 
-            var jumpTime = when {
+            val jumpTime = when {
                 repeatCount>15 -> FIVE_MINUTES
                 repeatCount > 10 -> ONE_MINUTES
                 repeatCount > 5 -> THIRTY_SECONDS
@@ -66,6 +58,11 @@ class VideoPlayerGlue<T : PlayerAdapter>(context: Context, adapter: T, mediaCont
 
         return super.onKey(v, keyCode, event)
 
+    }
+
+    override fun onUpdateProgress() {
+        super.onUpdateProgress()
+        movieService.updateMovieProgress(movieId, currentPosition)
     }
 
     override fun onCreatePrimaryActions(primaryActionsAdapter: ArrayObjectAdapter?) {
