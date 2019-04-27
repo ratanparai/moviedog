@@ -15,5 +15,6 @@ data class Movie (
     val videoUrl : String,
     val productionYear : Int,
     val duration: Int,
-    val progress: Long = 0
+    val progress: Long = 0,
+    val lastPlaytime: Long = 0
 )

@@ -3,7 +3,6 @@ package com.ratanparai.moviedog.db.dao
 import androidx.room.Room
 import androidx.test.InstrumentationRegistry
 import androidx.test.espresso.matcher.ViewMatchers.assertThat
-import com.ratanparai.moviedog.Movie
 import com.ratanparai.moviedog.db.AppDatabase
 import org.hamcrest.CoreMatchers.*
 import org.junit.After
@@ -27,20 +26,6 @@ class MovieDaoTest {
     @After
     fun closeDb() {
 
-    }
-
-    @Test
-    fun shouldRunTestInMobile() {
-        // Arrange
-        var expected = "Harry Potter"
-        var movie = Movie()
-
-        // Act
-        movie.title = "Harry Potter"
-        var actual = movie.title
-
-        // Assert
-        assertThat(actual, equalTo(expected))
     }
 
     @Test

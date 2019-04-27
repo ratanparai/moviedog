@@ -8,7 +8,6 @@ import com.ratanparai.moviedog.ui.PlaybackActivity
 
 class SearchableActivity: Activity() {
 
-    private val TAG = "SearchableActivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,5 +28,9 @@ class SearchableActivity: Activity() {
         }
 
         finish()
+    }
+
+    companion object {
+        private const val TAG = "SearchableActivity"
     }
 }

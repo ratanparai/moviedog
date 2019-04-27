@@ -54,6 +54,8 @@ class PlaybackFragment: VideoSupportFragment() {
 
     }
 
+
+
     override fun onStart() {
         super.onStart()
         Log.d(TAG, "Starting player")
@@ -62,21 +64,12 @@ class PlaybackFragment: VideoSupportFragment() {
 
     override fun onStop() {
         super.onStop()
-        Log.d(TAG, "releasing player")
-        releasePlayer()
-    }
-
-    override fun onPause() {
-        super.onPause()
-
-        Log.d(TAG, "Calling onPause()")
-
+        Log.d(TAG, "stopping player")
         if(playerGlue.isPlaying) {
             playerGlue.pause()
         }
 
         releasePlayer()
-
     }
 
     private fun initializePlayer() {

@@ -28,7 +28,6 @@
                 android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-                <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
             </intent-filter>
         </activity>
@@ -48,9 +47,6 @@
                     android:resource="@xml/searchable" />
         </activity>
 
-        <activity android:name=".DetailsActivity"/>
-        <activity android:name=".PlaybackActivity"/>
-        <activity android:name=".BrowseErrorActivity"/>
         <activity android:name=".ui.PlaybackActivity"/>
 
         <provider android:name=".provider.VideoProvider"
