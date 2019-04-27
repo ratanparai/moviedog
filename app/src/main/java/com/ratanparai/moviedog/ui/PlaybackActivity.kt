@@ -16,6 +16,12 @@ class PlaybackActivity: FragmentActivity() {
 
     private lateinit var playbackFragment: PlaybackFragment
 
+    override fun onStop() {
+        Log.d(TAG, "Finishing Activity")
+        super.onStop()
+        finish()
+    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
