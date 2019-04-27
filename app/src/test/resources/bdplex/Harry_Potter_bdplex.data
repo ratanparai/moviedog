@@ -1,0 +1,1308 @@
+
+
+<!doctype html>
+<html class="no-js" lang="en-US">
+<head>
+
+	<!-- meta -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1">
+
+	<!-- Uncomment the meta tags you are going to use! Be relevant and don't spam! -->
+
+    <meta name="keywords" content="Action Movies,Animation,crime,comedy" />
+	<meta name="description" content="Hollywood , Animation , Bollywood genre Movies">
+    <meta name="author" content="Kamruddin bivob (bivob172)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+	<!-- Title -->
+	<title>harry potter | bdplex</title>
+
+	<!-- Url of your website (without extra pages) 
+	<link rel="canonical" href="http://www.hogash-demos.com/kallyas_html/" />
+	-->
+
+	<!-- Restrict google from scanning info from Dmoz or YahooDir
+	More here: http://www.seoboy.com/what-are-the-meta-tags-noodp-and-noydir-used-for-in-seo/
+	Also more on robots here https://yoast.com/articles/robots-meta-tags/ 
+	<meta name="robots" content="noodp,noydir"/>
+	-->
+
+	<!--
+	Social media tags and more >>>>> http://moz.com/blog/meta-data-templates-123 <<<<<
+	Debugging tools:
+	- https://dev.twitter.com/docs/cards/validation/validator
+	- https://developers.facebook.com/tools/debug
+	- http://www.google.com/webmasters/tools/richsnippets
+	- http://developers.pinterest.com/rich_pins/validator/
+	-->
+
+	<!-- Google Authorship and Publisher Markup. You can also simply add your name.
+	Author = Owner, Publisher = who built the website. Add profile url in href="".
+	Profile url example: https://plus.google.com/1130658794498306186 or replace [Google+_Profile] below with your profile # 
+	<link rel="author" href="https://plus.google.com/[Google+_Profile]/posts"/>
+	<link rel="publisher" href="https://plus.google.com/[Google+_Page_Profile]"/>
+	-->
+
+	<!-- Schema.org markup for Google+ 
+	<meta itemprop="name" content="Kallyas Premium Template">
+	<meta itemprop="description" content="This is the page description">
+	<meta itemprop="image" content="">
+	-->
+
+	<!-- Open Graph Protocol meta tags.
+	Used mostly for Facebook, more here http://ogp.me/ 
+	<meta property="og:locale" content="en"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="Kallyas Premium Template"/>
+	<meta property="og:description" content="Kallyas is an ultra-premium, responsive theme built for todays websites."/>
+	<meta property="og:site_name" content="Kallyas Premium Template"/>
+	-->
+
+	<!-- Url of your website 
+	<meta property="og:url" content=""/>
+	-->
+
+	<!-- Representative image 
+	<meta property="og:image" content=""/>
+	-->
+
+	<!-- Twitter Cards
+	Will generate a card based on the info below.
+	More here: http://davidwalsh.name/twitter-cards or https://dev.twitter.com/docs/cards 
+	<meta name="twitter:card" content="summary">
+	-->
+
+	<!-- Representative image 
+	<meta name="twitter:image" content="">
+	<meta name="twitter:domain" content="hogash.com">
+	<meta name="twitter:site" content="@hogash">
+	<meta name="twitter:creator" content="@hogash">
+	-->
+
+	<!-- Url of your website 
+	<meta name="twitter:url" content="">
+	<meta name="twitter:title" content="How to Create a Twitter Card">
+	<meta name="twitter:description" content="Twitter's new Twitter Cards API allows developers to add META tags to their website, and Twitter will build card content from links to a given site.">
+	-->
+
+	<!-- GeoLocation Meta Tags / Geotagging. Used for custom results in Google.
+	Generator here http://mygeoposition.com/ 
+	<meta name="geo.placename" content="Chicago, IL, USA" />
+	<meta name="geo.position" content="41.8781140;-87.6297980" />
+	<meta name="geo.region" content="US-Illinois" />
+	<meta name="ICBM" content="41.8781140, -87.6297980" />
+	-->
+
+	<!-- Dublin Core Metadata Element Set
+	Using DC metadata is advantageous from an SEO perspective because search engines might interpret the extra code as an effort to make page content as descriptive and relevant as possible.
+
+	<link rel="schema.DC" href="http://purl.org/DC/elements/1.0/" />
+	<meta name="DC.Title" content="Kallyas Premium Template, Kallyas Responsive Template" />
+	<meta name="DC.Creator" content="hogash" />
+	<meta name="DC.Type" content="software" />
+	<meta name="DC.Date" content="2015-10-01" />
+	<meta name="DC.Format" content="text/html" />
+	<meta name="DC.Language" content="en" />
+	-->
+
+	<!-- end descriptive meta tags -->
+
+	<!-- Retina Images -->
+	<!-- Simply uncomment to use this script !! More here http://retina-images.complexcompulsions.com/
+	<script>(function(w){var dpr=((w.devicePixelRatio===undefined)?1:w.devicePixelRatio);if(!!w.navigator.standalone){var r=new XMLHttpRequest();r.open('GET','/retinaimages.php?devicePixelRatio='+dpr,false);r.send()}else{document.cookie='devicePixelRatio='+dpr+'; path=/'}})(window)</script>
+	<noscript><style id="devicePixelRatio" media="only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)">html{background-image:url("php-helpers/_retinaimages.php?devicePixelRatio=2")}</style></noscript>-->
+	<!-- End Retina Images -->
+
+	<!-- iDevices & Retina Favicons 
+	<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon-144-precomposed.png" sizes="144x144">
+	<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon-114-precomposed.png" sizes="114x114">
+	<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon-72-precomposed.png" sizes="72x72">
+	<link rel="apple-touch-icon" href="apple-touch-icon-57-precomposed.png" sizes="57x57">-->
+	
+	<!--  Desktop Favicons  -->
+	<link rel="icon" type="image/png" href="images/favicons/favicon.ico" sizes="16x16">
+	<!-- <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32"> -->
+	<!-- <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96"> -->
+
+	<!-- Google Fonts CSS Stylesheet // More here http://www.google.com/fonts#UsePlace:use/Collection:Open+Sans -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,600italic,700,800,800italic" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+	<!-- ***** Boostrap Custom / Addons Stylesheets ***** -->
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
+	<!-- Required CSS file for iCarousel element -->
+	<link rel="stylesheet" href="css/sliders/icarousel/icarousel.css" type="text/css" media="all" />
+	<!-- ***** Main + Responsive & Base sizing CSS Stylesheet ***** -->
+	<link rel="stylesheet" href="css/template.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/base-sizing.css" type="text/css" media="all">
+	
+	<!-- Custom CSS Stylesheet (where you should add your own css rules) -->
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+
+	<link rel="stylesheet" type="text/css" href="css/search.css" />
+
+	<!-- Modernizr Library -->
+	<script type="text/javascript" src="js/modernizr.min.js"></script>
+
+	<!-- jQuery Library -->
+	
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="js/script-search.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<style>.bg-white {
+    background-color: #2c0707!important;
+    }.myfont{color:#dfb3b3;}.tabs_style2>ul.nav>li.active>a, .tabs_style2>ul.nav>li>a:hover {
+    color: #dfb3b3;
+}.style3 .action_box_inner:before {
+background: radial-gradient(#2c0707, #700707);}.style3 .action_box_inner {
+background: radial-gradient(#2c0707, #700707);}
+
+
+@media only screen and (min-width: 1200px)
+.kl-icarousel-container {
+    top: 55%;
+}
+	</style>	
+	<style>
+	@media only screen and (min-width: 768px) {
+		.kl-slideshow.uh_zn_def_header_style, .kl-slideshow.zn_def_header_style, .page-subheader.uh_zn_def_header_style, .page-subheader.zn_def_header_style, .uh_zn_def_header_style, .zn_def_header_style {
+    height: 319px;
+}
+	}
+	.ptop-80 {
+    padding-top: 130px!important;
+}
+	</style>
+	
+</head>
+
+<body class="">
+	
+
+	<!-- Support Panel -->
+     <input type="checkbox" id="support_p" class="panel-checkbox">
+	<div class="support_panel">
+		<div class="support-close-inner">
+			<label for="support_p" class="spanel-label inner">
+				<span class="support-panel-close">×</span>
+			</label>
+		</div>	
+		<div class="container">		
+			<div class="row">
+				<div class="col-sm-12">
+					<!-- Title -->
+					<h4 class="m_title">NOTICE</h4>
+
+					<!-- Content - how to shop steps -->
+					<div class="m_content how_to_shop">
+<h3>This is Important Notice for all</h3>
+<p> Well, actually all contents within this "markdown-editable" context is really editable. Just click anywhere! </p>																		
+						<p></p>
+					</div>
+					<!--/ Content - how to shop steps -->
+				</div>
+				
+			</div>
+			<!--/ row -->
+		</div>
+		<!--/ container -->
+    </div>	<!--/ Support Panel -->
+	
+
+	<!-- Page Wrapper -->
+	<div id="page_wrapper">
+		
+		<!-- Header style 1 -->
+		
+		<header id="header" class="site-header style5  cta_button dark-transparent" data-header-style="7">
+			<!-- siteheader-container -->
+			<div class="container siteheader-container header--oldstyles">
+				<!-- Logo container-->
+				<div class="logo-container hasInfoCard logosize--yes">
+					<!-- Logo -->
+					<h1 class="site-logo logo" id="logo">
+						<a href="http://bdplex.net/" title="">
+									<img src="images/logo.png" class="logo-img" alt="bdplex logo" title="bdplex Logo" />
+										</a>
+					</h1>
+					<!--/ Logo -->
+
+				</div>
+
+				<!--/ Logo container-->
+
+				<!-- separator for responsive header -->
+				<div class="separator site-header-separator visible-xs"></div>
+				<!--/ separator for responsive header -->
+
+				<!-- header-links-container 
+				<div class="header-links-container">
+					
+					<ul class="topnav navRight topnav">
+						
+						<li>
+							<label for="support_p" class="spanel-label">
+		                		<i class="glyphicon glyphicon-info-sign icon-white support-info visible-xs xs-icon"></i>
+								<span class="hidden-xs">NOTICE</span>
+							</label>
+						</li>
+					
+						<li>
+							<a class="popup-with-form" href="#login_panel">
+								<i class="glyphicon glyphicon-log-in visible-xs xs-icon"></i>
+								<span class="hidden-xs">Login</span>
+							</a>
+						</li>
+					
+					</ul>
+				</div>
+				<!--/ header-links-container -->
+
+				<!-- separator for responsive header -->
+				<div class="separator site-header-separator visible-xs"></div>
+				<!--/ separator for responsive header -->
+
+				<!-- header search -->
+<div id="search" class="header-search">
+	<a href="#" class="searchBtn "><span class="glyphicon glyphicon-search icon-white"></span></a>
+	<div class="search-container" style="width: 340px;padding: 5px;" >
+		<form action="msearch.php" id="s" method="get" autocomplete="on" class="header-searchform" >
+		<input type="hidden" id="q" name="q"/>
+			<input  maxlength="40" class="inputbox" type="text" name="searchquery" size="20" id="inputString" onkeyup="lookup(this.value);"value="SEARCH ..." onblur="if (this.value=='') this.value='SEARCH ...';" onfocus="if (this.value=='SEARCH ...') this.value='';">
+			<input type="hidden" id="q" name="q" value="M" />
+			<button type="submit" id="searchsubmit" class="searchsubmit glyphicon glyphicon-search icon-white"></button>
+		</form>
+	</div>
+</div>
+<div id="suggestions" style="margin-left:10px;"></div>
+				<!--/ header search -->
+
+				
+				
+
+				<!--/ Call to action ribbon Free Quote -->
+				
+
+				<!-- responsive menu trigger -->
+				<div id="zn-res-menuwrapper">
+					<a href="#" class="zn-res-trigger zn-header-icon"></a>
+				</div>
+				<!--/ responsive menu trigger -->
+
+				<!-- main menu -->
+				<div id="main-menu" class="main-nav zn_mega_wrapper ">
+				
+					<ul id="menu-main-menu" class="main-menu zn_mega_menu">
+						<li class="menu-item-has-children"><a href="allmovies.php?page=1&entries=64&sort=DESC&w=grid">Movies</a>
+							<ul class="sub-menu clearfix">
+								 <li><a href="allmovies.php?page=1&entries=64&Category=Hollywood&sort=DESC&w=grid">Hollywood</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Bollywood&sort=DESC&w=grid">Bollywood</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Animation&sort=DESC&w=grid">Animation</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Foreign&sort=DESC&w=grid">Foreign</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Franch&sort=DESC&w=grid">Franch</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Chinese&sort=DESC&w=grid">Chinese</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Indian Bangla&sort=DESC&w=grid">Indian Bangla</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Italian&sort=DESC&w=grid">Italian</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=japanese&sort=DESC&w=grid">japanese</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Korean&sort=DESC&w=grid">Korean</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Malayalam&sort=DESC&w=grid">Malayalam</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Russia&sort=DESC&w=grid">Russia</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Tamil&sort=DESC&w=grid">Tamil</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Thailand&sort=DESC&w=grid">Thailand</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Spanish&sort=DESC&w=grid">Spanish</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Pakistani&sort=DESC&w=grid">Pakistani</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Brasil&sort=DESC&w=grid">Brasil</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Persian&sort=DESC&w=grid">Persian</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Hindi Dubbed&sort=DESC&w=grid">Hindi Dubbed</a>
+			</li>							</ul>
+						</li>
+						<li class="menu-item-has-children"><a href="#">Genre</a>
+							<ul class="sub-menu clearfix">
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Action&sort=DESC&w=grid">Action</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Adventure&sort=DESC&w=grid">Adventure</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Animation&sort=DESC&w=grid">Animation</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Comedy&sort=DESC&w=grid">Comedy</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Documentary&sort=DESC&w=grid">Documentary</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Thriller&sort=DESC&w=grid">Thriller</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Drama&sort=DESC&w=grid">Drama</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Family&sort=DESC&w=grid">Family</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Fantasy&sort=DESC&w=grid">Fantasy</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Foreign&sort=DESC&w=grid">Foreign</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=History&sort=DESC&w=grid">History</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=War&sort=DESC&w=grid">War</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Horror&sort=DESC&w=grid">Horror</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Music&sort=DESC&w=grid">Music</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Mystery&sort=DESC&w=grid">Mystery</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Romance&sort=DESC&w=grid">Romance</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Science fiction&sort=DESC&w=grid">Science fiction</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Western&sort=DESC&w=grid">Western</a></li>									
+								
+							</ul>
+						</li>
+						<li class="menu-item-has-children"><a href="tv-series.php?page=1&Category=all&sort=DESC&w=grid">Tv Series</a>
+							<ul class="sub-menu clearfix">
+								 <li><a href="tv-series.php?page=1&entries=32&Category=English Tv Series&sort=DESC&w=grid">English Tv Series</a></li><li><a href="tv-series.php?page=1&entries=32&Category=Korean Tv Series&sort=DESC&w=grid">Korean Tv Series</a></li><li><a href="tv-series.php?page=1&entries=32&Category=Hindi Tv Series&sort=DESC&w=grid">Hindi Tv Series</a></li><li><a href="tv-series.php?page=1&entries=32&Category=Bengali Tv Series&sort=DESC&w=grid">Bengali Tv Series</a></li><li><a href="posts.php?page=1&Category=Bangla Natok&sort=DESC">Bangla Natok</a>
+			</li>							</ul>
+						</li>
+						<li class="menu-item-has-children"><a href="games.php?page=1&entries=24&sort=DESC&w=block">Games</a>
+							<ul class="sub-menu clearfix">
+							<li><a href="http://bdplex.net/onlineGames.php" target="_blank">Online Games<span class="zn-mega-new-item">HOT</span></a></li>
+						    <li><a href="http://bdplex.net//games.php?page=1&entries=24&Category=Pc Games&sort=DESC&w=grid">Pc Games</a> </li><li><a href="http://bdplex.net//games.php?page=1&entries=24&Category=Android Games&sort=DESC&w=grid">Android Games</a> </li>							</ul>
+						</li>
+		
+						<li class="menu-item-has-children"><a href="software.php?page=1">Software</a></li>
+						<li class="menu-item-has-children">
+						<a href="http://youtubedom.com/" target="_blank" style="background-color: #ff4e4e;color:#fff; font-weight:bold;">Bangla Natok</a>
+							
+						</li>
+						
+						<li class="menu-item-has-children" style="" ><a href="#">Other Ftp</a>
+						
+						<ul class="sub-menu clearfix">
+								<li><a href="http://filmraja.com/" target="_blank">Movie Server 1</a></li>
+								<li><a href="http://172.22.22.100/" target="_blank">Movie Server 2</a></li>
+								<li><a href="http://172.22.22.101/home/" target="_blank">Movie Server 3</a></li>
+								<li><a href="http://fs.amrbd.com" target="_blank">Movie Server 4</a></li>
+								
+								<li><a href="http://172.22.22.102:8096/web/home.html" target="_blank">Plex-1</a></li>
+								<li><a href="http://172.22.22.102:8096/web/home.html" target="_blank">Plex-1</a></li>
+								<li><a href="www.crazyhd.com" target="_blank">CrazyHD</a></li>
+								<li><a href="http://172.27.27.23/" target="_blank">Torrent 5</a></li>
+								<li><a href="https://www.bioscopelive.com/" target="_blank">Bioscope</a></li>								
+								<li><a href="http://www.ebox.live/" target="_blank">TV Server 2</a></li>								
+								<li><a href="http://antbdonlinegaming.blogspot.com/" target="_blank">Games Server</a></li>	
+							</ul>
+						
+						</li>
+						
+						<li class="menu-item-has-children"><a href="#">Live TV &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+													
+						<ul class="sub-menu clearfix">
+						         
+								<li><a href="http://103.114.36.38" target="_blank">Live TV</a></li>
+								<li><a href="http://jagobd.com/" target="_blank">Jago BD <span class="zn-mega-new-item">HOT</span></a></li>
+								<li><a href="http://bioscopelive.com" target="_blank">Bioscope Live</a></li>
+								<li><a href="http://tv.rangdhanu.live/" target="_blank">Rangdhanu</a></li>
+						</ul>
+						
+						</li> 
+                        
+					</ul>
+				</div>
+				<!--/ main menu -->
+			</div>
+			<!--/ siteheader-container -->
+		</header><style>#_wpk-custom-bar{display:none;}</style>		<!-- / Header style 1 -->
+
+
+		<!-- Page sub-header + Bottom mask style 5 -->
+		<div id="page_header" class="page-subheader site-subheader-cst uh_flat_dark_blue maskcontainer--mask5">
+			<div class="bgback"></div>
+			
+			<!-- Background -->
+			<div class="kl-bg-source">
+				<!-- Gradient overlay -->
+				<div class="kl-bg-source__overlay" style="background:rgba(186,3,3,1); background: -moz-linear-gradient(left, rgba(186,3,3,1) 0%, rgba(53,53,53,0.85) 100%); background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(186,3,3,1)), color-stop(100%,rgba(53,53,53,0.85))); background: -webkit-linear-gradient(left, rgba(186,3,3,1) 0%,rgba(53,53,53,0.85) 100%); background: -o-linear-gradient(left, rgba(186,3,3,1) 0%,rgba(53,53,53,0.85) 100%); background: -ms-linear-gradient(left, rgba(186,3,3,1) 0%,rgba(53,53,53,0.85) 100%); background: linear-gradient(to right, rgba(186,3,3,1) 0%,rgba(53,53,53,0.85) 100%);">
+				</div>
+				<!--/ Gradient overlay -->
+			</div>
+			<!--/ Background -->
+
+
+			<!-- Animated Sparkles -->
+			<div class="th-sparkles"></div>
+			<!--/ Animated Sparkles -->
+			
+			<!-- Sub-Header content wrapper -->
+			<div class="ph-content-wrap">
+				<div class="ph-content-v-center ptop-80">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-6">
+								<!-- Breadcrumbs -->
+								<ul class="breadcrumbs fixclear">
+									<li><a href="index.php">Home</a></li>
+									<li>harry potter</li>
+								</ul>
+								<!-- Breadcrumbs -->
+
+								<!-- Current date -->
+								<span id="current-date" class="subheader-currentdate">August 25, 2016</span>
+								<!--/ Current date -->
+
+								<div class="clearfix"></div>
+							</div>
+							<!--/ col-sm-6 -->
+
+							<div class="col-sm-8">
+								<!-- Sub-header titles -->
+								<div class="subheader-titles">
+									<h2 class="subheader-maintitle">Search Movies , Tv Series , Games , Software and Posts</h2>
+									<h4 class="subheader-subtitle">You can search by Movie name ,keword, year, actor name and genre</h4>
+								</div>
+								<!--/ Sub-header titles -->
+							</div>
+							<!--/ col-sm-6 -->
+						</div>
+						<!--/ row -->
+					</div>
+					<!--/ container -->
+				</div>
+				<!--/ .ph-content-v-center -->
+			</div>
+			<!--/ Sub-Header content wrapper -->
+
+			<!-- Sub-header Bottom mask style 5 -->
+			<div class="kl-bottommask kl-bottommask--mask5">
+				<svg width="2700px" height="64px" class="svgmask" viewBox="0 0 2700 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				    <defs>
+				        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-mask5">
+				            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+				            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetInner1" result="shadowBlurInner1"></feGaussianBlur>
+				            <feComposite in="shadowBlurInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+				            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.45 0" in="shadowInnerInner1" type="matrix" result="shadowMatrixInner1"></feColorMatrix>
+				            <feMerge>
+				                <feMergeNode in="SourceGraphic"></feMergeNode>
+				                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+				            </feMerge>
+				        </filter>
+				    </defs>
+				    <path d="M1892,0 L2119,44.993 L2701,45 L2701.133,63.993 L-0.16,63.993 L1.73847048e-12,45 L909,44.993 L1892,0 Z" class="bmask-bgfill" fill="#2c0707" filter="url(#filter-mask5)"></path>
+				    <path d="M2216,44.993 L2093,55 L1882,6 L995,62 L966,42 L1892,0 L2118,44.993 L2216,44.993 L2216,44.993 Z" fill="#cd2122" class="bmask-customfill" filter="url(#filter-mask5)"></path>
+				</svg>
+			</div>
+			<!--/ Sub-header Bottom mask style 5 -->
+		</div>
+        <!--/ Page sub-header + Bottom mask style 5 -->
+
+
+        <!-- Tabs section with custom paddings -->
+        <section class="hg_section pbottom-80" style="background-color: #0c010e">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						
+						<!-- Tabs element style 5 -->
+						<div class="tabbable tabs_style5">
+							<!-- Navigation menu -->
+							<ul class="nav fixclear">
+								<!-- Tab #1 -->
+								<li class="active"><a href="#tabs_i2-pane1" data-toggle="tab">Movies</a></li>
+								<!--/ Tab #1 -->
+
+								<!-- Tab #2 -->
+								<li class=""><a href="#tabs_i2-pane2" data-toggle="tab">Games</a></li>
+								<!--/ Tab #2 -->
+
+								<!-- Tab #3 -->
+								<li class=""><a href="#tabs_i2-pane3" data-toggle="tab">Tv Series</a></li>
+								<!--/ Tab #3 -->
+								
+								<!-- Tab #4 -->
+								<li class=""><a href="#tabs_i2-pane4" data-toggle="tab">Software</a></li>
+								<!--/ Tab #4 -->
+								
+								<!-- Tab #4 -->
+								<li class=""><a href="#tabs_i2-pane5" data-toggle="tab">Posts</a></li>
+								<!--/ Tab #4 -->
+							</ul>
+							<!--/ Navigation menu -->
+
+							<!-- Tabs content -->
+							<div class="tab-content">
+								<!-- Tab #1 -->
+								<div class="tab-pane active" id="tabs_i2-pane1">
+									<!-- Title -->
+									<h4>Movies</h4>
+									<!-- Title -->
+									<!-- Description -->
+									<p>
+									
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs1-8 col-xs-12">
+   <a href="movie.php?imdbid=tt1201607&cat=Hollywood" class="thumb hoverBorder plus boxHov1" onmouseover="document.getElementById('divtt1201607').style.display = 'block';" onMouseOut="document.getElementById('divtt1201607').style.display = 'none';" style="margin-bottom:0px;">
+    
+        <span class="hoverBorderWrapper">
+        
+            <img src="http://bdplex.net/Admin/main/images/tt1201607/poster/fTplI1NCSuEDP4ITLcTps739fcC.jpg" onerror="this.src='http://image.tmdb.org/t/p/w185/fTplI1NCSuEDP4ITLcTps739fcC.jpg" class="img-responsive offer-banners-img" alt="" title="" style="height:auto;width:100%">
+            
+             <span class="MovieQuality">HD-RIP</span><span class="theHoverBorder"></span>
+        </span>
+        
+    </a>
+    <div class="post-details" style="line-height:1.2em;margin-bottom:15px;">                        
+        <p class="MovieTitle">
+        <a href="movie.php?imdbid=tt1201607&cat=Hollywood" title="Harry Potter .." >Harry Potter ..</a>
+        <a  href="movie.php?imdbid=tt1201607&cat=Hollywood" title="Harry Potter .." style="padding: 1px 4px;font-size: 11px;margin-right: 6%;float:right;">
+        <span>2011</span>
+        <span class="MovieRatings">8.1</span>
+        
+        </p>    
+    </div>
+    
+    <div class="displayHover1 BoxCss" id="divtt1201607" style="" onmouseover="document.getElementById('divtt1201607').style.display = 'block';" onMouseOut="document.getElementById('divtt1201607').style.display = 'none';">
+        <div class="arrow_box"></div>
+        <div class="headBox">
+          <ul>
+           <li style="margin-left: -17px;"><font style="font-size:16px;color:#fff;">8.1</font> <br><img src="images/imdb_logo.jpg" style="width:28px;margin-top:-15px;" /></li>
+           <li style="margin-left: 19px;"><font style="font-size:16px;color:#fff;">2011</font> <br> 
+           <div style="margin-top: -7px;color: #fff;">YEAR</div></li>
+           <li style="margin-left: 19px;"><font style="font-size:14px;color:#fff;margin-left:0px;">HD-RIP</font> <br> 
+           <div style="margin-top: -7px;color: #fff;">Quality</div></li>
+           <li style="margin-left: 20px;margin-top: 6px;"><a href="#" class="flove" title="add to favourite list"><span class="grid-ibx__icon glyphicon glyphicon-heart-empty"></span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-9" style="clear:left;background:-color:#fff;"><div style="font-size: 21px;margin-top: 10px;margin-bottom: -27px;">Hollywood</div><br><div style="font-size: 10px;"><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Family&sort=DESC&w=grid">Family</a> ,<a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Fantasy&sort=DESC&w=grid">Fantasy</a>, <a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Adventure&sort=DESC&w=grid">Adventure</a>, </div></div>
+        <div class="col-md-2" style="margin-top: 10px;border: 1px solid #000;border-radius: 50px;height: 50px;width: 50px;"><div style="text-align:center;font-size:14px;font-weight: bold;margin-top: 5px;margin-left: -3px;">130</div> <div style="margin-top: -10px;margin-left: -2px;">min</div></div>
+        <div class="col-md-12" style="font-size: 16px;
+font-weight: bold;margin-top: 8px;line-height: 15px;">Harry Potter and the Deathly Hallows: Part 2</div>
+        <div class="col-md-12" style="line-height: 13px;margin-top: 10px;
+"> Harry, Ron and Hermione continue their quest to vanquish the evil Voldemort once and for all. Just as things begin to look hopeless for the young wiza...<a href="movie.php?imdbid=tt1201607&cat=Hollywood">More</a>. <br>
+<a class="btn-element btn btn-fullcolor btn-sm " href="http://www.youtube.com/watch?v=mObK5XD8udk" data-lightbox="iframe" title="Watch Trailer" style="margin:5px 5px 5px 0;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Trailer</span></a>
+
+<a class="btn-element btn btn-lined lined-dark btn-sm " href="movie.php?imdbid=tt1201607&cat=Hollywood" title="Play Now" style="margin: 5px 0px 4px -4px;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Watch Now</span></a>
+
+<a class="btn-element btn btn-success lined-dark btn-sm " href="#" title="Add to Playlist" style="margin: 1px 0px 0px 1px;"><span><i class="grid-ibx__icon glyphicon glyphicon-plus"  style="font-size:11px;" ></i></span></a>
+</div>
+        
+    </div>
+    </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs1-8 col-xs-12">
+   <a href="movie.php?imdbid=tt0926084&cat=Hollywood" class="thumb hoverBorder plus boxHov1" onmouseover="document.getElementById('divtt0926084').style.display = 'block';" onMouseOut="document.getElementById('divtt0926084').style.display = 'none';" style="margin-bottom:0px;">
+    
+        <span class="hoverBorderWrapper">
+        
+            <img src="http://bdplex.net/Admin/main/images/tt0926084/poster/maP4MTfPCeVD2FZbKTLUgriOW4R.jpg" onerror="this.src='http://image.tmdb.org/t/p/w185/maP4MTfPCeVD2FZbKTLUgriOW4R.jpg" class="img-responsive offer-banners-img" alt="" title="" style="height:auto;width:100%">
+            
+             <span class="MovieQuality">HD-RIP</span><span class="theHoverBorder"></span>
+        </span>
+        
+    </a>
+    <div class="post-details" style="line-height:1.2em;margin-bottom:15px;">                        
+        <p class="MovieTitle">
+        <a href="movie.php?imdbid=tt0926084&cat=Hollywood" title="Harry Potter .." >Harry Potter ..</a>
+        <a  href="movie.php?imdbid=tt0926084&cat=Hollywood" title="Harry Potter .." style="padding: 1px 4px;font-size: 11px;margin-right: 6%;float:right;">
+        <span>2010</span>
+        <span class="MovieRatings">7.7</span>
+        
+        </p>    
+    </div>
+    
+    <div class="displayHover1 BoxCss" id="divtt0926084" style="" onmouseover="document.getElementById('divtt0926084').style.display = 'block';" onMouseOut="document.getElementById('divtt0926084').style.display = 'none';">
+        <div class="arrow_box"></div>
+        <div class="headBox">
+          <ul>
+           <li style="margin-left: -17px;"><font style="font-size:16px;color:#fff;">7.7</font> <br><img src="images/imdb_logo.jpg" style="width:28px;margin-top:-15px;" /></li>
+           <li style="margin-left: 19px;"><font style="font-size:16px;color:#fff;">2010</font> <br> 
+           <div style="margin-top: -7px;color: #fff;">YEAR</div></li>
+           <li style="margin-left: 19px;"><font style="font-size:14px;color:#fff;margin-left:0px;">HD-RIP</font> <br> 
+           <div style="margin-top: -7px;color: #fff;">Quality</div></li>
+           <li style="margin-left: 20px;margin-top: 6px;"><a href="#" class="flove" title="add to favourite list"><span class="grid-ibx__icon glyphicon glyphicon-heart-empty"></span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-9" style="clear:left;background:-color:#fff;"><div style="font-size: 21px;margin-top: 10px;margin-bottom: -27px;">Hollywood</div><br><div style="font-size: 10px;"><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Adventure&sort=DESC&w=grid">Adventure</a> ,<a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Fantasy&sort=DESC&w=grid">Fantasy</a>, <a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Family&sort=DESC&w=grid">Family</a>, </div></div>
+        <div class="col-md-2" style="margin-top: 10px;border: 1px solid #000;border-radius: 50px;height: 50px;width: 50px;"><div style="text-align:center;font-size:14px;font-weight: bold;margin-top: 5px;margin-left: -3px;">146</div> <div style="margin-top: -10px;margin-left: -2px;">min</div></div>
+        <div class="col-md-12" style="font-size: 16px;
+font-weight: bold;margin-top: 8px;line-height: 15px;">Harry Potter and the Deathly Hallows: Part 1</div>
+        <div class="col-md-12" style="line-height: 13px;margin-top: 10px;
+"> Harry, Ron and Hermione walk away from their last year at Hogwarts to find and destroy the remaining Horcruxes, putting an end to Voldemort's bid for ...<a href="movie.php?imdbid=tt0926084&cat=Hollywood">More</a>. <br>
+<a class="btn-element btn btn-fullcolor btn-sm " href="http://www.youtube.com/watch?v=9hXH0Ackz6w" data-lightbox="iframe" title="Watch Trailer" style="margin:5px 5px 5px 0;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Trailer</span></a>
+
+<a class="btn-element btn btn-lined lined-dark btn-sm " href="movie.php?imdbid=tt0926084&cat=Hollywood" title="Play Now" style="margin: 5px 0px 4px -4px;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Watch Now</span></a>
+
+<a class="btn-element btn btn-success lined-dark btn-sm " href="#" title="Add to Playlist" style="margin: 1px 0px 0px 1px;"><span><i class="grid-ibx__icon glyphicon glyphicon-plus"  style="font-size:11px;" ></i></span></a>
+</div>
+        
+    </div>
+    </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs1-8 col-xs-12">
+   <a href="movie.php?imdbid=tt0417741&cat=Hollywood" class="thumb hoverBorder plus boxHov1" onmouseover="document.getElementById('divtt0417741').style.display = 'block';" onMouseOut="document.getElementById('divtt0417741').style.display = 'none';" style="margin-bottom:0px;">
+    
+        <span class="hoverBorderWrapper">
+        
+            <img src="http://bdplex.net/Admin/main/images/tt0417741/poster/bFXys2nhALwDvpkF3dP3Vvdfn8b.jpg" onerror="this.src='http://image.tmdb.org/t/p/w185/bFXys2nhALwDvpkF3dP3Vvdfn8b.jpg" class="img-responsive offer-banners-img" alt="" title="" style="height:auto;width:100%">
+            
+             <span class="MovieQuality">HD-RIP</span><span class="theHoverBorder"></span>
+        </span>
+        
+    </a>
+    <div class="post-details" style="line-height:1.2em;margin-bottom:15px;">                        
+        <p class="MovieTitle">
+        <a href="movie.php?imdbid=tt0417741&cat=Hollywood" title="Harry Potter .." >Harry Potter ..</a>
+        <a  href="movie.php?imdbid=tt0417741&cat=Hollywood" title="Harry Potter .." style="padding: 1px 4px;font-size: 11px;margin-right: 6%;float:right;">
+        <span>2009</span>
+        <span class="MovieRatings">7.6</span>
+        
+        </p>    
+    </div>
+    
+    <div class="displayHover1 BoxCss" id="divtt0417741" style="" onmouseover="document.getElementById('divtt0417741').style.display = 'block';" onMouseOut="document.getElementById('divtt0417741').style.display = 'none';">
+        <div class="arrow_box"></div>
+        <div class="headBox">
+          <ul>
+           <li style="margin-left: -17px;"><font style="font-size:16px;color:#fff;">7.6</font> <br><img src="images/imdb_logo.jpg" style="width:28px;margin-top:-15px;" /></li>
+           <li style="margin-left: 19px;"><font style="font-size:16px;color:#fff;">2009</font> <br> 
+           <div style="margin-top: -7px;color: #fff;">YEAR</div></li>
+           <li style="margin-left: 19px;"><font style="font-size:14px;color:#fff;margin-left:0px;">HD-RIP</font> <br> 
+           <div style="margin-top: -7px;color: #fff;">Quality</div></li>
+           <li style="margin-left: 20px;margin-top: 6px;"><a href="#" class="flove" title="add to favourite list"><span class="grid-ibx__icon glyphicon glyphicon-heart-empty"></span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-9" style="clear:left;background:-color:#fff;"><div style="font-size: 21px;margin-top: 10px;margin-bottom: -27px;">Hollywood</div><br><div style="font-size: 10px;"><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Adventure&sort=DESC&w=grid">Adventure</a> ,<a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Fantasy&sort=DESC&w=grid">Fantasy</a>, <a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Family&sort=DESC&w=grid">Family</a>, </div></div>
+        <div class="col-md-2" style="margin-top: 10px;border: 1px solid #000;border-radius: 50px;height: 50px;width: 50px;"><div style="text-align:center;font-size:14px;font-weight: bold;margin-top: 5px;margin-left: -3px;">153</div> <div style="margin-top: -10px;margin-left: -2px;">min</div></div>
+        <div class="col-md-12" style="font-size: 16px;
+font-weight: bold;margin-top: 8px;line-height: 15px;">Harry Potter and the Half-Blood Prince</div>
+        <div class="col-md-12" style="line-height: 13px;margin-top: 10px;
+"> As Harry begins his sixth year at Hogwarts, he discovers an old book marked as 'Property of the Half-Blood Prince', and begins to learn more about Lor...<a href="movie.php?imdbid=tt0417741&cat=Hollywood">More</a>. <br>
+<a class="btn-element btn btn-fullcolor btn-sm " href="http://www.youtube.com/watch?v=JYLdTuL9Wjw" data-lightbox="iframe" title="Watch Trailer" style="margin:5px 5px 5px 0;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Trailer</span></a>
+
+<a class="btn-element btn btn-lined lined-dark btn-sm " href="movie.php?imdbid=tt0417741&cat=Hollywood" title="Play Now" style="margin: 5px 0px 4px -4px;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Watch Now</span></a>
+
+<a class="btn-element btn btn-success lined-dark btn-sm " href="#" title="Add to Playlist" style="margin: 1px 0px 0px 1px;"><span><i class="grid-ibx__icon glyphicon glyphicon-plus"  style="font-size:11px;" ></i></span></a>
+</div>
+        
+    </div>
+    </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs1-8 col-xs-12">
+   <a href="movie.php?imdbid=tt0373889&cat=Hollywood" class="thumb hoverBorder plus boxHov1" onmouseover="document.getElementById('divtt0373889').style.display = 'block';" onMouseOut="document.getElementById('divtt0373889').style.display = 'none';" style="margin-bottom:0px;">
+    
+        <span class="hoverBorderWrapper">
+        
+            <img src="http://bdplex.net/Admin/main/images/tt0373889/poster/4YnLxYLHhT4UQ8i9jxAXWy46Xuw.jpg" onerror="this.src='http://image.tmdb.org/t/p/w185/4YnLxYLHhT4UQ8i9jxAXWy46Xuw.jpg" class="img-responsive offer-banners-img" alt="" title="" style="height:auto;width:100%">
+            
+             <span class="MovieQuality">HD-RIP</span><span class="theHoverBorder"></span>
+        </span>
+        
+    </a>
+    <div class="post-details" style="line-height:1.2em;margin-bottom:15px;">                        
+        <p class="MovieTitle">
+        <a href="movie.php?imdbid=tt0373889&cat=Hollywood" title="Harry Potter .." >Harry Potter ..</a>
+        <a  href="movie.php?imdbid=tt0373889&cat=Hollywood" title="Harry Potter .." style="padding: 1px 4px;font-size: 11px;margin-right: 6%;float:right;">
+        <span>2007</span>
+        <span class="MovieRatings">7.6</span>
+        
+        </p>    
+    </div>
+    
+    <div class="displayHover1 BoxCss" id="divtt0373889" style="" onmouseover="document.getElementById('divtt0373889').style.display = 'block';" onMouseOut="document.getElementById('divtt0373889').style.display = 'none';">
+        <div class="arrow_box"></div>
+        <div class="headBox">
+          <ul>
+           <li style="margin-left: -17px;"><font style="font-size:16px;color:#fff;">7.6</font> <br><img src="images/imdb_logo.jpg" style="width:28px;margin-top:-15px;" /></li>
+           <li style="margin-left: 19px;"><font style="font-size:16px;color:#fff;">2007</font> <br> 
+           <div style="margin-top: -7px;color: #fff;">YEAR</div></li>
+           <li style="margin-left: 19px;"><font style="font-size:14px;color:#fff;margin-left:0px;">HD-RIP</font> <br> 
+           <div style="margin-top: -7px;color: #fff;">Quality</div></li>
+           <li style="margin-left: 20px;margin-top: 6px;"><a href="#" class="flove" title="add to favourite list"><span class="grid-ibx__icon glyphicon glyphicon-heart-empty"></span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-9" style="clear:left;background:-color:#fff;"><div style="font-size: 21px;margin-top: 10px;margin-bottom: -27px;">Hollywood</div><br><div style="font-size: 10px;"><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Adventure&sort=DESC&w=grid">Adventure</a> ,<a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Fantasy&sort=DESC&w=grid">Fantasy</a>, <a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Family&sort=DESC&w=grid">Family</a>, <a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Mystery&sort=DESC&w=grid">Mystery</a></div></div>
+        <div class="col-md-2" style="margin-top: 10px;border: 1px solid #000;border-radius: 50px;height: 50px;width: 50px;"><div style="text-align:center;font-size:14px;font-weight: bold;margin-top: 5px;margin-left: -3px;">138</div> <div style="margin-top: -10px;margin-left: -2px;">min</div></div>
+        <div class="col-md-12" style="font-size: 16px;
+font-weight: bold;margin-top: 8px;line-height: 15px;">Harry Potter and the Order of the Phoenix</div>
+        <div class="col-md-12" style="line-height: 13px;margin-top: 10px;
+"> Returning for his fifth year of study at Hogwarts, Harry is stunned to find that his warnings about the return of Lord Voldemort have been ignored. Le...<a href="movie.php?imdbid=tt0373889&cat=Hollywood">More</a>. <br>
+<a class="btn-element btn btn-fullcolor btn-sm " href="http://www.youtube.com/watch?v=WIj9DYJ5EKk" data-lightbox="iframe" title="Watch Trailer" style="margin:5px 5px 5px 0;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Trailer</span></a>
+
+<a class="btn-element btn btn-lined lined-dark btn-sm " href="movie.php?imdbid=tt0373889&cat=Hollywood" title="Play Now" style="margin: 5px 0px 4px -4px;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Watch Now</span></a>
+
+<a class="btn-element btn btn-success lined-dark btn-sm " href="#" title="Add to Playlist" style="margin: 1px 0px 0px 1px;"><span><i class="grid-ibx__icon glyphicon glyphicon-plus"  style="font-size:11px;" ></i></span></a>
+</div>
+        
+    </div>
+    </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs1-8 col-xs-12">
+   <a href="movie.php?imdbid=tt0330373&cat=Hollywood" class="thumb hoverBorder plus boxHov1" onmouseover="document.getElementById('divtt0330373').style.display = 'block';" onMouseOut="document.getElementById('divtt0330373').style.display = 'none';" style="margin-bottom:0px;">
+    
+        <span class="hoverBorderWrapper">
+        
+            <img src="http://bdplex.net/Admin/main/images/tt0330373/poster/6sASqcdrEHXxUhA3nFpjrRecPD2.jpg" onerror="this.src='http://image.tmdb.org/t/p/w185/6sASqcdrEHXxUhA3nFpjrRecPD2.jpg" class="img-responsive offer-banners-img" alt="" title="" style="height:auto;width:100%">
+            
+             <span class="MovieQuality">HD-RIP</span><span class="theHoverBorder"></span>
+        </span>
+        
+    </a>
+    <div class="post-details" style="line-height:1.2em;margin-bottom:15px;">                        
+        <p class="MovieTitle">
+        <a href="movie.php?imdbid=tt0330373&cat=Hollywood" title="Harry Potter .." >Harry Potter ..</a>
+        <a  href="movie.php?imdbid=tt0330373&cat=Hollywood" title="Harry Potter .." style="padding: 1px 4px;font-size: 11px;margin-right: 6%;float:right;">
+        <span>2005</span>
+        <span class="MovieRatings">7.7</span>
+        
+        </p>    
+    </div>
+    
+    <div class="displayHover1 BoxCss" id="divtt0330373" style="" onmouseover="document.getElementById('divtt0330373').style.display = 'block';" onMouseOut="document.getElementById('divtt0330373').style.display = 'none';">
+        <div class="arrow_box"></div>
+        <div class="headBox">
+          <ul>
+           <li style="margin-left: -17px;"><font style="font-size:16px;color:#fff;">7.7</font> <br><img src="images/imdb_logo.jpg" style="width:28px;margin-top:-15px;" /></li>
+           <li style="margin-left: 19px;"><font style="font-size:16px;color:#fff;">2005</font> <br> 
+           <div style="margin-top: -7px;color: #fff;">YEAR</div></li>
+           <li style="margin-left: 19px;"><font style="font-size:14px;color:#fff;margin-left:0px;">HD-RIP</font> <br> 
+           <div style="margin-top: -7px;color: #fff;">Quality</div></li>
+           <li style="margin-left: 20px;margin-top: 6px;"><a href="#" class="flove" title="add to favourite list"><span class="grid-ibx__icon glyphicon glyphicon-heart-empty"></span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-9" style="clear:left;background:-color:#fff;"><div style="font-size: 21px;margin-top: 10px;margin-bottom: -27px;">Hollywood</div><br><div style="font-size: 10px;"><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Adventure&sort=DESC&w=grid">Adventure</a> ,<a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Fantasy&sort=DESC&w=grid">Fantasy</a>, <a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Family&sort=DESC&w=grid">Family</a>, </div></div>
+        <div class="col-md-2" style="margin-top: 10px;border: 1px solid #000;border-radius: 50px;height: 50px;width: 50px;"><div style="text-align:center;font-size:14px;font-weight: bold;margin-top: 5px;margin-left: -3px;">157</div> <div style="margin-top: -10px;margin-left: -2px;">min</div></div>
+        <div class="col-md-12" style="font-size: 16px;
+font-weight: bold;margin-top: 8px;line-height: 15px;">Harry Potter and the Goblet of Fire</div>
+        <div class="col-md-12" style="line-height: 13px;margin-top: 10px;
+"> Harry starts his fourth year at Hogwarts, competes in the treacherous Triwizard Tournament and faces the evil Lord Voldemort. Ron and Hermione help Ha...<a href="movie.php?imdbid=tt0330373&cat=Hollywood">More</a>. <br>
+<a class="btn-element btn btn-fullcolor btn-sm " href="http://www.youtube.com/watch?v=PFWAOnvMd1Q" data-lightbox="iframe" title="Watch Trailer" style="margin:5px 5px 5px 0;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Trailer</span></a>
+
+<a class="btn-element btn btn-lined lined-dark btn-sm " href="movie.php?imdbid=tt0330373&cat=Hollywood" title="Play Now" style="margin: 5px 0px 4px -4px;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Watch Now</span></a>
+
+<a class="btn-element btn btn-success lined-dark btn-sm " href="#" title="Add to Playlist" style="margin: 1px 0px 0px 1px;"><span><i class="grid-ibx__icon glyphicon glyphicon-plus"  style="font-size:11px;" ></i></span></a>
+</div>
+        
+    </div>
+    </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs1-8 col-xs-12">
+   <a href="movie.php?imdbid=tt0304141&cat=Hollywood" class="thumb hoverBorder plus boxHov1" onmouseover="document.getElementById('divtt0304141').style.display = 'block';" onMouseOut="document.getElementById('divtt0304141').style.display = 'none';" style="margin-bottom:0px;">
+    
+        <span class="hoverBorderWrapper">
+        
+            <img src="http://bdplex.net/Admin/main/images/tt0304141/poster/jUFjMoLh8T2CWzHUSjKCojI5SHu.jpg" onerror="this.src='http://image.tmdb.org/t/p/w185/jUFjMoLh8T2CWzHUSjKCojI5SHu.jpg" class="img-responsive offer-banners-img" alt="" title="" style="height:auto;width:100%">
+            
+             <span class="MovieQuality720p"></span><span class="theHoverBorder"></span>
+        </span>
+        
+    </a>
+    <div class="post-details" style="line-height:1.2em;margin-bottom:15px;">                        
+        <p class="MovieTitle">
+        <a href="movie.php?imdbid=tt0304141&cat=Hollywood" title="Harry Potter .." >Harry Potter ..</a>
+        <a  href="movie.php?imdbid=tt0304141&cat=Hollywood" title="Harry Potter .." style="padding: 1px 4px;font-size: 11px;margin-right: 6%;float:right;">
+        <span>2004</span>
+        <span class="MovieRatings">7.9</span>
+        
+        </p>    
+    </div>
+    
+    <div class="displayHover1 BoxCss" id="divtt0304141" style="" onmouseover="document.getElementById('divtt0304141').style.display = 'block';" onMouseOut="document.getElementById('divtt0304141').style.display = 'none';">
+        <div class="arrow_box"></div>
+        <div class="headBox">
+          <ul>
+           <li style="margin-left: -17px;"><font style="font-size:16px;color:#fff;">7.9</font> <br><img src="images/imdb_logo.jpg" style="width:28px;margin-top:-15px;" /></li>
+           <li style="margin-left: 19px;"><font style="font-size:16px;color:#fff;">2004</font> <br> 
+           <div style="margin-top: -7px;color: #fff;">YEAR</div></li>
+           <li style="margin-left: 19px;"><font style="font-size:14px;color:#fff;margin-left:0px;">HD 720p</font> <br> 
+           <div style="margin-top: -7px;color: #fff;">Quality</div></li>
+           <li style="margin-left: 20px;margin-top: 6px;"><a href="#" class="flove" title="add to favourite list"><span class="grid-ibx__icon glyphicon glyphicon-heart-empty"></span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-9" style="clear:left;background:-color:#fff;"><div style="font-size: 21px;margin-top: 10px;margin-bottom: -27px;">Hollywood</div><br><div style="font-size: 10px;"><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Adventure&sort=DESC&w=grid">Adventure</a> ,<a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Fantasy&sort=DESC&w=grid">Fantasy</a>, <a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Family&sort=DESC&w=grid">Family</a>, </div></div>
+        <div class="col-md-2" style="margin-top: 10px;border: 1px solid #000;border-radius: 50px;height: 50px;width: 50px;"><div style="text-align:center;font-size:14px;font-weight: bold;margin-top: 5px;margin-left: -3px;">141</div> <div style="margin-top: -10px;margin-left: -2px;">min</div></div>
+        <div class="col-md-12" style="font-size: 16px;
+font-weight: bold;margin-top: 8px;line-height: 15px;">Harry Potter and the Prisoner of Azkaban</div>
+        <div class="col-md-12" style="line-height: 13px;margin-top: 10px;
+"> Harry, Ron and Hermione return to Hogwarts for another magic-filled year. Harry comes face to face with danger yet again, this time in the form of esc...<a href="movie.php?imdbid=tt0304141&cat=Hollywood">More</a>. <br>
+<a class="btn-element btn btn-fullcolor btn-sm " href="http://www.youtube.com/watch?v=R69laoH02xg" data-lightbox="iframe" title="Watch Trailer" style="margin:5px 5px 5px 0;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Trailer</span></a>
+
+<a class="btn-element btn btn-lined lined-dark btn-sm " href="movie.php?imdbid=tt0304141&cat=Hollywood" title="Play Now" style="margin: 5px 0px 4px -4px;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Watch Now</span></a>
+
+<a class="btn-element btn btn-success lined-dark btn-sm " href="#" title="Add to Playlist" style="margin: 1px 0px 0px 1px;"><span><i class="grid-ibx__icon glyphicon glyphicon-plus"  style="font-size:11px;" ></i></span></a>
+</div>
+        
+    </div>
+    </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs1-8 col-xs-12">
+   <a href="movie.php?imdbid=tt0241527&cat=Hollywood" class="thumb hoverBorder plus boxHov1" onmouseover="document.getElementById('divtt0241527').style.display = 'block';" onMouseOut="document.getElementById('divtt0241527').style.display = 'none';" style="margin-bottom:0px;">
+    
+        <span class="hoverBorderWrapper">
+        
+            <img src="http://bdplex.net/Admin/main/images/tt0241527/poster/dCtFvscYcXQKTNvyyaQr2g2UacJ.jpg" onerror="this.src='http://image.tmdb.org/t/p/w185/dCtFvscYcXQKTNvyyaQr2g2UacJ.jpg" class="img-responsive offer-banners-img" alt="" title="" style="height:auto;width:100%">
+            
+             <span class="MovieQuality720p"></span><span class="theHoverBorder"></span>
+        </span>
+        
+    </a>
+    <div class="post-details" style="line-height:1.2em;margin-bottom:15px;">                        
+        <p class="MovieTitle">
+        <a href="movie.php?imdbid=tt0241527&cat=Hollywood" title="Harry Potter .." >Harry Potter ..</a>
+        <a  href="movie.php?imdbid=tt0241527&cat=Hollywood" title="Harry Potter .." style="padding: 1px 4px;font-size: 11px;margin-right: 6%;float:right;">
+        <span>2001</span>
+        <span class="MovieRatings">7.8</span>
+        
+        </p>    
+    </div>
+    
+    <div class="displayHover1 BoxCss" id="divtt0241527" style="" onmouseover="document.getElementById('divtt0241527').style.display = 'block';" onMouseOut="document.getElementById('divtt0241527').style.display = 'none';">
+        <div class="arrow_box"></div>
+        <div class="headBox">
+          <ul>
+           <li style="margin-left: -17px;"><font style="font-size:16px;color:#fff;">7.8</font> <br><img src="images/imdb_logo.jpg" style="width:28px;margin-top:-15px;" /></li>
+           <li style="margin-left: 19px;"><font style="font-size:16px;color:#fff;">2001</font> <br> 
+           <div style="margin-top: -7px;color: #fff;">YEAR</div></li>
+           <li style="margin-left: 19px;"><font style="font-size:14px;color:#fff;margin-left:0px;">HD 720p</font> <br> 
+           <div style="margin-top: -7px;color: #fff;">Quality</div></li>
+           <li style="margin-left: 20px;margin-top: 6px;"><a href="#" class="flove" title="add to favourite list"><span class="grid-ibx__icon glyphicon glyphicon-heart-empty"></span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-9" style="clear:left;background:-color:#fff;"><div style="font-size: 21px;margin-top: 10px;margin-bottom: -27px;">Hollywood</div><br><div style="font-size: 10px;"><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Adventure&sort=DESC&w=grid">Adventure</a> ,<a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Fantasy&sort=DESC&w=grid">Fantasy</a>, <a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Family&sort=DESC&w=grid">Family</a>, </div></div>
+        <div class="col-md-2" style="margin-top: 10px;border: 1px solid #000;border-radius: 50px;height: 50px;width: 50px;"><div style="text-align:center;font-size:14px;font-weight: bold;margin-top: 5px;margin-left: -3px;">152</div> <div style="margin-top: -10px;margin-left: -2px;">min</div></div>
+        <div class="col-md-12" style="font-size: 16px;
+font-weight: bold;margin-top: 8px;line-height: 15px;">Harry Potter and the Philosopher's Stone</div>
+        <div class="col-md-12" style="line-height: 13px;margin-top: 10px;
+"> Harry Potter has lived under the stairs at his aunt and uncle's house his whole life. But on his 11th birthday, he learns he's a powerful wizard -- wi...<a href="movie.php?imdbid=tt0241527&cat=Hollywood">More</a>. <br>
+<a class="btn-element btn btn-fullcolor btn-sm " href="http://www.youtube.com/watch?v=PbdM1db3JbY" data-lightbox="iframe" title="Watch Trailer" style="margin:5px 5px 5px 0;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Trailer</span></a>
+
+<a class="btn-element btn btn-lined lined-dark btn-sm " href="movie.php?imdbid=tt0241527&cat=Hollywood" title="Play Now" style="margin: 5px 0px 4px -4px;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Watch Now</span></a>
+
+<a class="btn-element btn btn-success lined-dark btn-sm " href="#" title="Add to Playlist" style="margin: 1px 0px 0px 1px;"><span><i class="grid-ibx__icon glyphicon glyphicon-plus"  style="font-size:11px;" ></i></span></a>
+</div>
+        
+    </div>
+    </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs1-8 col-xs-12">
+   <a href="movie.php?imdbid=tt0295297&cat=Hollywood" class="thumb hoverBorder plus boxHov1" onmouseover="document.getElementById('divtt0295297').style.display = 'block';" onMouseOut="document.getElementById('divtt0295297').style.display = 'none';" style="margin-bottom:0px;">
+    
+        <span class="hoverBorderWrapper">
+        
+            <img src="http://bdplex.net/Admin/main/images/tt0295297/poster/sdEOH0992YZ0QSxgXNIGLq1ToUi.jpg" onerror="this.src='http://image.tmdb.org/t/p/w185/sdEOH0992YZ0QSxgXNIGLq1ToUi.jpg" class="img-responsive offer-banners-img" alt="" title="" style="height:auto;width:100%">
+            
+             <span class="MovieQuality720p"></span><span class="theHoverBorder"></span>
+        </span>
+        
+    </a>
+    <div class="post-details" style="line-height:1.2em;margin-bottom:15px;">                        
+        <p class="MovieTitle">
+        <a href="movie.php?imdbid=tt0295297&cat=Hollywood" title="Harry Potter .." >Harry Potter ..</a>
+        <a  href="movie.php?imdbid=tt0295297&cat=Hollywood" title="Harry Potter .." style="padding: 1px 4px;font-size: 11px;margin-right: 6%;float:right;">
+        <span>2002</span>
+        <span class="MovieRatings">7.7</span>
+        
+        </p>    
+    </div>
+    
+    <div class="displayHover1 BoxCss" id="divtt0295297" style="" onmouseover="document.getElementById('divtt0295297').style.display = 'block';" onMouseOut="document.getElementById('divtt0295297').style.display = 'none';">
+        <div class="arrow_box"></div>
+        <div class="headBox">
+          <ul>
+           <li style="margin-left: -17px;"><font style="font-size:16px;color:#fff;">7.7</font> <br><img src="images/imdb_logo.jpg" style="width:28px;margin-top:-15px;" /></li>
+           <li style="margin-left: 19px;"><font style="font-size:16px;color:#fff;">2002</font> <br> 
+           <div style="margin-top: -7px;color: #fff;">YEAR</div></li>
+           <li style="margin-left: 19px;"><font style="font-size:14px;color:#fff;margin-left:0px;">HD 720p</font> <br> 
+           <div style="margin-top: -7px;color: #fff;">Quality</div></li>
+           <li style="margin-left: 20px;margin-top: 6px;"><a href="#" class="flove" title="add to favourite list"><span class="grid-ibx__icon glyphicon glyphicon-heart-empty"></span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-9" style="clear:left;background:-color:#fff;"><div style="font-size: 21px;margin-top: 10px;margin-bottom: -27px;">Hollywood</div><br><div style="font-size: 10px;"><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Adventure&sort=DESC&w=grid">Adventure</a> ,<a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Fantasy&sort=DESC&w=grid">Fantasy</a>, <a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Family&sort=DESC&w=grid">Family</a>, </div></div>
+        <div class="col-md-2" style="margin-top: 10px;border: 1px solid #000;border-radius: 50px;height: 50px;width: 50px;"><div style="text-align:center;font-size:14px;font-weight: bold;margin-top: 5px;margin-left: -3px;">161</div> <div style="margin-top: -10px;margin-left: -2px;">min</div></div>
+        <div class="col-md-12" style="font-size: 16px;
+font-weight: bold;margin-top: 8px;line-height: 15px;">Harry Potter and the Chamber of Secrets</div>
+        <div class="col-md-12" style="line-height: 13px;margin-top: 10px;
+"> Ignoring threats to his life, Harry returns to Hogwarts to investigate – aided by Ron and Hermione – a mysterious series of attacks.. <br>
+<a class="btn-element btn btn-fullcolor btn-sm " href="http://www.youtube.com/watch?v=uU-ET1FAv3Y" data-lightbox="iframe" title="Watch Trailer" style="margin:5px 5px 5px 0;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Trailer</span></a>
+
+<a class="btn-element btn btn-lined lined-dark btn-sm " href="movie.php?imdbid=tt0295297&cat=Hollywood" title="Play Now" style="margin: 5px 0px 4px -4px;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Watch Now</span></a>
+
+<a class="btn-element btn btn-success lined-dark btn-sm " href="#" title="Add to Playlist" style="margin: 1px 0px 0px 1px;"><span><i class="grid-ibx__icon glyphicon glyphicon-plus"  style="font-size:11px;" ></i></span></a>
+</div>
+        
+    </div>
+    </div>									
+										
+										
+									</p>
+									<!--/ Description -->
+									
+								</div>
+								<!--/ Tab #1 -->
+
+								<!-- Tab #2 -->
+								<div class="tab-pane " id="tabs_i2-pane2">
+									<!-- Title -->
+									<h4>Games</h4>
+									<!--/ Title -->
+
+									<!-- Description -->
+									<p>
+										
+									</p>
+									
+									<!--/ Description -->
+								</div>
+								<!--/ Tab #2 -->
+
+								<!-- Tab #3 -->
+								<div class="tab-pane " id="tabs_i2-pane3">
+									<!-- Title -->
+									<h4>Tv Series</h4>
+									<!--/ Title -->
+
+									<!-- Description -->
+									<p>
+										
+					
+	<div class="alert alert-error" style="background:#ef5454;">
+		Sorry, but nothing matched your search criteria. Please try again with some different keywords.
+		<span class="close"></span>
+	</div>
+										
+										
+									</p>
+									<!--/ Description -->
+								</div>
+								<!--/ Tab #3 -->
+								
+								<!-- Tab #4 -->
+								<div class="tab-pane " id="tabs_i2-pane4">
+									<!-- Title -->
+									<h4>Software</h4>
+									<!--/ Title -->
+
+									<!-- Description -->
+									<p>
+										Authoritatively parallel task team building models via leveraged initiatives. Competently disintermediate e-business strategic theme areas whereas open-source products. Monotonectally matrix integrated intellectual capital for premier mindshare. Rapidiously revolutionize web-enabled products whereas alternative ideas. Completely transform resource sucking supply chains via error-free content.<br>
+										Energistically foster client-centric solutions for market-driven infrastructures. Phosfluorescently whiteboard prospective action items whereas enabled leadership skills. Credibly synthesize premier e-business whereas diverse action items. Rapidiously leverage other's equity invested channels and long-term high-impact value. Continually myocardinate high standards in testing procedures and interactive opportunities.
+									</p>
+									<!--/ Description -->
+								</div>
+								<!--/ Tab #4 -->
+								
+								<!-- Tab #5 -->
+								<div class="tab-pane " id="tabs_i2-pane5">
+									<!-- Title -->
+									<h4>Posts</h4>
+									<!--/ Title -->
+
+									<!-- Description -->
+									<p>
+										Authoritatively parallel task team building models via leveraged initiatives. Competently disintermediate e-business strategic theme areas whereas open-source products. Monotonectally matrix integrated intellectual capital for premier mindshare. Rapidiously revolutionize web-enabled products whereas alternative ideas. Completely transform resource sucking supply chains via error-free content.<br>
+										Energistically foster client-centric solutions for market-driven infrastructures. Phosfluorescently whiteboard prospective action items whereas enabled leadership skills. Credibly synthesize premier e-business whereas diverse action items. Rapidiously leverage other's equity invested channels and long-term high-impact value. Continually myocardinate high standards in testing procedures and interactive opportunities.
+									</p>
+									<!--/ Description -->
+								</div>
+								<!--/ Tab #5 -->
+								
+							</div>
+							<!--/ Tabs content -->
+						</div>
+						<!--/ Tabs element style 5 -->
+					</div>
+					<!--/ col-md-12 col-sm-12 -->
+				</div>
+				<!--/ row -->
+			</div>
+			<!--/ container -->
+		</section>
+		<!--/ Tabs section with custom paddings -->
+
+
+
+		<!-- Call to action (Info box v3) full width section with background -->
+		<section class="hg_section hg_section--relative p-0">
+			<!-- Background -->
+			<div class="kl-bg-source">
+				<!-- Background image -->
+				<div class="kl-bg-source__bgimage" style="background-image:url(images/bg_01.jpg); background-repeat:no-repeat; background-attachment:scroll; background-position-x:center; background-position-y:center; background-size:cover;">
+				</div>
+				<!--/ Background image -->
+
+				<!-- Color overlay -->
+				<div class="kl-bg-source__overlay" style="background-color:rgba(53,53,53,0.5)">
+				</div>
+				<!--/ Color overlay -->
+			</div>
+			<!--/ Background -->
+
+              <!--/ container -->
+			<div class="container" style="display:none;">
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<!-- Info box v3 element-->
+						<div class="infobox3" style="background-repeat:repeat; background-size:auto; background-position:left top; background-attachment:scroll;">
+							<div class="row">
+								<!-- Info box v3 content - light text -->
+								<div class="ib-content infobox3--light col-sm-12 col-lg-12">
+									<!-- Content title -->
+									<h3 class="ib-content__title m_title">Impressed by the new Movie Template?</h3>
+									<!--/ Content title -->
+
+									<!-- Info box Button #1 lined style -->
+									<div class="ib-button ib-button-1">
+										<a href="#" target="_self" class="ib-button-1 btn btn-lined">Purchase now</a>
+									</div>
+									<!--/ Info box Button #1 lined style -->
+								</div>
+								<!--/ Info box v3 content - light text -->
+							</div>
+							<!--/ row -->
+						</div>
+						<!--/ Info box v3 element-->
+					</div>
+					<!--/ col-md-12 col-sm-12 -->
+				</div>
+				<!--/ row -->
+			</div>
+			<!--/ container -->
+			
+			
+		</section>
+		<!--/ Call to action (Info box v3) full width section with background -->
+
+		<!-- Footer - Default Style -->
+		<footer id="footer" style="padding:0px;background: #04060e;">
+			<div class="container">
+				<div class="row">
+				
+					<div class="col-sm-12">
+						<div class="bottom clearfix">
+							<!-- social-icons -->
+							<ul class="social-icons sc--clean clearfix">
+								<li class="title">GET SOCIAL</li>
+								
+								     <li><a href="#" target="_self" class="icon-facebook" title="Facebook"></a></li>
+								
+								
+							</ul>
+							<!--/ social-icons -->
+
+							<!-- copyright -->
+							<div class="copyright">
+								<a href="index.php">
+																     <img src="images/logo.png" alt="bdplex" style="width:100px;">
+							
+								</a>
+								<p>© 2019 All rights reserved </a> Design and Developed by - <a href="https://moviedom.club">Moviedom</a></p>
+							</div>
+							<!--/ copyright -->
+						</div>
+						<!--/ bottom -->
+					</div>
+					<!--/ col-sm-12 -->
+				</div>
+				<!--/ row -->
+			</div>
+			<!--/ container -->
+		</footer>
+		<a href="#Learn_more_panel" class="popup-with-form" ><img src="images/live-chat-button.png" class="ContentImg" style="position: fixed;bottom: 32px;right: 25px;" ></a>		<!--/ Footer - Default Style -->
+		
+	</div>
+	<!--/ Page Wrapper -->
+
+
+	<!-- Login Panel content -->
+	<div id="login_panel" class="mfp-hide loginbox-popup auth-popup">
+		<div class="inner-container login-panel auth-popup-panel">
+			<h3 class="m_title m_title_ext text-custom auth-popup-title tcolor">SIGN IN YOUR ACCOUNT TO HAVE ACCESS TO DIFFERENT FEATURES</h3>
+			<form class="login_panel" name="login_form" method="post" action="#">
+				<div class="form-group kl-fancy-form">
+					<input type="text" id="kl-username" name="log" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="eg: james_smith">
+					<label class="kl-font-alt kl-fancy-form-label">USERNAME</label>
+				</div>
+				<div class="form-group kl-fancy-form">
+					<input type="password" id="kl-password" name="pwd" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="type password">
+					<label class="kl-font-alt kl-fancy-form-label">PASSWORD</label>
+				</div>
+				<label class="auth-popup-remember" for="kl-rememberme"><input type="checkbox" name="rememberme" id="kl-rememberme" value="forever" class="auth-popup-remember-chb"> Remember Me </label>
+				<input type="submit" id="login" name="submit_button" class="btn zn_sub_button btn-fullcolor btn-md" value="LOG IN">
+				<input type="hidden" value="login" class="" name="form_action"><input type="hidden" value="login" class="" name="action">
+				<input type="hidden" value="#" class="" name="submit">
+				<div class="links auth-popup-links">
+					<a href="#register_panel" class="create_account auth-popup-createacc kl-login-box auth-popup-link">CREATE AN ACCOUNT</a><span class="sep auth-popup-sep"></span><a href="#forgot_panel" class="kl-login-box auth-popup-link">FORGOT YOUR PASSWORD?</a>
+				</div>
+			</form>
+		</div>
+		<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+	</div>
+	<div id="register_panel" class="mfp-hide loginbox-popup auth-popup">
+		<div class="inner-container register-panel auth-popup-panel">
+			<h3 class="m_title m_title_ext text-custom auth-popup-title">CREATE ACCOUNT</h3>
+			<form class="register_panel" name="login_form" method="post" action="#">
+				<div class="form-group kl-fancy-form ">
+					<input type="text" id="reg-username" name="user_login" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="type desired username"><label class="kl-font-alt kl-fancy-form-label">USERNAME</label>
+				</div>
+				<div class="form-group kl-fancy-form">
+					<input type="text" id="reg-email" name="user_email" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="your-email@website.com"><label class="kl-font-alt kl-fancy-form-label">EMAIL</label>
+				</div>
+				<div class="form-group kl-fancy-form">
+					<input type="password" id="reg-pass" name="user_password" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="*****"><label class="kl-font-alt kl-fancy-form-label">PASSWORD</label>
+				</div>
+				<div class="form-group kl-fancy-form">
+					<input type="password" id="reg-pass2" name="user_password2" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="*****"><label class="kl-font-alt kl-fancy-form-label">CONFIRM PASSWORD</label>
+				</div>
+				<div class="form-group">
+					<input type="submit" id="signup" name="submit" class="btn zn_sub_button btn-block btn-fullcolor btn-md" value="CREATE MY ACCOUNT">
+				</div>
+				<div class="links auth-popup-links">
+					<a href="#login_panel" class="kl-login-box auth-popup-link">ALREADY HAVE AN ACCOUNT?</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="forgot_panel" class="mfp-hide loginbox-popup auth-popup forgot-popup">
+		<div class="inner-container forgot-panel auth-popup-panel">
+			<h3 class="m_title m_title_ext text-custom auth-popup-title">FORGOT YOUR DETAILS?</h3>
+			<form class="forgot_form" name="login_form" method="post" action="#">
+				<div class="form-group kl-fancy-form">
+					<input type="text" id="forgot-email" name="user_login" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="...">
+					<label class="kl-font-alt kl-fancy-form-label">USERNAME OR EMAIL</label>
+				</div>
+				<div class="form-group">
+					<input type="submit" id="recover" name="submit" class="btn btn-block zn_sub_button btn-fullcolor btn-md" value="SEND MY DETAILS!">
+				</div>
+				<div class="links auth-popup-links">
+					<a href="#login_panel" class="kl-login-box auth-popup-link">AAH, WAIT, I REMEMBER NOW!</a>
+				</div>
+			</form>
+		</div>
+		<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+	</div>
+	<div id="Learn_more_panel" class="mfp-hide loginbox-popup auth-popup forgot-popup">
+		<div class="inner-container login-panel auth-popup-panel">
+			<h3 class="m_title m_title_ext text-custom auth-popup-title tcolor">Request Your Content or report about Content</h3>
+			
+			<form class="login_panel" name="req_form" method="post" action="">
+				<div class="form-group kl-fancy-form">
+				<select class="form-control kl-fancy-form-select kl-fw-input" name="Rcate" id="Rcate">
+                    <option value="Movie" selected="">Movie</option>
+                    <option value="Games">Games</option>
+                    <option value="Tv">Tv Series</option>
+                    <option value="Software">Software</option>
+                    <option value="Link">Link Broken</option>
+                    <option value="Wrong">Wrong Content</option>
+                </select>
+					<label class="kl-font-alt kl-fancy-form-label">ISSUE</label>
+				</div>
+				<div class="form-group kl-fancy-form">
+					<input type="text"  id="Rname" name="Rname" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="type Your Name">
+					<label class="kl-font-alt kl-fancy-form-label">Your Name</label>
+				</div>
+				<div class="form-group kl-fancy-form">
+					<input type="text" id="Remail" name="Remail" pattern="^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$" required="required" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="your-email@website.com"><label class="kl-font-alt kl-fancy-form-label">EMAIL</label>
+				</div>
+				
+				<div class="form-group kl-fancy-form">
+									<textarea name="Rtext" id="Rtext" class="form-control" cols="20" rows="10" placeholder="Your Request,Complain,Link Broken... etc" tabindex="4" required=""></textarea>
+									<label class="control-label">MESSAGE</label>
+								</div>
+								
+				<input type="submit" id="insert-data" name="insert-data" class="btn zn_sub_button btn-fullcolor btn-md"  onclick="insertData()" value="SUBMIT">
+				<input type="hidden" value="login" class="" name="form_action"><input type="hidden" value="login" class="" name="action">
+				<input type="hidden" value="#" class="" name="submit">
+				<p id="message"></p>
+				<div class="links auth-popup-links">
+					<a href="#register_panel" class="create_account auth-popup-createacc kl-login-box auth-popup-link">CREATE AN ACCOUNT</a><span class="sep auth-popup-sep"></span><a href="#login_panel" class="kl-login-box auth-popup-link">LOGIN</a>
+				</div>
+			</form>
+			
+			
+		</div>
+		<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+	</div>	<!--/ Login Panel content -->
+	
+
+	<!-- ToTop trigger -->
+	<a href="#" id="totop">TOP</a>
+	<!--/ ToTop trigger -->
+
+
+	
+
+
+	<!-- JS FILES // These should be loaded in every page -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/kl-plugins.js"></script>
+
+	<!-- JS FILES // Loaded on this page -->
+	<!-- Required js scripts files for iCarousel slider element -->
+	<script type="text/javascript" src="js/plugins/_sliders/icarousel/icarousel.packed.js"></script>
+	<script type="text/javascript" src="js/plugins/_sliders/icarousel/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="js/plugins/_sliders/icarousel/raphael-min.js"></script>
+
+	
+	
+
+
+	<!-- Custom user JS codes -->
+	<script type="text/javascript" src="js/kl-custom.js"></script>
+	
+	<!-- Modernizr script -->
+	<script type="text/javascript">
+		//use the modernizr load to load up external scripts. This will load the scripts asynchronously, but the order listed matters. Although it will load all scripts in parallel, it will execute them in the order listed
+		Modernizr.load([
+			{
+				// test for media query support, if not load respond.js
+				test : Modernizr.mq('only all'),
+				// If not, load the respond.js file
+				nope : '//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js'
+			}
+		]);
+	</script>
+
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-XXXXX-X', 'auto');
+	  ga('send', 'pageview');
+	</script>
+	-->
+
+	<!-- Required js trigger for iCarousel slider element -->
+	<script type="text/javascript" src="js/trigger/slider/icarousel/kl-icarousel.js"></script>
+    
+
+
+
+
+
+	<!-- CarouFredSel required js script for Partner / Featured products carousel elements -->
+	<script type="text/javascript" src="js/plugins/_sliders/caroufredsel/jquery.carouFredSel-packed.js"></script>
+
+
+	<!-- Custom Kallyas JS codes -->
+	<script type="text/javascript" src="js/kl-scripts.js"></script>
+	
+	<!-- Required js trigger for Recent Work Carousel style 3 element -->
+	<script type="text/javascript" src="js/trigger/kl-recent-work-carousel3.js"></script>
+	
+	
+	<!-- Required js script file for Animated sparkles element -->
+	<script type="text/javascript" src="js/plugins/sparkles.js"></script>
+	<!-- Required jQuery migrate plugin for Animated sparkles element -->
+	<script type="text/javascript" src="js/jquery-migrate.min.js"></script>
+	
+	<script type="text/javascript" src="js/plugins/_sliders/caroufredsel/jquery.carouFredSel-packed.js"></script>
+	<script type="text/javascript" src="js/trigger/slider/caroufredsel/circular-catalogue/kl-circular-catalogue.js"></script>
+	
+	
+	<!-- Required script for sorting (masonry) elements - Isotope filter -->
+	<script type="text/javascript" src="js/plugins/jquery.isotope.min.js"></script>
+	<!-- Required js trigger for Portfolio sortable element -->
+	<script type="text/javascript" src="js/trigger/kl-portfolio-sortable.js"></script>
+	
+	<script type="text/javascript">
+
+  function insertData() {
+    var Rcate=$("#Rcate").val();
+    var Rname=$("#Rname").val();
+    var Remail=$("#Remail").val();
+    var Rtext=$("#Rtext").val();
+
+
+// AJAX code to send data to php file.
+        $.ajax({
+            type: "POST",
+            url: "insert-data.php",
+            data: {Rcate:Rcate,Rname:Rname,Remail:Remail,Rtext:Rtext},
+            dataType: "JSON",
+            success: function(data) {
+            $("#message").html(data);
+            $("#message").addClass("alert alert-success");
+            },
+            error: function(err) {
+            alert(err);
+            }
+        });
+$('form').submit(function() {
+  return false;
+});
+}
+
+  </script>
+</body>
+</html>

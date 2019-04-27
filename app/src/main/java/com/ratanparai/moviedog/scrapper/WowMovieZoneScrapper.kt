@@ -5,6 +5,18 @@ import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 
 class WowMovieZoneScrapper: Scrapper {
+    override fun getSearchUrl(query: String): String {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun getMovie(document: Document): Movie {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun getListOfMovieLinksFromSearchResult(document: Document): List<String> {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
     val SEARCH_URL = "http://172.27.27.84/ajax_search?search_value=%s"
 
     fun getSearchResult(query : String): Document? {

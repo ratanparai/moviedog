@@ -1,17 +1,14 @@
 package com.ratanparai.moviedog.scrapper
 
 import com.ratanparai.moviedog.db.entity.Movie
-import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
-import java.io.IOException
 import java.util.concurrent.TimeUnit
 
-class DekhvhaiScrapper: Scrapper {
-
-    val DEKHVHAI_SEARCH_URL = "http://dekhvhai.com/msearch.php?q=&searchquery=%s&q=M"
+class BdPlexScrapper: Scrapper {
+    val SEARCH_URL = "http://bdplex.net/msearch.php?q=&searchquery=%s&q=M"
 
     override fun getSearchUrl(query: String): String {
-        return String.format(DEKHVHAI_SEARCH_URL, query)
+        return String.format(SEARCH_URL, query)
     }
 
     override fun getMovie(document: Document): Movie {
@@ -22,10 +19,10 @@ class DekhvhaiScrapper: Scrapper {
         val description = document.select(".portfolio-item-desc-inner > p").text()
 
         val movieTime =
-            document.select("#sidebar-widget > div:nth-child(1) > div > div > table > tbody > tr:nth-child(6) > td:nth-child(2)").text()
+            document.select("#page_header > div.ph-content-wrap > div > div > div > div:nth-child(4) > table > tbody > tr:nth-child(6) > td:nth-child(2)").text()
         var duration = getDurationInMiliseconds(movieTime)
 
-        var videoUrl = document.select("#sidebar-widget > div:nth-child(1) > div > div > a:nth-child(5)").attr("href")
+        var videoUrl = document.select("#page_header > div.ph-content-wrap > div > div > div > div:nth-child(4) > a").attr("href").replace(" ", "%20")
 
         val cardImage =
             document.select("#page_header > div.ph-content-wrap > div > div > div > div.col-md-2 > div > a > img")
@@ -43,7 +40,7 @@ class DekhvhaiScrapper: Scrapper {
 
     override fun getListOfMovieLinksFromSearchResult(document: Document): List<String>{
         val result = ArrayList<String>()
-        val elements = document.select("#tabs_i2-pane1 > div > a")
+        val elements = document.select("#tabs_i2-pane1 > div > a:first-child")
         for (elem in elements) {
             result.add(elem.attr("abs:href"))
         }
@@ -78,5 +75,4 @@ class DekhvhaiScrapper: Scrapper {
     fun getDurationInMiliseconds(hour: Long, minute: Long): Int{
         return (TimeUnit.HOURS.toMillis(hour) + TimeUnit.MINUTES.toMillis(minute)).toInt()
     }
-
 }

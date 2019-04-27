@@ -3,30 +3,41 @@ package com.ratanparai.moviedog.service
 import android.content.Context
 import android.util.Log
 import com.ratanparai.moviedog.db.AppDatabase
+import com.ratanparai.moviedog.db.dao.MovieDao
+import com.ratanparai.moviedog.db.dao.SearchHashDao
 import com.ratanparai.moviedog.db.entity.Movie
 import com.ratanparai.moviedog.db.entity.SearchHash
+import com.ratanparai.moviedog.scrapper.BdPlexScrapper
 import com.ratanparai.moviedog.scrapper.DekhvhaiScrapper
+import com.ratanparai.moviedog.scrapper.Scrapper
 import com.ratanparai.moviedog.utilities.MD5
 
 class MovieService(private val context: Context) {
 
     fun search(query: String): List<Movie> {
-        val scrapper = DekhvhaiScrapper()
+        val dekhvhaiScrapper = DekhvhaiScrapper()
+        val bdPlexScrapper = BdPlexScrapper()
+
+        val searchHashDao = AppDatabase.getInstance(context).searchHashDao()
+        val movieDao = AppDatabase.getInstance(context).movieDao()
+
+        scrapMovies(bdPlexScrapper, query, searchHashDao, movieDao)
+        scrapMovies(dekhvhaiScrapper, query, searchHashDao, movieDao)
+
+        return movieDao.searchByTitle(query)
+    }
+
+    private fun scrapMovies(scrapper: Scrapper, query: String, searchHashDao: SearchHashDao, movieDao: MovieDao) {
         val searchUrl = scrapper.getSearchUrl(query)
         val document = scrapper.getDocument(searchUrl)
 
         val md5Hex = MD5(document.html())
 
-        val searchHashDao = AppDatabase.getInstance(context).searchHashDao()
-        val movieDao = AppDatabase.getInstance(context).movieDao()
-
         val sHash = searchHashDao.getByUrl(searchUrl)
 
         if (sHash?.md5hash == md5Hex) {
-            // Already in the database
-            return movieDao.searchByTitle(query)
+            return
         }
-
 
         val movieLinks = scrapper.getListOfMovieLinksFromSearchResult(document)
 
@@ -42,15 +53,15 @@ class MovieService(private val context: Context) {
 
         }
 
-        val searchHash = SearchHash(url = searchUrl, md5hash = md5Hex)
-        
+
         if (sHash==null) {
+            val searchHash = SearchHash(url = searchUrl, md5hash = md5Hex)
             searchHashDao.add(searchHash)
         } else {
             searchHashDao.updateHash(sHash.id, md5Hex)
         }
 
-        return movieDao.searchByTitle(query)
+
     }
 
     fun getMovieById(id : Int): Movie {
