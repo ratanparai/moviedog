@@ -1,5 +1,6 @@
 package com.ratanparai.moviedog
 
+import android.content.Context
 import android.os.Bundle
 import android.os.Handler
 import android.util.Log
@@ -8,7 +9,9 @@ import androidx.leanback.app.BrowseFragment
 import androidx.leanback.widget.*
 import com.ratanparai.moviedog.db.AppDatabase
 import com.ratanparai.moviedog.db.dao.MovieDao
+import com.ratanparai.moviedog.db.entity.Movie
 import com.ratanparai.moviedog.presenter.CardPresenter
+import com.ratanparai.moviedog.ui.PlaybackActivity
 
 /**
  * Loads a grid of cards with movies to browse.
@@ -28,6 +31,11 @@ class MainFragment : BrowseFragment() {
 
         setupUi()
         setupRowAdapter()
+        setupEventListeners()
+    }
+
+    private fun setupEventListeners() {
+        onItemViewClickedListener = ItemViewClickedListener(context)
     }
 
     private fun setupRowAdapter() {
@@ -43,7 +51,7 @@ class MainFragment : BrowseFragment() {
 
         // rowsAdapter.add(SectionRow(HeaderItem("Continue Watching")))
 
-        val movies = movieDao.getMovies()
+        val movies = movieDao.getCurrentlyPlaying()
 
         val rowsAdapter = ArrayObjectAdapter(ListRowPresenter())
         val cardPresenter = CardPresenter()
@@ -53,7 +61,7 @@ class MainFragment : BrowseFragment() {
             listRowAdapter.add(movie)
         }
 
-        val header = HeaderItem("All Movies")
+        val header = HeaderItem("Continue watching")
 
         rowsAdapter.add(ListRow(header, listRowAdapter))
 
@@ -79,4 +87,24 @@ class MainFragment : BrowseFragment() {
     companion object {
         private const val TAG = "MainFragment"
     }
+
+
+    private class ItemViewClickedListener(val context: Context) : OnItemViewClickedListener {
+        override fun onItemClicked(
+            itemViewHolder: Presenter.ViewHolder?,
+            item: Any?,
+            rowViewHolder: RowPresenter.ViewHolder?,
+            row: Row?
+        ) {
+            if (item is Movie) {
+                val movie = item as Movie
+
+                val intent = PlaybackActivity.createIntent(context, movie.id)
+                context.startActivity(intent)
+
+            }
+
+        }
+    }
 }
+

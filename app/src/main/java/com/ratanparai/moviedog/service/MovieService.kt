@@ -78,9 +78,10 @@ class MovieService(private val context: Context) {
 
     fun updateMovieProgress(id: Int, progress: Long) {
         // only update progress if there is any real progress
-        if(progress != 0L) {
+        if(progress > 0L) {
             val movieDao = AppDatabase.getInstance(context).movieDao()
-            movieDao.updatePlayProgress(id, progress)
+            var lastPlayTime = System.currentTimeMillis()
+            movieDao.updatePlayProgress(id, progress, lastPlayTime)
         }
     }
 }
