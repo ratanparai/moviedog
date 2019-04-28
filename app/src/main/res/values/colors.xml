@@ -6,5 +6,8 @@
     <color name="selected_background">#ffaa3f</color>
     <color name="default_background">#3d3d3d</color>
 
+    <color name="detail_view_actionbar_background">#04549D</color>
+    <color name="detail_view_background">#0374BF</color>
+
     <color name="background_black">#000000</color>
 </resources>

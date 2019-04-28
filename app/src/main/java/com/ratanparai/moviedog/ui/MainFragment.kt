@@ -1,6 +1,7 @@
 package com.ratanparai.moviedog.ui
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.util.Log
@@ -89,7 +90,7 @@ class MainFragment : BrowseFragment() {
     }
 
 
-    private class ItemViewClickedListener(val context: Context) : OnItemViewClickedListener {
+    private inner class ItemViewClickedListener(val context: Context) : OnItemViewClickedListener {
         override fun onItemClicked(
             itemViewHolder: Presenter.ViewHolder?,
             item: Any?,
@@ -98,9 +99,11 @@ class MainFragment : BrowseFragment() {
         ) {
             if (item is Movie) {
                 val movie = item as Movie
+//
+//                val intent = PlaybackActivity.createIntent(context, movie.id)
+                val intent = MovieDetailsActivity.createIntent(context, movie.id)
 
-                val intent = PlaybackActivity.createIntent(context, movie.id)
-                context.startActivity(intent)
+                activity.startActivity(intent)
 
             }
 
