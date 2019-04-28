@@ -7,7 +7,6 @@ import android.util.Log
 import android.view.KeyEvent
 import androidx.fragment.app.FragmentActivity
 import com.ratanparai.moviedog.R
-import com.ratanparai.moviedog.db.AppDatabase
 import com.ratanparai.moviedog.utilities.EXTRA_MOVIE_ID
 
 class PlaybackActivity: FragmentActivity() {

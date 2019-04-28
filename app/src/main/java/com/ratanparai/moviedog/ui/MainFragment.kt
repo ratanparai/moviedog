@@ -1,4 +1,4 @@
-package com.ratanparai.moviedog
+package com.ratanparai.moviedog.ui
 
 import android.content.Context
 import android.os.Bundle
@@ -7,11 +7,11 @@ import android.util.Log
 import android.widget.Toast
 import androidx.leanback.app.BrowseFragment
 import androidx.leanback.widget.*
+import com.ratanparai.moviedog.R
 import com.ratanparai.moviedog.db.AppDatabase
 import com.ratanparai.moviedog.db.dao.MovieDao
 import com.ratanparai.moviedog.db.entity.Movie
 import com.ratanparai.moviedog.presenter.CardPresenter
-import com.ratanparai.moviedog.ui.PlaybackActivity
 
 /**
  * Loads a grid of cards with movies to browse.
