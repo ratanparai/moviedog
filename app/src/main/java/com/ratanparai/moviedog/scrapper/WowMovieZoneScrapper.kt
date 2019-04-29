@@ -5,8 +5,9 @@ import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 
 class WowMovieZoneScrapper: Scrapper {
+
     override fun getSearchUrl(query: String): String {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return String.format(SEARCH_URL, query)
     }
 
     override fun getMovie(document: Document): Movie {
@@ -14,10 +15,14 @@ class WowMovieZoneScrapper: Scrapper {
     }
 
     override fun getListOfMovieLinksFromSearchResult(document: Document): List<String> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
+        val result = ArrayList<String>()
+        val elements = document.select("a")
+        for (elem in elements) {
+            result.add(elem.attr("abs:href"))
+        }
 
-    val SEARCH_URL = "http://172.27.27.84/ajax_search?search_value=%s"
+        return result.distinct()
+    }
 
     fun getSearchResult(query : String): Document? {
         var query = query.toLowerCase()
@@ -28,5 +33,9 @@ class WowMovieZoneScrapper: Scrapper {
         return Jsoup.connect(searchUrl)
             .header("X-Requested-With", " XMLHttpRequest")
             .get()
+    }
+
+    companion object {
+        private const val SEARCH_URL = "http://172.27.27.84/ajax_search?search_value=%s"
     }
 }
