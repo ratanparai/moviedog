@@ -4,6 +4,7 @@ import android.app.Activity
 import android.os.Bundle
 import android.util.Log
 import androidx.core.content.IntentCompat.EXTRA_START_PLAYBACK
+import com.ratanparai.moviedog.ui.MovieDetailsActivity
 import com.ratanparai.moviedog.ui.PlaybackActivity
 
 class SearchableActivity: Activity() {
@@ -24,7 +25,8 @@ class SearchableActivity: Activity() {
             startActivity(PlaybackActivity.createIntent(this, id))
         } else {
             Log.d(TAG, "Show movie details screen")
-            startActivity(PlaybackActivity.createIntent(this, id))
+            // startActivity(PlaybackActivity.createIntent(this, id))
+            startActivity(MovieDetailsActivity.createIntent(this, id))
         }
 
         finish()

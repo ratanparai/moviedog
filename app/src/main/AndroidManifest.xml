@@ -20,7 +20,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
-                android:name=".MainActivity"
+                android:name=".ui.MainActivity"
                 android:banner="@drawable/app_icon_your_company"
                 android:icon="@drawable/app_icon_your_company"
                 android:label="@string/app_name"
@@ -48,6 +48,8 @@
         </activity>
 
         <activity android:name=".ui.PlaybackActivity"/>
+        <activity android:name=".ui.MovieDetailsActivity"/>
+        <activity android:name=".ui.SelectMovieSourceDialogActivity"/>
 
         <provider android:name=".provider.VideoProvider"
                   android:authorities="com.ratanparai.moviedog"

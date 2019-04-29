@@ -12,10 +12,11 @@
  * the License.
  */
 
-package com.ratanparai.moviedog
+package com.ratanparai.moviedog.ui
 
 import android.app.Activity
 import android.os.Bundle
+import com.ratanparai.moviedog.R
 
 /**
  * Loads [MainFragment].

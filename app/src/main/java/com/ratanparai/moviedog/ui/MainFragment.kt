@@ -1,17 +1,18 @@
-package com.ratanparai.moviedog
+package com.ratanparai.moviedog.ui
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.util.Log
 import android.widget.Toast
 import androidx.leanback.app.BrowseFragment
 import androidx.leanback.widget.*
+import com.ratanparai.moviedog.R
 import com.ratanparai.moviedog.db.AppDatabase
 import com.ratanparai.moviedog.db.dao.MovieDao
 import com.ratanparai.moviedog.db.entity.Movie
 import com.ratanparai.moviedog.presenter.CardPresenter
-import com.ratanparai.moviedog.ui.PlaybackActivity
 
 /**
  * Loads a grid of cards with movies to browse.
@@ -89,7 +90,7 @@ class MainFragment : BrowseFragment() {
     }
 
 
-    private class ItemViewClickedListener(val context: Context) : OnItemViewClickedListener {
+    private inner class ItemViewClickedListener(val context: Context) : OnItemViewClickedListener {
         override fun onItemClicked(
             itemViewHolder: Presenter.ViewHolder?,
             item: Any?,
@@ -98,9 +99,11 @@ class MainFragment : BrowseFragment() {
         ) {
             if (item is Movie) {
                 val movie = item as Movie
+//
+//                val intent = PlaybackActivity.createIntent(context, movie.id)
+                val intent = MovieDetailsActivity.createIntent(context, movie.id)
 
-                val intent = PlaybackActivity.createIntent(context, movie.id)
-                context.startActivity(intent)
+                activity.startActivity(intent)
 
             }
 
