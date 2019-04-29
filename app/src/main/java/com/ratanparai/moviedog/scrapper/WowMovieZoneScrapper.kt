@@ -67,6 +67,12 @@ class WowMovieZoneScrapper: Scrapper {
             .get()
     }
 
+    override fun getDocument(url: String): Document {
+        val headers = HashMap<String, String>()
+        headers["X-Requested-With"] = "XMLHttpRequest"
+        return super.getDocument(url, headers)
+    }
+
     fun getDuration(videoUrl: String): Int {
         val mmr = MediaMetadataRetriever()
 
@@ -75,7 +81,10 @@ class WowMovieZoneScrapper: Scrapper {
         } else {
             mmr.setDataSource(videoUrl)
         }
-        return mmr.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DURATION).toInt()
+
+        val duration = mmr.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DURATION).toInt()
+        mmr.release()
+        return duration
     }
 
     companion object {

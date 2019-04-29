@@ -45,4 +45,18 @@ class WowMovieZoneScrapperTest {
         assertThat(movieLinks.size).isEqualTo(13)
 
     }
+
+    @Test
+    fun shouldWorkWithRealAddress() {
+        val scrapper = WowMovieZoneScrapper()
+        val searchUrl = scrapper.getSearchUrl("Harry Potter")
+        val document = scrapper.getDocument(searchUrl)
+        val searchResult = scrapper.getListOfMovieLinksFromSearchResult(document)
+        for (result in searchResult) {
+            val movieDocument = scrapper.getDocument(result)
+            val movie = scrapper.getMovie(movieDocument)
+        }
+
+        assertThat(searchResult.size).isEqualTo(-1)
+    }
 }
