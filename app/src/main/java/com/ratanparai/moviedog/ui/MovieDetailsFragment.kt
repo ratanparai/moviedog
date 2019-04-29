@@ -83,6 +83,13 @@ class MovieDetailsFragment: DetailsFragment() {
             )
         )
 
+        actionAdapter.add(
+            Action(
+                ACTION_SELECT_SOURCE,
+                resources.getString(R.string.select_movie_source)
+            )
+        )
+
         row.actionsAdapter = actionAdapter
 
         arrayAdapter.add(row)
@@ -97,10 +104,11 @@ class MovieDetailsFragment: DetailsFragment() {
             ContextCompat.getColor(context, R.color.detail_view_actionbar_background)
 
         detailsPresenter.onActionClickedListener = OnActionClickedListener { action ->
-            if (action.id == ACTION_PLAY_MOVIE) {
-                startActivity(PlaybackActivity.createIntent(context, movie!!.id ))
-            } else {
-                Toast.makeText(context, action.toString(), Toast.LENGTH_SHORT).show()
+            when {
+                action.id == ACTION_PLAY_MOVIE -> startActivity(PlaybackActivity.createIntent(context, movie!!.id ))
+                action.id == ACTION_SELECT_SOURCE -> Toast.makeText(context, "Select Source Selected",
+                    Toast.LENGTH_SHORT).show()
+                else -> Toast.makeText(context, action.toString(), Toast.LENGTH_SHORT).show()
             }
         }
         presenterSelector.addClassPresenter(DetailsOverviewRow::class.java, detailsPresenter)
@@ -115,6 +123,7 @@ class MovieDetailsFragment: DetailsFragment() {
         private const val TAG = "MovieDetailsFragment"
 
         private const val ACTION_PLAY_MOVIE = 1L
+        private const val ACTION_SELECT_SOURCE = 2L
 
         private const val DETAIL_THUMB_WIDTH = 274
         private const val DETAIL_THUMB_HEIGHT = 420

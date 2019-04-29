@@ -27,4 +27,5 @@
 
     <string name="not_implemented">Not Implemented Yet!</string>
     <string name="play_movie">Play</string>
+    <string name="select_movie_source">Select Source</string>
 </resources>
