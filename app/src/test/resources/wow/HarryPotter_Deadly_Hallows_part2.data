@@ -1,0 +1,975 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="http://172.27.27.84/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="http://172.27.27.84/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="http://172.27.27.84/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="http://172.27.27.84/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="http://172.27.27.84/css/nouislider.min.css">
+	<link rel="stylesheet" href="http://172.27.27.84/css/ionicons.min.css">
+	<link rel="stylesheet" href="http://172.27.27.84/css/plyr.css">
+	<link rel="stylesheet" href="http://172.27.27.84/css/photoswipe.css">
+	<link rel="stylesheet" href="http://172.27.27.84/css/default-skin.css">
+	<link rel="stylesheet" href="http://172.27.27.84/css/main.css">
+	<link rel="stylesheet" href="http://172.27.27.84/magnific-popup/dist/magnific-popup.css">
+	<!-- Favicons -->
+	<link rel="icon" type="image/png" href="default_images/favicon.png">
+ 	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<title>Wow</title>
+	<style>
+		#genre_list li {
+    		display: inline;
+		}
+	</style>
+
+</head>
+<body class="body">
+	
+	<!-- header -->
+	
+	<!-- end header -->
+
+	<!-- details -->
+	<section class="section details">
+		<!-- details background -->
+		<div class="details__bg" data-bg="/movie_cover/1548310429_image.jpg"></div>
+		<!-- end details background -->
+
+				<!-- details content -->
+		<div class="container">
+			<div class="row">
+				<!-- title -->
+				<div class="col-12">
+					<h1 class="details__title">Harry Potter And The Deathly Hallows Part 2</h1>
+				</div>
+				<!-- end title -->
+
+				<!-- content -->
+				<div class="col-10">
+					<div class="card card--details card--series">
+						<div class="row">
+							<!-- card cover -->
+							<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+								<div class="card__cover">
+									<img height="320" class="centered-and-cropped sround" src="/movie_poster/1548310428_image.jpg"  alt="">
+								</div>
+							</div>
+							<!-- end card cover -->
+
+							<!-- card content -->
+							<div class="col-12 col-sm-8 col-md-8 col-lg-9 col-xl-9">
+								<div class="card__content">
+									<div class="card__wrap">
+										<span class="card__rate"><i class="icon ion-ios-star"></i>
+											Rating : 8.10</span>
+
+										<ul class="card__list">
+											
+										</ul>
+									</div>
+									<div class="card__wrap">
+										<span class="card__rate"><i class="icon ion-ios-eye"></i>
+											Total View : 78</span>
+
+										<ul class="card__list">
+											
+										</ul>
+									</div>
+
+
+									<ul class="card__meta">
+										<li>
+											
+																						<ul id="genre_list">
+												<span>Genre:</span>
+																								<li>
+													<a href="http://172.27.27.84/GalleryForMovie/all/Adventure/all/english/all">Adventure,</a></li>
+																								<li>
+													<a href="http://172.27.27.84/GalleryForMovie/all/ Drama/all/english/all"> Drama,</a></li>
+																								<li>
+													<a href="http://172.27.27.84/GalleryForMovie/all/ Fantasy/all/english/all"> Fantasy,</a></li>
+																								<li>
+													<a href="http://172.27.27.84/GalleryForMovie/all/ Mystery/all/english/all"> Mystery,</a></li>
+																							</ul>	
+										</li>
+										<li><span>Release year:</span>2011</li>
+										<li><span>Country:</span> <a href="#">USA, UK</a> </li>
+									</ul>
+									<div class="card__description card__description--details">
+										Harry, Ron, and Hermione search for Voldemort&#039;&#039;s remaining Horcruxes in their effort to destroy the Dark Lord as the final battle rages on at Hogwarts.
+									</div>
+									<br>
+									<a href="https://www.youtube.com/watch?v=7xGbgqsRTT0" class="header__sign-in video-popup" style="margin-right: 10px; float: right" >
+										<i class="icon ion-ios-log-in"></i>
+										<span>Trailer</span>
+									</a>
+								</div>
+							</div>
+							<!-- end card content -->
+						</div>
+					</div>
+				</div>
+				<!-- end content -->
+
+				<!-- player -->
+				<div class="col-12 col-xl-6" style="padding-top: 1%">
+					<h2 class="details__title" style="color: white">Watch Here</h2>
+					<video  id="video_player" preload="auto" class="sround" width="100%" controls poster="/movie_cover/1548310429_image.jpg" preload="auto"  type='video/x-matroska; codecs="theora, vorbis"'>
+  <source  src="http://172.27.27.251/2TB1/1080p/2011/Harry%20Potter%20And%20The%20Deathly%20Hallows%20Part%202%20%282011%29%20%5B1080p%5D/Harry%20Potter%20And%20The%20Deathly%20Hallows%20Part%202%20%282011%29%20%5B1080p%5D.mp4">
+ 
+  Your browser does not support HTML5 video.
+</video>
+				</div>
+				<!-- end player -->
+
+				<!-- accordion -->
+				<div class="col-12 col-xl-6" style="padding-top: 1%">
+					
+			
+
+								<h2 class="details__title" style="color: white">Download List</h2>
+							<div class="card-body">
+									<table class="accordion__list">
+										<tbody>
+																						<tr>
+												<td style="font-size: 18px;">Harry Potter And The Deathly Hallows Part 2 (2011) [1080p] mp4</td>
+												<td>
+																										<button class="header__play" onclick="play_video('http://172.27.27.251/2TB1/1080p/2011/Harry%20Potter%20And%20The%20Deathly%20Hallows%20Part%202%20%282011%29%20%5B1080p%5D/Harry%20Potter%20And%20The%20Deathly%20Hallows%20Part%202%20%282011%29%20%5B1080p%5D.mp4')">Play</button>
+																									</td>
+												<td>
+													<a  class="header__download" href="http://172.27.27.251/2TB1/1080p/2011/Harry%20Potter%20And%20The%20Deathly%20Hallows%20Part%202%20%282011%29%20%5B1080p%5D/Harry%20Potter%20And%20The%20Deathly%20Hallows%20Part%202%20%282011%29%20%5B1080p%5D.mp4" target="_blank">Download</a>
+												</td>
+											</tr>
+																						<tr>
+												<td style="font-size: 18px;">Harry Potter And The Deathly Hallows Part 2 (2011) [1080p] srt</td>
+												<td>
+													    													Compatibility Issue
+																									</td>
+												<td>
+													<a  class="header__download" href="http://172.27.27.251/2TB1/1080p/2011/Harry%20Potter%20And%20The%20Deathly%20Hallows%20Part%202%20%282011%29%20%5B1080p%5D/Harry%20Potter%20And%20The%20Deathly%20Hallows%20Part%202%20%282011%29%20%5B1080p%5D.srt" target="_blank">Download</a>
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+						
+								</div> 
+				</div>
+				<!-- end accordion -->
+
+
+			</div>
+		</div>
+		<!-- end details content -->
+	</section>
+	<!-- end details -->
+
+	<!-- content -->
+	<section class="content">
+		<div class="content__head">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<!-- content title -->
+						
+						<!-- end content title -->
+
+						<!-- content tabs nav -->
+						<ul class="nav nav-tabs content__tabs" id="content__tabs" role="tablist">
+
+
+							<li class="nav-item">
+								<a class="nav-link active" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Casts</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Details</a>
+							</li>
+
+
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false" onclick=
+								"fetch_movie_screen_shots('tt1201607')">Screenshots</a>
+							</li>
+						</ul>
+						<!-- end content tabs nav -->
+
+						<!-- content mobile tabs nav -->
+						<div class="content__mobile-tabs" id="content__mobile-tabs">
+							<div class="content__mobile-tabs-btn dropdown-toggle" role="navigation" id="mobile-tabs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<input type="button" value="Comments">
+								<span></span>
+							</div>
+
+							<div class="content__mobile-tabs-menu dropdown-menu" aria-labelledby="mobile-tabs">
+								<ul class="nav nav-tabs" role="tablist">
+									<li class="nav-item"><a class="nav-link active" id="1-tab" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Details</a></li>
+
+									<li class="nav-item"><a class="nav-link" id="2-tab" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false" onclick=
+								"fetch_movie_casts('tt1201607')">Casts</a></li>
+
+									<li class="nav-item"><a class="nav-link" id="3-tab" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false" onclick=
+								"fetch_movie_screen_shots('tt1201607')">Screenshots</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- end content mobile tabs nav -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-8 col-xl-8">
+					<!-- content tabs -->
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="1-tab">
+														<div itemscope>
+								<div class="row">
+									<!-- gallery item -->
+									<div class="row" id="cast_list"><h2></h2></div>
+									<div id="cast_template" style="display: none;">
+										<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+											<a href="cast_url_link">
+											<img class="cast" style="border-radius: 50%; width: 150px;height:150px;object-fit: cover" src="cast_url"/>
+											</a>
+											<br>
+											<br>
+											<h4 style="color:white;font-weight: 200;padding-top: 3px; text-align: center;"><a 
+												href="http://172.27.27.84/GalleryForMovieArtist/all/all/all/actor_name_link/english/all">
+													actor_name
+												</a></h4>
+											<figcaption itemprop="caption description">
+											</figcaption>
+										</figure>
+									</div>
+									<!-- end gallery item -->
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="2-tab">
+								<div class="row">
+								<!-- comments -->
+								<div class="col-12">
+									<h2>Production House:</h2>
+									<h4 style="color: white;font-weight: 200">Warner Bros. Pictures,Heyday Films</h4>
+									<h2>language:</h2>
+									<h4 style="color: white;font-weight: 200">English</h4>
+									<h2>Director:</h2>
+									<h4 style="color: white;font-weight: 200">David Yates</h4>
+								</div>
+								<!-- end comments -->
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="3-tab">							<!-- project gallery -->
+							<div class="gallery" itemscope>
+								<div class="row" id="screen_shot_list"><h2></h2></div>
+								<div id="screen_shot_template" style="display: none;">
+										<figure class="col-12 col-sm-6 col-xl-4" itemprop="associatedMedia" itemscope>
+											<a href="screen_shot_url_link" itemprop="contentUrl" data-size="1920x1280">
+											<img src="screen_shot_url"/>
+											</a>
+											<figcaption itemprop="caption description"></figcaption>
+										</figure>
+								</div>
+							</div>
+							<!-- end project gallery -->
+						</div>
+					</div>
+					<!-- end content tabs -->
+				</div>
+
+				<!-- sidebar -->
+				<div class="col-12 col-lg-4 col-xl-4">
+					<div class="row">
+						<!-- section title -->
+						<div class="col-12">
+							<h2 class="section__title section__title--sidebar">You may also like...</h2>
+						</div>
+						<!-- end section title -->
+
+						<!-- card -->
+												<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img height="240" class="centered-and-cropped sround" src="/movie_poster/1548308699_image.jpg" alt="">
+									<a id="youtube" href="https://www.youtube.com/watch?v=UMMEdYCxGm0" class="card__play video-popup">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="http://172.27.27.84/movie/1280">The Duchess</a></h3>
+									<span class="card__category">
+										<a href="#">Biography, Drama, History, Romance</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.90</span>
+								</div>
+							</div>
+						</div>
+												<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img height="240" class="centered-and-cropped sround" src="/movie_poster/1548308750_image.jpg" alt="">
+									<a id="youtube" href="https://www.youtube.com/watch?v=JA1J2WmFGUw" class="card__play video-popup">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="http://172.27.27.84/movie/1289">The Reader</a></h3>
+									<span class="card__category">
+										<a href="#">Drama, Romance</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.60</span>
+								</div>
+							</div>
+						</div>
+												<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img height="240" class="centered-and-cropped sround" src="/movie_poster/1548309017_image.jpg" alt="">
+									<a id="youtube" href="https://www.youtube.com/watch?v=z7cEL6n24d4" class="card__play video-popup">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="http://172.27.27.84/movie/1332">Clash of the Titans</a></h3>
+									<span class="card__category">
+										<a href="#">Action, Adventure, Fantasy</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>5.80</span>
+								</div>
+							</div>
+						</div>
+												<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img height="240" class="centered-and-cropped sround" src="/movie_poster/1548310176_image.jpg" alt="">
+									<a id="youtube" href="https://www.youtube.com/watch?v=bsYrGIQnmxo" class="card__play video-popup">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="http://172.27.27.84/movie/1504">Coriolanus</a></h3>
+									<span class="card__category">
+										<a href="#">Drama, Thriller, War</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.10</span>
+								</div>
+							</div>
+						</div>
+												<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img height="240" class="centered-and-cropped sround" src="/movie_poster/1548310428_image.jpg" alt="">
+									<a id="youtube" href="https://www.youtube.com/watch?v=7xGbgqsRTT0" class="card__play video-popup">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="http://172.27.27.84/movie/1530">Harry Potter And The Deathly Hallows Part 2</a></h3>
+									<span class="card__category">
+										<a href="#">Adventure, Drama, Fantasy, Mystery</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.10</span>
+								</div>
+							</div>
+						</div>
+												<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img height="240" class="centered-and-cropped sround" src="/movie_poster/1548334276_image.jpg" alt="">
+									<a id="youtube" href="https://www.youtube.com/watch?v=3zC13ekq1Sk" class="card__play video-popup">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="http://172.27.27.84/movie/2043">A Bigger Splash</a></h3>
+									<span class="card__category">
+										<a href="#">Drama, Thriller</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>6.40</span>
+								</div>
+							</div>
+						</div>
+												<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img height="240" class="centered-and-cropped sround" src="/movie_poster/1548337963_image.jpg" alt="">
+									<a id="youtube" href="https://www.youtube.com/watch?v=xhtAyshwDFk" class="card__play video-popup">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="http://172.27.27.84/movie/2451">Maid In Manhattan</a></h3>
+									<span class="card__category">
+										<a href="#">Comedy, Drama, Romance</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>5.20</span>
+								</div>
+							</div>
+						</div>
+												<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img height="240" class="centered-and-cropped sround" src="/movie_poster/1548340866_image.jpg" alt="">
+									<a id="youtube" href="https://www.youtube.com/watch?v=N1OopmufwUo" class="card__play video-popup">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="http://172.27.27.84/movie/2692">The English Patient</a></h3>
+									<span class="card__category">
+										<a href="#">Drama, Romance, War</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.40</span>
+								</div>
+							</div>
+						</div>
+												<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img height="240" class="centered-and-cropped sround" src="/movie_poster/1548340870_image.jpg" alt="">
+									<a id="youtube" href="https://www.youtube.com/watch?v=N1OopmufwUo" class="card__play video-popup">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="http://172.27.27.84/movie/2693">The English Patient</a></h3>
+									<span class="card__category">
+										<a href="#">Drama, Romance, War</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.40</span>
+								</div>
+							</div>
+						</div>
+												<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img height="240" class="centered-and-cropped sround" src="/movie_poster/1548432012_image.jpg" alt="">
+									<a id="youtube" href="https://www.youtube.com/watch?v=VQvuC7_qgTE" class="card__play video-popup">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="http://172.27.27.84/movie/3961">Red Dragon</a></h3>
+									<span class="card__category">
+										<a href="#">Crime, Drama, Thriller</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.20</span>
+								</div>
+							</div>
+						</div>
+												<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img height="240" class="centered-and-cropped sround" src="/movie_poster/1548432029_image.jpg" alt="">
+									<a id="youtube" href="https://www.youtube.com/watch?v=7xGbgqsRTT0" class="card__play video-popup">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="http://172.27.27.84/movie/3965">Harry Potter and the Deathly Hallows Part 2</a></h3>
+									<span class="card__category">
+										<a href="#">Adventure, Drama, Fantasy, Mystery</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>8.10</span>
+								</div>
+							</div>
+						</div>
+												<div class="col-6 col-sm-4 col-lg-6">
+							<div class="card">
+								<div class="card__cover">
+									<img height="240" class="centered-and-cropped sround" src="/movie_poster/1548432092_image.jpg" alt="">
+									<a id="youtube" href="https://www.youtube.com/watch?v=YvV3g8hLlyU" class="card__play video-popup">
+										<i class="icon ion-ios-play"></i>
+									</a>
+								</div>
+								<div class="card__content">
+									<h3 class="card__title"><a href="http://172.27.27.84/movie/3981">Skyfall</a></h3>
+									<span class="card__category">
+										<a href="#">Action, Adventure, Thriller</a>
+									</span>
+									<span class="card__rate"><i class="icon ion-ios-star"></i>7.80</span>
+								</div>
+							</div>
+						</div>
+												<!-- end card -->
+					</div>
+				</div>
+				<!-- end sidebar -->
+			</div>
+		</div>
+	</section>
+	<!-- end content -->
+	<!-- Root element of PhotoSwipe. Must have class pswp. -->
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+		<!-- Background of PhotoSwipe. 
+		It's a separate element, as animating opacity is faster than rgba(). -->
+		<div class="pswp__bg"></div>
+
+		<!-- Slides wrapper with overflow:hidden. -->
+		<div class="pswp__scroll-wrap">
+
+			<!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+			<!-- don't modify these 3 pswp__item elements, data is added later on. -->
+			<div class="pswp__container">
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+			</div>
+
+			<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+			<div class="pswp__ui pswp__ui--hidden">
+
+				<div class="pswp__top-bar">
+
+					<!--  Controls are self-explanatory. Order can be changed. -->
+
+					<div class="pswp__counter"></div>
+
+					<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+					<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+					<!-- Preloader -->
+					<div class="pswp__preloader">
+						<div class="pswp__preloader__icn">
+							<div class="pswp__preloader__cut">
+								<div class="pswp__preloader__donut"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+
+				<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+				<div class="pswp__caption">
+					<div class="pswp__caption__center"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+
+	<!-- JS -->
+<!-- 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+    <script  src="http://172.27.27.84/js/player.js"></script>
+	<script src="http://172.27.27.84/js/jquery-3.3.1.min.js"></script>
+	<script src="http://172.27.27.84/js/bootstrap.bundle.min.js"></script>
+	<script src="http://172.27.27.84/js/owl.carousel.min.js"></script>
+	<script src="http://172.27.27.84/js/jquery.mousewheel.min.js"></script>
+	<script src="http://172.27.27.84/js/jquery.mCustomScrollbar.min.js"></script>
+	<script src="http://172.27.27.84/js/wNumb.js"></script>
+	<script src="http://172.27.27.84/js/nouislider.min.js"></script>
+	<script src="http://172.27.27.84/js/plyr.min.js"></script>
+	<script src="http://172.27.27.84/js/jquery.morelines.min.js"></script>
+	<script src="http://172.27.27.84/js/photoswipe.min.js"></script>
+	<script src="http://172.27.27.84/js/photoswipe-ui-default.min.js"></script>
+		<script src="http://172.27.27.84/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+	<script src="http://172.27.27.84/js/main.js"></script>
+
+	<script>
+
+        var youtube_src = document.getElementById("youtube").getAttribute("href");
+
+        //console.log(youtube_src);
+
+        $('.video-popup').magnificPopup({
+            items: {
+                src: youtube_src,
+            },
+            type: 'iframe',
+            iframe: {
+                markup: '<div class="mfp-iframe-scaler">\'+\n' +
+                    '            \'<div class="mfp-close"></div>\'+\n' +
+                    '            \'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>\'+\n' +
+                    '          \'</div>',
+                patterns: {
+                    youtube: {
+                        index: 'youtube.com/',
+                        id: 'v=',
+                        src: $(this).href
+                    }
+                },
+                srcAction: 'iframe_src',
+            }
+        });
+
+	</script>
+
+
+    <script type="text/javascript">
+    	function play_video(path){
+			var vid = document.getElementById("video_player");
+			vid.src = path;
+			vid.play(); 
+
+		}
+		function fetch_movie_screen_shots(imdb_id){
+
+			$value=imdb_id;
+			list=document.getElementById("screen_shot_list").innerHTML;
+			
+			if(imdb_id!="N/A" && list=="<h2></h2>"){
+				document.getElementById("screen_shot_list").innerHTML="";
+    			$.ajax({
+            		type: 'get',
+            		url: "http://172.27.27.84/fetch_movie_screen_shots",
+            		data: { 'imdb_id': $value },
+            		success: function(data) {
+            			var screen_shots="";
+                		var i;
+						for (i = 0; i < data.length; i++) { 
+  							screen_shot=document.getElementById("screen_shot_template").innerHTML;
+  							var screen_shot = screen_shot.replace("screen_shot_url_link",data[i].file_path);
+  							var screen_shot = screen_shot.replace("screen_shot_url",data[i].file_path);
+  							var div = document.getElementById('screen_shot_list');
+  							div.innerHTML += screen_shot;  						
+						}                	
+            		}
+        		});
+    		}	
+		}
+		
+		
+		function fetch_movie_casts(imdb_id){
+
+			$value=imdb_id;
+			list=document.getElementById("cast_list").innerHTML;
+			if(imdb_id!="N/A" && list=="<h2></h2>"){
+				document.getElementById("cast_list").innerHTML="";
+			///////////////////////////////////////////////////////
+				$.ajax({
+            		type: 'get',
+            		url: "http://172.27.27.84/fetch_movie_casts",
+            		data: { 'imdb_id': $value },
+            		success: function(data) {
+            			for (variable in data) {
+            				var cast=document.getElementById("cast_template").innerHTML;
+  							cast = cast.replace("cast_url_link",data[variable].profile_path);
+  							cast = cast.replace("cast_url",data[variable].profile_path);
+  							cast = cast.replace("actor_name_link",data[variable].name);
+  							cast = cast.replace("actor_name",data[variable].name);
+
+  							var div = document.getElementById('cast_list');
+  							console.log(cast);
+  							div.innerHTML += cast;  	  
+  						
+						};
+            		}
+        		});
+        	}	
+		}
+
+		fetch_movie_casts("tt1201607");
+
+    </script>
+
+
+</body>
+</html>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- footer list -->
+           <!--  <div class="col-12 col-md-3">
+                <h6 class="footer__title">Download Our App</h6>
+                <ul class="footer__app">
+                    <li><a href="#"><img src="img/Download_on_the_App_Store_Badge.svg" alt=""></a></li>
+                    <li><a href="#"><img src="img/google-play-badge.png" alt=""></a></li>
+                </ul>
+            </div> -->
+            <!-- end footer list -->
+
+            <!-- footer list -->
+            <div class="col-6 col-sm-4 col-md-4">
+                <h6 class="footer__title">Resources</h6>
+                <ul class="footer__list">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <!-- end footer list -->
+
+            <!-- footer list -->
+            <div class="col-6 col-sm-4 col-md-4">
+                <h6 class="footer__title">Legal</h6>
+                <ul class="footer__list">
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Security</a></li>
+                </ul>
+            </div>
+            <!-- end footer list -->
+
+            <!-- footer list -->
+            <div class="col-12 col-sm-4 col-md-4">
+                <h6 class="footer__title">Contact</h6>
+               <!--  <ul class="footer__list">
+                    <li><a href="tel:+8801904440314">+8801904440314</a></li>
+                    <li><a href="mailto:support@xplex.xyz">support@xplex.xyz</a></li>
+                </ul>
+                <ul class="footer__social">
+                    <li class="facebook"><a href="https://www.facebook.com/KsNetworkLtd/"><i
+                                    class="icon ion-logo-facebook"></i></a></li>
+                    <li class="instagram"><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+                    <li class="twitter"><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+                    <li class="vk"><a href="#"><i class="icon ion-logo-vk"></i></a></li>
+                </ul> -->
+            </div>
+            <!-- end footer list -->
+
+            <!-- footer copyright -->
+          <!--   <div class="col-12">
+                <div class="footer__copyright">
+                    <small>© 2018 Xplex. Create by <a href="https://m.me/xplex.ftp" target="_blank">Xplex</a></small>
+
+                    <ul>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div> -->
+            <!-- end footer copyright -->
+        </div>
+    </div>
+</footer><!-- header -->
+<header class="header">
+    <div class="header__wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header__content">
+                        <!-- header logo -->
+                        <a href="/" class="header__logo">
+                            <img src="http://172.27.27.84/img/logo.png" alt="">
+                        </a>
+                        <!-- end header logo -->
+
+                        <!-- header nav -->
+                        <ul class="header__nav">
+                            <!-- dropdown -->
+                            <li class="header__nav-item">
+                                <a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuHome"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Movies</a>
+
+                                <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuHome">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <li>
+                                                <a href="http://172.27.27.84/GalleryForMovie/all/all/all/english/all">English</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://172.27.27.84/GalleryForMovie/all/all/all/bengali/all">Indian Bengali</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://172.27.27.84/GalleryForMovie/all/all/all/korean/all">Korean</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://172.27.27.84/GalleryForMovie/all/all/all/hindi/all">Hindi</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://172.27.27.84/GalleryForMovie/all/all/all/hindi-dubbed/all">Hindi Dubbed</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://172.27.27.84/GalleryForMovie/all/all/all/south/all">South
+                                                    Indian</a></li>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <li>
+                                                <a href="http://172.27.27.84/GalleryForMovie/all/all/all/Animation/all">Animation</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://172.27.27.84/GalleryForMovie/all/all/all/others/all">Foreign
+                                                    Movies</a></li>
+                                           <!--  <li>
+                                                <a href="http://172.27.27.84/ftp/3d_movies/3d">3D Movies</a>
+                                            </li> -->
+                                           <!--  <li><a href="http://172.27.27.84/ftp/4k_movies/4K_eng_movie">4k Movies Drive 1</a></li>
+                                            <li><a href="http://172.27.27.84/ftp/4k_movies/4K_eng_movie2">4k Movies Drive 2</a></li> -->
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <!-- end dropdown -->
+
+                            <!-- dropdown -->
+                            <li class="header__nav-item">
+                                <a class="dropdown-toggle header__nav-link" href="#" role="button"
+                                   id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">TV-Shows</a>
+
+                                <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuCatalog">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <li><a href="http://172.27.27.84/galleryForTv/tv_series/english/all">TV-Series</a>
+                                            </li>
+                                            <li><a href="http://172.27.27.84/galleryForTv/tv_series/animation/all">Anime
+                                                    Series</a></li>
+
+                                        </div>
+                                       <!--  <div class="col-md-6">
+                                            <li><a href="index2.html">Award & TV Shows</a></li>
+                                            <li><a href="index2.html">WWE Wrestling
+                                        </div> -->
+                                    </div>
+                                </ul>
+                            </li>
+                            <!-- end dropdown -->
+
+                            <li class="header__nav-item">
+                                <a class="dropdown-toggle header__nav-link" href="#" role="button"
+                                   id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">Games</a>
+                                <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuMore">
+                                    <li><a href="http://172.27.27.84/galleryForPcGame/all/all">Games Gallery</a></li>
+
+                                    <li><a href="http://172.27.27.84/ftp/pc_games/Games1">Games Drive 1</a></li>
+
+                                    <li><a href="http://172.27.27.84/ftp/pc_games/games2">Games Drive 2</a></li>
+
+                                    <li><a href="http://172.27.27.84/ftp/pc_games/Games3">Games Drive 3</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="header__nav-item">
+                                <a class="dropdown-toggle header__nav-link" href="#" role="button"
+                                   id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">Others</a>
+                                <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuMore">
+                                    <li><a href="http://172.27.27.84/ftp/ebooks/ebook">E books</a></li>
+                                    <li><a href="http://172.27.27.84/ftp/tutorials/tutorial">Tutorials</a></li>
+                                    <li><a href="http://172.27.27.84/ftp/softwares/software">Softwares</a></li>
+                                </ul>
+                            </li>
+                            <!-- dropdown -->
+
+                            <!-- end dropdown -->
+                        </ul>
+                        <!-- end header nav -->
+
+                        <!-- header auth -->
+                        <div class="header__auth">
+                            <button class="header__search-btn" type="button" onclick="search()">
+                                <i class="icon ion-ios-search"></i>
+                            </button>
+                        </div>
+                        <!-- end header auth -->
+
+                        <!-- header menu btn -->
+                        <button class="header__btn" type="button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <!-- end header menu btn -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- header search -->
+    <div class="container" style="display: none" id="search_result">
+        <div class="row">
+            <div class="col-12">
+                <form action="#" class="header__search" style="border-radius: 0px 0px 10px 10px">
+                    <div class="header__search-content">
+                        <input type="text" placeholder="Search for a movie, TV Series that you are looking for" onkeyup="searchResult(this.value)">
+                        <br>
+                        <div class="col-12">
+                            <div>
+                                <div class="row">
+                                    <!-- end content -->
+                                    <!-- accordion -->
+                                        <div class="accordion" id="accordion">
+                                            <div>
+                                                <div>
+                                                    <table class="accordion__list" style="padding-bottom: 10px">
+                                                        <tbody id="search_result_list">
+                                                        
+                                                            
+                                                                
+                                                                         
+                                                                
+                                                                
+                                                                
+                                                            
+                                                        
+                                                        </tbody>
+
+                                                    </table>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    <!-- end accordion -->
+                                </div>
+                            </div>
+                            <!-- end details content -->
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- end header search -->
+</header>
+<script>
+    var search_on = 0;
+    function search() {
+        if(search_on == 0) {
+            $('#search_result').css("display", "block");
+            search_on = 1;
+        }
+        else {
+            $('#search_result').css("display", "none");
+            search_on = 0;
+        }
+    }
+    function searchResult(value) {
+
+        var check_string = value.split(' ').join('');
+
+        if(check_string.length!=0) {
+            console.log(value);
+            $.ajax({
+                type: 'GET',
+                url: '/ajax_search',
+                data: {'search_value': value},
+                success: function (data) {
+                    $('.header__search-content').css('height', '370px');
+                    $('.header__search').css('height', '370px');
+                    console.log(data);
+                    document.getElementById('search_result_list').innerHTML = data;
+                },
+                error: function (xhr, status, error) {
+                    var err = eval("(" + xhr.responseText + ")");
+                    console.log(error);
+                }
+            })
+        }else {
+            document.getElementById('search_result_list').innerHTML = "";
+            $('.header__search-content').css('height', '60px');
+            $('.header__search').css('height', '60px');
+
+
+        }
+    }
+</script>
