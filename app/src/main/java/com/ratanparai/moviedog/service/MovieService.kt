@@ -4,9 +4,11 @@ import android.content.Context
 import android.util.Log
 import com.ratanparai.moviedog.db.AppDatabase
 import com.ratanparai.moviedog.db.dao.MovieDao
+import com.ratanparai.moviedog.db.dao.MovieUrlDao
 import com.ratanparai.moviedog.db.dao.ScrappedDao
 import com.ratanparai.moviedog.db.dao.SearchHashDao
 import com.ratanparai.moviedog.db.entity.Movie
+import com.ratanparai.moviedog.db.entity.MovieUrl
 import com.ratanparai.moviedog.db.entity.Scrapped
 import com.ratanparai.moviedog.db.entity.SearchHash
 import com.ratanparai.moviedog.scrapper.BdPlexScrapper
@@ -27,15 +29,16 @@ class MovieService(private val context: Context) {
         val searchHashDao = AppDatabase.getInstance(context).searchHashDao()
         val movieDao = AppDatabase.getInstance(context).movieDao()
         val scrappedDao = AppDatabase.getInstance(context).scrappedDao()
+        val movieUrlDao = AppDatabase.getInstance(context).movieUrlDao()
 
-        scrapMovies(wowMovieZoneScrapper, query, searchHashDao, movieDao, scrappedDao)
-        scrapMovies(bdPlexScrapper, query, searchHashDao, movieDao, scrappedDao)
-        scrapMovies(dekhvhaiScrapper, query, searchHashDao, movieDao, scrappedDao)
+        scrapMovies(wowMovieZoneScrapper, query, searchHashDao, movieDao, scrappedDao, movieUrlDao, "WoW Movie")
+        scrapMovies(bdPlexScrapper, query, searchHashDao, movieDao, scrappedDao, movieUrlDao, "BDPlex")
+        scrapMovies(dekhvhaiScrapper, query, searchHashDao, movieDao, scrappedDao, movieUrlDao, "Dekhvhai")
 
         return movieDao.searchByTitle(query)
     }
 
-    private fun scrapMovies(scrapper: Scrapper, query: String, searchHashDao: SearchHashDao, movieDao: MovieDao, scrappedDao: ScrappedDao) {
+    private fun scrapMovies(scrapper: Scrapper, query: String, searchHashDao: SearchHashDao, movieDao: MovieDao, scrappedDao: ScrappedDao, movieUrlDao: MovieUrlDao, serviceName: String) {
         try {
             val searchUrl = scrapper.getSearchUrl(query)
             val document = scrapper.getDocument(searchUrl)
@@ -71,7 +74,23 @@ class MovieService(private val context: Context) {
                 Log.d(TAG, "Scrapped movie: $movie for search URL $searchUrl ")
                 try {
                     scrappedDao.insert(scrapped)
-                    movieDao.insertMovie(movie)
+
+                    val movieFromDao = movieDao.getMovieByTitle(movie.title)
+                    if (movieFromDao == null) {
+                        Log.d(TAG, "The movie is not in database. Inserting movie info and first video link")
+                        val movieId = movieDao.insertMovie(movie).toInt()
+                        val movieUrl = MovieUrl(movieId = movieId, movieUrl = movie.videoUrl, serviceName = serviceName)
+                        movieUrlDao.insertMovieUrl(movieUrl)
+                    } else {
+                        Log.d(TAG, "Movie is already in database. Adding new video urls")
+                        val movieUrl = MovieUrl(
+                            movieId = movieFromDao.id,
+                            movieUrl = movie.videoUrl,
+                            serviceName = serviceName
+                        )
+
+                        movieUrlDao.insertMovieUrl(movieUrl)
+                    }
 
                 } catch (ex: Exception) {
                     Log.d("MovieService", ex.message)

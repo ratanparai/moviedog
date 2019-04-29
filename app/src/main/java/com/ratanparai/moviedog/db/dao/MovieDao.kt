@@ -5,6 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
+import androidx.room.Update
 import com.ratanparai.moviedog.db.entity.Movie
 
 @Dao
@@ -14,6 +15,9 @@ interface MovieDao {
 
     @Query("SELECT * FROM movies WHERE id = :movieId")
     fun getMovieById(movieId : Int) : Movie
+
+    @Query("SELECT * FROM movies WHERE title = :title")
+    fun getMovieByTitle(title: String): Movie?
 
     @Query("SELECT * FROM movies WHERE imdbId = :imdbId")
     fun getMovieByImdbId(imdbId : String) : Movie
