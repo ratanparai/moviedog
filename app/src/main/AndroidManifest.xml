@@ -49,6 +49,7 @@
 
         <activity android:name=".ui.PlaybackActivity"/>
         <activity android:name=".ui.MovieDetailsActivity"/>
+        <activity android:name=".ui.SelectMovieSourceDialogActivity"/>
 
         <provider android:name=".provider.VideoProvider"
                   android:authorities="com.ratanparai.moviedog"

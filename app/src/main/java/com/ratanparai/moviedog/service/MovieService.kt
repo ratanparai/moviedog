@@ -31,9 +31,9 @@ class MovieService(private val context: Context) {
         val scrappedDao = AppDatabase.getInstance(context).scrappedDao()
         val movieUrlDao = AppDatabase.getInstance(context).movieUrlDao()
 
-        scrapMovies(wowMovieZoneScrapper, query, searchHashDao, movieDao, scrappedDao, movieUrlDao, "WoW Movie")
         scrapMovies(bdPlexScrapper, query, searchHashDao, movieDao, scrappedDao, movieUrlDao, "BDPlex")
         scrapMovies(dekhvhaiScrapper, query, searchHashDao, movieDao, scrappedDao, movieUrlDao, "Dekhvhai")
+        scrapMovies(wowMovieZoneScrapper, query, searchHashDao, movieDao, scrappedDao, movieUrlDao, "WoW Movie")
 
         return movieDao.searchByTitle(query)
     }

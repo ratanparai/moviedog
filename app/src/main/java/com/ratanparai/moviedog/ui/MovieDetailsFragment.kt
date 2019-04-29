@@ -13,6 +13,7 @@ import com.bumptech.glide.load.resource.drawable.GlideDrawable
 import com.bumptech.glide.request.animation.GlideAnimation
 import com.bumptech.glide.request.target.SimpleTarget
 import com.ratanparai.moviedog.R
+import com.ratanparai.moviedog.db.AppDatabase
 import com.ratanparai.moviedog.db.entity.Movie
 import com.ratanparai.moviedog.presenter.DetailsDescriptionPresenter
 import com.ratanparai.moviedog.service.MovieService
@@ -83,12 +84,17 @@ class MovieDetailsFragment: DetailsFragment() {
             )
         )
 
-        actionAdapter.add(
-            Action(
-                ACTION_SELECT_SOURCE,
-                resources.getString(R.string.select_movie_source)
+        val movieUrlDao = AppDatabase.getInstance(context).movieUrlDao()
+        val movieUrlsByMovieId = movieUrlDao.getMovieUrlsByMovieId(movie!!.id)
+
+        if (movieUrlsByMovieId.size > 1) {
+            actionAdapter.add(
+                Action(
+                    ACTION_SELECT_SOURCE,
+                    resources.getString(R.string.select_movie_source)
+                )
             )
-        )
+        }
 
         row.actionsAdapter = actionAdapter
 
@@ -106,8 +112,12 @@ class MovieDetailsFragment: DetailsFragment() {
         detailsPresenter.onActionClickedListener = OnActionClickedListener { action ->
             when {
                 action.id == ACTION_PLAY_MOVIE -> startActivity(PlaybackActivity.createIntent(context, movie!!.id ))
-                action.id == ACTION_SELECT_SOURCE -> Toast.makeText(context, "Select Source Selected",
-                    Toast.LENGTH_SHORT).show()
+                action.id == ACTION_SELECT_SOURCE -> {
+                    val intent = Intent(context, SelectMovieSourceDialogActivity::class.java)
+                    intent.putExtra(EXTRA_MOVIE_ID, movie!!.id)
+                    startActivity(intent)
+                }
+
                 else -> Toast.makeText(context, action.toString(), Toast.LENGTH_SHORT).show()
             }
         }

@@ -21,6 +21,7 @@ import com.ratanparai.moviedog.db.entity.Movie
 import com.ratanparai.moviedog.player.VideoPlayerGlue
 import com.ratanparai.moviedog.service.MovieService
 import com.ratanparai.moviedog.utilities.EXTRA_MOVIE_ID
+import com.ratanparai.moviedog.utilities.EXTRA_MOVIE_URL
 
 class PlaybackFragment: VideoSupportFragment() {
     private val TAG = "PlaybackFragment"
@@ -34,12 +35,15 @@ class PlaybackFragment: VideoSupportFragment() {
 
     private var movieIdToPlay: Int = -1
 
+    private var movieUrl: String? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.d(TAG, "Fragment loaded")
 
         val movieId = activity?.intent?.getIntExtra(EXTRA_MOVIE_ID, -1)
+        movieUrl = activity?.intent?.getStringExtra(EXTRA_MOVIE_URL)
 
         movieIdToPlay = movieId!!
 
@@ -109,9 +113,17 @@ class PlaybackFragment: VideoSupportFragment() {
 
     private fun prepareMediaForPlaying(movie: Movie) {
         val userAgent = Util.getUserAgent(context, "MovieDog")
-        val mediaSource = ExtractorMediaSource
-            .Factory(DefaultDataSourceFactory(context, userAgent))
-            .createMediaSource(Uri.parse(movie.videoUrl))
+
+        val mediaSource = if (movieUrl == null) {
+            ExtractorMediaSource
+                .Factory(DefaultDataSourceFactory(context, userAgent))
+                .createMediaSource(Uri.parse(movie.videoUrl))
+        } else {
+            ExtractorMediaSource
+                .Factory(DefaultDataSourceFactory(context, userAgent))
+                .createMediaSource(Uri.parse(movieUrl))
+        }
+
 
         exoPlayer.prepare(mediaSource)
     }

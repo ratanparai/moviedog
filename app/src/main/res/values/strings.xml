@@ -28,4 +28,8 @@
     <string name="not_implemented">Not Implemented Yet!</string>
     <string name="play_movie">Play</string>
     <string name="select_movie_source">Select Source</string>
+    <string name="dialog_movie_select_title">Select movie source to play</string>
+    <string name="dialog_movie_select_description">You can choose any source to play movies. If one source failed,
+        please try another source
+    </string>
 </resources>

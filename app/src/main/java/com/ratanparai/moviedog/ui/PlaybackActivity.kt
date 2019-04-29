@@ -8,6 +8,7 @@ import android.view.KeyEvent
 import androidx.fragment.app.FragmentActivity
 import com.ratanparai.moviedog.R
 import com.ratanparai.moviedog.utilities.EXTRA_MOVIE_ID
+import com.ratanparai.moviedog.utilities.EXTRA_MOVIE_URL
 
 class PlaybackActivity: FragmentActivity() {
 
@@ -40,6 +41,13 @@ class PlaybackActivity: FragmentActivity() {
         fun createIntent(context: Context, movieId: Int): Intent {
             val intent = Intent(context, PlaybackActivity::class.java)
             intent.putExtra(EXTRA_MOVIE_ID, movieId)
+            return intent
+        }
+
+        fun createIntent(context: Context, movieId: Int, movieUrl: String): Intent {
+            val intent = Intent(context, PlaybackActivity::class.java)
+            intent.putExtra(EXTRA_MOVIE_ID, movieId)
+            intent.putExtra(EXTRA_MOVIE_URL, movieUrl)
             return intent
         }
     }
