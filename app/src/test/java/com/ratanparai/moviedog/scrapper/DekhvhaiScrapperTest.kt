@@ -102,4 +102,14 @@ class DekhvhaiScrapperTest {
 
     }
 
+    @Test
+    fun shouldGetImdbIdFromDocument() {
+        val scrapper = DekhvhaiScrapper()
+
+        val actual = scrapper.getImdbId(deathlyHalos)
+        val expected = "tt1201607"
+
+        assertThat(actual).isEqualTo(expected)
+    }
+
 }

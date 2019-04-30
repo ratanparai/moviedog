@@ -45,4 +45,14 @@ class WowMovieZoneScrapperTest {
         assertThat(movieLinks.size).isEqualTo(13)
 
     }
+
+    @Test
+    fun shouldGetImdbIdFromSingleMovieDocument() {
+        val scrapper = WowMovieZoneScrapper()
+
+        val actual = scrapper.getImdbId(movieDoc)
+        val expected = "tt1201607"
+
+        assertThat(actual).isEqualTo(expected)
+    }
 }

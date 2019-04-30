@@ -12,6 +12,8 @@ class BdPlexScrapper: Scrapper {
     }
 
     override fun getMovie(document: Document): Movie {
+        val imdbId = getImdbId(document)
+
         var titleWithYear = document.select(".subheader-maintitle").text()
         var title = getOnlyTitleFromTitleAndYear(titleWithYear)
         var year = getOnlyYearFromTitleAndYear(titleWithYear).toInt()
@@ -31,6 +33,7 @@ class BdPlexScrapper: Scrapper {
         return Movie(
             title = title,
             description = description,
+            imdbId = imdbId,
             videoUrl = videoUrl,
             productionYear = year,
             duration = duration,
@@ -46,6 +49,12 @@ class BdPlexScrapper: Scrapper {
         }
 
         return result
+    }
+
+    fun getImdbId(document: Document): String {
+        val movieUrl =  document.select("body > meta:nth-child(9)").attr("content")
+
+        return movieUrl.substring(movieUrl.indexOf("imdbid=") + 7, movieUrl.indexOf("&cat"))
     }
 
 

@@ -101,4 +101,14 @@ class BdPlexScrapperTest {
         Truth.assertThat(movie.description).isEqualTo("Harry, Ron and Hermione continue their quest to vanquish the evil Voldemort once and for all. Just as things begin to look hopeless for the young wizards, Harry discovers a trio of magical objects that endow him with powers to rival Voldemort's formidable skills.")
 
     }
+
+    @Test
+    fun shouldGetImdbIdFromDocument() {
+        val scrapper = BdPlexScrapper()
+
+        val actual = scrapper.getImdbId(deathlyHalos)
+        val expected = "tt1201607"
+
+        Truth.assertThat(actual).isEqualTo(expected)
+    }
 }

@@ -15,6 +15,9 @@ class WowMovieZoneScrapper: Scrapper {
     }
 
     override fun getMovie(document: Document): Movie {
+
+        var imdbId = getImdbId(document)
+
         // var titleWithYear = document.select(".subheader-maintitle").text()
         var title = document.select("body > section.section.details > div.container > div > div:nth-child(1) > h1").text()
         var yearText = document.select("body > section.section.details > div.container > div > div.col-10 > div > div > div.col-12.col-sm-8.col-md-8.col-lg-9.col-xl-9 > div > ul > li:nth-child(2)").text()
@@ -34,11 +37,18 @@ class WowMovieZoneScrapper: Scrapper {
         return Movie(
             title = title,
             description = description,
+            imdbId = imdbId,
             videoUrl = videoUrl,
             productionYear = year,
             duration = duration,
             cardImage = cardImage
         )
+    }
+
+    fun getImdbId(document: Document): String {
+        val keyText =  document.select("#content__tabs > li:nth-child(3) > a").attr("onclick")
+
+        return keyText.substring(keyText.indexOf("('") + 2, keyText.indexOf("')"))
     }
 
     private fun getYearFromYearText(yearText: String): Int {
