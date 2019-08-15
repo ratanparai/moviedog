@@ -1,6 +1,8 @@
 # Movie Dog
 
 [![Build Status](https://ratanparai.visualstudio.com/moviedog/_apis/build/status/moviedog?branchName=master)](https://ratanparai.visualstudio.com/moviedog/_build/latest?definitionId=3&branchName=master)
+[![Actions Status](https://wdp9fww0r9.execute-api.us-west-2.amazonaws.com/production/badge/ratanparai/moviedog)](https://wdp9fww0r9.execute-api.us-west-2.amazonaws.com/production/results/ratanparai/moviedog)
+
 
 Free Movie Streaming Service For Android TV
 
