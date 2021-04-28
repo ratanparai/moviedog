@@ -11,10 +11,7 @@ import com.ratanparai.moviedog.db.entity.Movie
 import com.ratanparai.moviedog.db.entity.MovieUrl
 import com.ratanparai.moviedog.db.entity.Scrapped
 import com.ratanparai.moviedog.db.entity.SearchHash
-import com.ratanparai.moviedog.scrapper.BdPlexScrapper
-import com.ratanparai.moviedog.scrapper.DekhvhaiScrapper
-import com.ratanparai.moviedog.scrapper.Scrapper
-import com.ratanparai.moviedog.scrapper.WowMovieZoneScrapper
+import com.ratanparai.moviedog.scrapper.*
 import com.ratanparai.moviedog.utilities.MD5
 
 class MovieService(private val context: Context) {
@@ -25,15 +22,17 @@ class MovieService(private val context: Context) {
         val dekhvhaiScrapper = DekhvhaiScrapper()
         val bdPlexScrapper = BdPlexScrapper()
         val wowMovieZoneScrapper = WowMovieZoneScrapper()
+        var flixhubScrapper = FlixhubScrapper()
 
         val searchHashDao = AppDatabase.getInstance(context).searchHashDao()
         val movieDao = AppDatabase.getInstance(context).movieDao()
         val scrappedDao = AppDatabase.getInstance(context).scrappedDao()
         val movieUrlDao = AppDatabase.getInstance(context).movieUrlDao()
 
-        scrapMovies(bdPlexScrapper, query, searchHashDao, movieDao, scrappedDao, movieUrlDao, "BDPlex")
-        scrapMovies(dekhvhaiScrapper, query, searchHashDao, movieDao, scrappedDao, movieUrlDao, "Dekhvhai")
-        scrapMovies(wowMovieZoneScrapper, query, searchHashDao, movieDao, scrappedDao, movieUrlDao, "WoW Movie")
+//        scrapMovies(bdPlexScrapper, query, searchHashDao, movieDao, scrappedDao, movieUrlDao, "BDPlex")
+//        scrapMovies(dekhvhaiScrapper, query, searchHashDao, movieDao, scrappedDao, movieUrlDao, "Dekhvhai")
+        //scrapMovies(wowMovieZoneScrapper, query, searchHashDao, movieDao, scrappedDao, movieUrlDao, "WoW Movie")
+        scrapMovies(flixhubScrapper, query, searchHashDao, movieDao, scrappedDao, movieUrlDao, "FlexHub")
 
         return movieDao.searchByTitle(query)
     }
@@ -69,10 +68,11 @@ class MovieService(private val context: Context) {
                     url = link
                 )
 
-                val movieDoc = scrapper.getDocument(link)
-                val movie = scrapper.getMovie(movieDoc)
-                Log.d(TAG, "Scrapped movie: $movie for search URL $searchUrl ")
                 try {
+                    val movieDoc = scrapper.getDocument(link)
+                    val movie = scrapper.getMovie(movieDoc)
+                    Log.d(TAG, "Scrapped movie: $movie for search URL $searchUrl ")
+
                     scrappedDao.insert(scrapped)
 
                     val movieFromDao = movieDao.getMovieByTitle(movie.title)

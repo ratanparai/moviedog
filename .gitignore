@@ -16,3 +16,10 @@ app/.classpath
 .settings/org.eclipse.buildship.core.prefs
 app/.project
 app/.settings/org.eclipse.buildship.core.prefs
+.idea/encodings.xml
+.idea/gradle.xml
+.idea/misc.xml
+.idea/runConfigurations.xml
+.idea/vcs.xml
+.idea/codeStyles/codeStyleConfig.xml
+.idea/codeStyles/Project.xml
