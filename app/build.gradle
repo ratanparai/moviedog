@@ -14,6 +14,10 @@ ext {
 
 android {
     compileSdkVersion 28
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
     defaultConfig {
         applicationId "com.ratanparai.moviedog"
         minSdkVersion 26
@@ -42,6 +46,12 @@ dependencies {
     implementation 'com.google.android.exoplayer:extension-leanback:2.6.1'
 
     implementation 'org.jsoup:jsoup:1.11.3'
+
+    // REST
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    // https://mvnrepository.com/artifact/com.squareup.retrofit2/converter-gson
+    implementation group: 'com.squareup.retrofit2', name: 'converter-gson', version: '2.9.0'
+
 
     // Room components
     implementation "android.arch.persistence.room:runtime:$rootProject.roomVersion"

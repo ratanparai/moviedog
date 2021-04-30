@@ -9,7 +9,7 @@ class FlixhubScrapper : Scrapper {
         return String.format(SEARCH_URL, query)
     }
 
-    override fun getMovie(document: Document): Movie {
+    override fun getMovie(document: Document, url: String): Movie {
         val imdbId = getImdbId(document)
 
         var titleWithYear = document.select(".subheader-maintitle").text()

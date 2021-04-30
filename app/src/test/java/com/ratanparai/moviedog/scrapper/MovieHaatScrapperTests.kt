@@ -6,42 +6,41 @@ import org.jsoup.nodes.Document
 import org.junit.Before
 import org.junit.Test
 
-class FlixhuScrapperTests {
+class MovieHaatScrapperTests {
     private lateinit var searchDoc: Document
     private lateinit var movieDoc: Document
 
     @Before
     fun loadHtml() {
-        val searchResultFile = ClassLoader.getSystemResource("Flixhub/search_harry_potter.data").readText()
-        val deathlyHalosFile = ClassLoader.getSystemResource("Flixhub/details_harry_potter_chamer.data").readText()
+        val searchResultFile = ClassLoader.getSystemResource("MovieHaat/search_harry_potter.data").readText()
+        val deathlyHalosFile = ClassLoader.getSystemResource("MovieHaat/details_harry_potter_chamber.data").readText()
 
-        searchDoc = Jsoup.parse(searchResultFile, "http://172.27.27.84")
-        movieDoc = Jsoup.parse(deathlyHalosFile, "http://172.27.27.84")
+        searchDoc = Jsoup.parse(searchResultFile, "http://www.moviehaat.net/")
+        movieDoc = Jsoup.parse(deathlyHalosFile, "http://www.moviehaat.net/")
     }
 
     @Test
     fun shouldGetMovieLinksFromSearchResult() {
-        val scrapper = FlixhubScrapper()
+        val scrapper = MovieHaatScrapper()
         val movieLinks = scrapper.getListOfMovieLinksFromSearchResult(searchDoc)
 
-        Truth.assertThat(movieLinks.size).isEqualTo(4)
+        Truth.assertThat(movieLinks.size).isEqualTo(8)
 
     }
 
     @Test
-    fun shouldGetImdbIdFromSingleMovieDocument() {
-        val scrapper = FlixhubScrapper()
+    fun shouldParseMin() {
+        var movieTime = "136 min"
+        val scrapper = MovieHaatScrapper()
+        var actual = scrapper.getDurationInMiliseconds(movieTime)
 
-        val actual = scrapper.getImdbId(movieDoc)
-        val expected = "tt0295297"
-
-        Truth.assertThat(actual).isEqualTo(expected)
+        Truth.assertThat(actual).isEqualTo(8160000)
     }
 
     @Test
     fun shouldGetMovieFromUrl() {
-        val scrapper = FlixhubScrapper()
-        val movie = scrapper.getMovie(movieDoc, "")
+        val scrapper = MovieHaatScrapper()
+        val movie = scrapper.getMovie(movieDoc, "http://www.moviehaat.net/movies/tt0295297")
 
         Truth.assertThat(movie).isNotNull()
         Truth.assertThat(movie.title).isEqualTo("Harry Potter and the Chamber of Secrets")

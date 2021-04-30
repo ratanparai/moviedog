@@ -1,0 +1,612 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Monoarul Islam">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="FX02e6zCO6R3C7xHYpFRzL6zTxWquqIMp922pQiV">
+
+    <title>Stream | Biggest FTP File Server</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://www.moviehaat.net/frontend/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="http://www.moviehaat.net/frontend/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="http://www.moviehaat.net/frontend/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="http://www.moviehaat.net/frontend/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="http://www.moviehaat.net/frontend/css/nouislider.min.css">
+    <link rel="stylesheet" href="http://www.moviehaat.net/frontend/css/ionicons.min.css">
+    <link rel="stylesheet" href="http://www.moviehaat.net/frontend/css/plyr.css">
+    <link rel="stylesheet" href="http://www.moviehaat.net/frontend/css/photoswipe.css">
+    <link rel="stylesheet" href="http://www.moviehaat.net/frontend/css/default-skin.css">
+    <link rel="stylesheet" href="http://www.moviehaat.net/frontend/css/main.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="icon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-touch-icon-144x144.png">
+</head>
+<body class="body">
+
+<!-- header -->
+<header class="header">
+    <div class="header__wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header__content">
+                        <!-- header logo -->
+                        <a href="http://www.moviehaat.net" class="header__logo">
+                            <img src="http://www.moviehaat.net/frontend/img/logo.png" alt="">
+                        </a>
+                        <!-- end header logo -->
+
+                        <!-- header nav -->
+                        <ul class="header__nav" id="mobile_menu">
+                            <!-- dropdown -->
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="http://www.moviehaat.net" role="button">Home</a>
+                            </li>
+                            <!-- end dropdown -->
+
+                            <!-- dropdown -->
+                            <li class="header__nav-item menu-item-has-children">
+                                <a class="header__nav-link" href="http://www.moviehaat.net/movies" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Movies</a>
+
+                                <ul class="dropdown-menu header__dropdown-menu scrollbar-dropdown movie__dropdown-menu" aria-labelledby="dropdownMenuCatalog">
+                                                                                                                    <li><a href="http://www.moviehaat.net/movies?category=Hollywood">Hollywood</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Bollywood">Bollywood</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Animation">Animation</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Foreign">Foreign</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Franch">Franch</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Chinese">Chinese</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Indianbangla">Indianbangla</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Italian">Italian</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=japanese">japanese</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Korean">Korean</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Malayalam">Malayalam</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Russia">Russia</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Tamil">Tamil</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Thailand">Thailand</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Turkey">Turkey</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Hong-Kong">Hong-Kong</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Portugese">Portugese</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Dutch">Dutch</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Germany">Germany</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=3D Movie">3D Movie</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Brazil">Brazil</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Persian">Persian</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Hindi Dubbed">Hindi Dubbed</a></li>
+                                                                                                            </ul>
+                            </li>
+                            <!-- end dropdown -->
+                            <!-- dropdown -->
+                            
+                                
+
+                                
+                                    
+                                        
+                                            
+                                        
+                                    
+                                
+                            
+                            <!-- end dropdown -->
+
+                            <li class="header__nav-item menu-item-has-children">
+                                <a class="header__nav-link" href="http://www.moviehaat.net/tv-series" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TV Shows</a>
+
+                                <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuCatalog">
+                                                                                                                <li><a href="http://www.moviehaat.net/tv-series?category=English_Tv_Series">English Tv Series</a></li>
+                                                                            <li><a href="http://www.moviehaat.net/tv-series?category=Korean_TV_Shows">Korean TV Shows</a></li>
+                                                                            <li><a href="http://www.moviehaat.net/tv-series?category=Hindi_TV_Shows">Hindi TV Shows</a></li>
+                                                                                                            </ul>
+                            </li>
+
+                            <li class="header__nav-item menu-item-has-children">
+                                <a class="header__nav-link" href="http://www.moviehaat.net/games" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Games</a>
+
+                                <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuCatalog">
+                                                                                                                        <li><a href="http://www.moviehaat.net/games?category=Pc_Games">Pc Games</a></li>
+                                                                                    <li><a href="http://www.moviehaat.net/games?category=Android_Games">Android Games</a></li>
+                                                                                    <li><a href="http://www.moviehaat.net/games?category=Console">Console</a></li>
+                                                                                                            </ul>
+                            </li>
+
+                            
+                                
+
+                                
+                                    
+                                        
+                                            
+                                        
+                                    
+                                
+                            
+
+
+
+
+
+
+
+
+
+
+                            <!-- end dropdown -->
+                        </ul>
+                        <!-- end header nav -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- header auth -->
+                        <div class="header__auth">
+                            <button class="header__search-btn" type="button">
+                                <i class="icon ion-ios-search"></i>
+                            </button>
+
+                            
+                                
+                                
+                            
+                        </div>
+                        <!-- end header auth -->
+
+                        <!-- header menu btn -->
+                        <button class="header__btn" type="button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <!-- end header menu btn -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myOverlay" class="overlay frmSearch">
+        <span class="closebtn" title="Close Overlay">×</span>
+        <div class="overlay-content">
+            <form method="get" action="/search" class="header__search">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="header__search-content">
+                                <input type="text" id="header__search-input"  placeholder="Search for a movie, TV Series that you are looking for" name="q" autocomplete="off" required>
+
+                                <button type="submit">search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div id="suggesstion-box"></div>
+        </div>
+    </div>
+
+    <!-- header search -->
+    
+        
+            
+                
+                    
+                        
+
+                        
+                    
+                
+            
+        
+    
+    <!-- end header search -->
+</header>
+<!-- end header -->
+
+<!-- home -->
+    <section class="" style="padding: 100px 0;">
+        <div class="search_content__head">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="content__title">There are total <span style="color: #24D7D5; font-weight: 700;">8</span>
+                                                            <span>items</span>
+                             for the term "harry potter"</h2>
+                        <!-- end content title -->
+
+                        <!-- content tabs nav -->
+                        <ul class="nav nav-tabs content__tabs" id="content__tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Movies (8)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true">Movie Series (0)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="true">TV Series (0)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="true">Games (0)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-5" role="tab" aria-controls="tab-5" aria-selected="true">Software (0)</a>
+                            </li>
+                        </ul>
+                        <!-- end content tabs nav -->
+
+                        <!-- content mobile tabs nav -->
+                        <div class="content__mobile-tabs" id="content__mobile-tabs">
+                            <div class="content__mobile-tabs-btn dropdown-toggle" role="navigation" id="mobile-tabs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <input type="button" value="Movies">
+                                <span></span>
+                            </div>
+
+                            <div class="content__mobile-tabs-menu dropdown-menu" aria-labelledby="mobile-tabs">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item"><a class="nav-link active" id="1-tab" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Movies</a></li>
+
+                                    <li class="nav-item"><a class="nav-link" id="2-tab" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Movie Series</a></li>
+
+                                    <li class="nav-item"><a class="nav-link" id="3-tab" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">TV Series</a></li>
+
+                                    <li class="nav-item"><a class="nav-link" id="4-tab" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="false">Games</a></li>
+
+                                    <li class="nav-item"><a class="nav-link" id="5-tab" data-toggle="tab" href="#tab-5" role="tab" aria-controls="tab-5" aria-selected="false">Software</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end content mobile tabs nav -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- content tabs -->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="1-tab">
+                            <div class="row">
+                                                                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                                        <div class="card">
+                                            <div class="card__cover">
+                                                <a href="/movies/tt0295297" class="hover__effect">
+                                                    <img src="uploads/movies/d9FK-harry-potter-and-the-chamber-of-secrets.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="card__content">
+                                                <h3 class="card__title"><a href="/movies/tt0295297">Harry Potter and the Chamber of Secrets</a></h3>
+                                                <span class="card__category">
+                                                <a href="#">Adventure, Fantasy</a>
+                                                </span>
+                                                <span class="card__rate" style="color: #212529"><i class="icon ion-ios-star"></i>7.7</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                                        <div class="card">
+                                            <div class="card__cover">
+                                                <a href="/movies/tt0926084" class="hover__effect">
+                                                    <img src="uploads/movies/Pcvz-harry-potter-and-the-deathly-hallows-part-1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="card__content">
+                                                <h3 class="card__title"><a href="/movies/tt0926084">Harry Potter and the Deathly Hallows: Part 1</a></h3>
+                                                <span class="card__category">
+                                                <a href="#">Adventure, Fantasy</a>
+                                                </span>
+                                                <span class="card__rate" style="color: #212529"><i class="icon ion-ios-star"></i>7.8</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                                        <div class="card">
+                                            <div class="card__cover">
+                                                <a href="/movies/tt1201607" class="hover__effect">
+                                                    <img src="uploads/movies/0vLa-harry-potter-and-the-deathly-hallows-part-2.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="card__content">
+                                                <h3 class="card__title"><a href="/movies/tt1201607">Harry Potter and the Deathly Hallows: Part 2</a></h3>
+                                                <span class="card__category">
+                                                <a href="#">Family, Fantasy</a>
+                                                </span>
+                                                <span class="card__rate" style="color: #212529"><i class="icon ion-ios-star"></i>8.1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                                        <div class="card">
+                                            <div class="card__cover">
+                                                <a href="/movies/tt0330373" class="hover__effect">
+                                                    <img src="uploads/movies/moGn-harry-potter-and-the-goblet-of-fire.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="card__content">
+                                                <h3 class="card__title"><a href="/movies/tt0330373">Harry Potter and the Goblet of Fire</a></h3>
+                                                <span class="card__category">
+                                                <a href="#">Adventure, Fantasy</a>
+                                                </span>
+                                                <span class="card__rate" style="color: #212529"><i class="icon ion-ios-star"></i>7.8</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                                        <div class="card">
+                                            <div class="card__cover">
+                                                <a href="/movies/tt0417741" class="hover__effect">
+                                                    <img src="uploads/movies/A2fe-harry-potter-and-the-half-blood-prince.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="card__content">
+                                                <h3 class="card__title"><a href="/movies/tt0417741">Harry Potter and the Half-Blood Prince</a></h3>
+                                                <span class="card__category">
+                                                <a href="#">Adventure, Fantasy</a>
+                                                </span>
+                                                <span class="card__rate" style="color: #212529"><i class="icon ion-ios-star"></i>7.6</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                                        <div class="card">
+                                            <div class="card__cover">
+                                                <a href="/movies/tt0373889" class="hover__effect">
+                                                    <img src="uploads/movies/cZFC-harry-potter-and-the-order-of-the-phoenix.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="card__content">
+                                                <h3 class="card__title"><a href="/movies/tt0373889">Harry Potter and the Order of the Phoenix</a></h3>
+                                                <span class="card__category">
+                                                <a href="#">Adventure, Fantasy</a>
+                                                </span>
+                                                <span class="card__rate" style="color: #212529"><i class="icon ion-ios-star"></i>7.6</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                                        <div class="card">
+                                            <div class="card__cover">
+                                                <a href="/movies/tt0241527" class="hover__effect">
+                                                    <img src="uploads/movies/hFCl-harry-potter-and-the-philosophers-stone.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="card__content">
+                                                <h3 class="card__title"><a href="/movies/tt0241527">Harry Potter and the Philosopher&#039;s Stone</a></h3>
+                                                <span class="card__category">
+                                                <a href="#">Adventure, Fantasy</a>
+                                                </span>
+                                                <span class="card__rate" style="color: #212529"><i class="icon ion-ios-star"></i>7.8</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                                        <div class="card">
+                                            <div class="card__cover">
+                                                <a href="/movies/tt0304141" class="hover__effect">
+                                                    <img src="uploads/movies/FSrq-harry-potter-and-the-prisoner-of-azkaban.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="card__content">
+                                                <h3 class="card__title"><a href="/movies/tt0304141">Harry Potter and the Prisoner of Azkaban</a></h3>
+                                                <span class="card__category">
+                                                <a href="#">Adventure, Fantasy</a>
+                                                </span>
+                                                <span class="card__rate" style="color: #212529"><i class="icon ion-ios-star"></i>7.9</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="2-tab">
+                            <div class="row">
+                                                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="3-tab">
+                            <div class="row">
+                                                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="4-tab">
+                            <div class="row">
+                                                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="tab-5" role="tabpanel" aria-labelledby="5-tab">
+                            <div class="row">
+                                                            </div>
+                        </div>
+                    </div>
+                    <!-- end content tabs -->
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- end partners -->
+
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="footer-widget">
+                    <div class="footer-menu footer-menu--1">
+                        <h4 class="footer-widget-title">Movie Categories</h4>
+                        <ul style="column-count: 2;">
+                            <li>
+                                <a href="http://moviehaat.net/movies?geners=Action">Action Movies</a>
+                            </li>
+                            <li>
+                                <a href="http://moviehaat.net/movies?geners=Drama">Drama Movies</a>
+                            </li>
+                            <li>
+                                <a href="http://moviehaat.net/movies?geners=Animation">Animation Movies</a>
+                            </li>
+                            <li>
+                                <a href="http://moviehaat.net/movies?geners=Comedy">Comedy Movies</a>
+                            </li>
+                            <li>
+                                <a href="http://moviehaat.net/movies?geners=Action">Adventure</a>
+                            </li>
+                            <li>
+                                <a href="http://moviehaat.net/movies?geners=Action">Crime Movies</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end /.footer-menu -->
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+                <div class="footer-widget">
+                    <div class="footer-menu">
+                        <h4 class="footer-widget-title">Tv Series</h4>
+                        <ul>
+                            <li>
+                                <a href="http://moviehaat.net/tv-series?category=English_Tv_Series">English Tv Series</a>
+                            </li>
+                            <li>
+                                <a href="http://moviehaat.net/tv-series?category=Hindi_Tv_Series">Hindi Tv Series</a>
+                            </li>
+                            <li>
+                                <a href="http://moviehaat.net/tv-series?category=Korean_Tv_Series">Korean Tv Series</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end /.footer-menu -->
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+                <div class="footer-widget">
+                    <div class="footer-menu">
+                        <h4 class="footer-widget-title">Games</h4>
+                        <ul>
+                            <li>
+                                <a href="http://moviehaat.net/games?category=Pc_Games">PC Games</a>
+                            </li>
+                            <li>
+                                <a href="http://moviehaat.net/games?category=Android_Games">Android Games</a>
+                            </li>
+                            <li>
+                                <a href="http://moviehaat.net/games?category=Console">Console</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end /.footer-menu -->
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="footer-widget">
+                    <div class="footer-menu">
+                        <div class="footer-logo">
+                            <a href="http://www.moviehaat.net" class="">
+                                <img src="http://www.moviehaat.net/frontend/img/logo.png" alt="" width="200px">
+                            </a>
+                        </div>
+                        <div class="copyright-text">
+                            <p style="color: #131722; font-size: 14px;">Copyright © 2019 MovieWala | All rights reserved</p>
+                        </div>
+                    </div>
+                    <!-- end /.footer-menu -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        
+            
+                
+                    
+                
+            
+        
+    
+
+    
+        
+            
+                
+                    
+                        
+                        
+                            
+                            
+                            
+                                
+                            
+                            
+                                
+                            
+                            
+                                
+                            
+                            
+                                
+                            
+                            
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+</footer>
+<!-- end footer -->
+<!-- end footer -->
+
+<!-- JS -->
+<script src="http://www.moviehaat.net/frontend/js/jquery-3.3.1.min.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/inview.min.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/bootstrap.bundle.min.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/jquery.pjax.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/owl.carousel.min.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/jquery.mousewheel.min.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/jquery.mCustomScrollbar.min.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/wNumb.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/nouislider.min.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/plyr.min.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/customPlyr.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/jquery.morelines.min.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/photoswipe.min.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/photoswipe-ui-default.min.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/bootstrap-multiselect.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/main.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/sendEmail.js"></script>
+<!-- <script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script> -->
+
+</body>
+
+</html>

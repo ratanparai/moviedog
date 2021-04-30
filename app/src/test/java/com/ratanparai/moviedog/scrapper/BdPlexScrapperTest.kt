@@ -91,7 +91,7 @@ class BdPlexScrapperTest {
     @Test
     fun shouldGetMovieFromUrl() {
         val scrapper = BdPlexScrapper()
-        val movie = scrapper.getMovie(deathlyHalos)
+        val movie = scrapper.getMovie(deathlyHalos, "")
 
         Truth.assertThat(movie).isNotNull()
         Truth.assertThat(movie.title).isEqualTo("Harry Potter and the Deathly Hallows: Part 2")
