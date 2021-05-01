@@ -52,6 +52,8 @@ dependencies {
     // https://mvnrepository.com/artifact/com.squareup.retrofit2/converter-gson
     implementation group: 'com.squareup.retrofit2', name: 'converter-gson', version: '2.9.0'
 
+    // Subtitle
+    implementation 'com.github.masterwok:open-subtitles-android:0.0.8'
 
     // Room components
     implementation "android.arch.persistence.room:runtime:$rootProject.roomVersion"

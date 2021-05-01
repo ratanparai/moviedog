@@ -3,6 +3,7 @@ package com.ratanparai.moviedog.ui
 import android.app.Activity
 import android.net.Uri
 import android.os.Bundle
+import android.os.StrictMode
 import android.support.v4.media.session.MediaControllerCompat
 import android.support.v4.media.session.MediaSessionCompat
 import android.util.Log
@@ -11,20 +12,28 @@ import androidx.leanback.app.VideoSupportFragmentGlueHost
 import androidx.leanback.media.PlaybackTransportControlGlue
 import com.google.android.exoplayer2.C
 import com.google.android.exoplayer2.ExoPlayerFactory
+import com.google.android.exoplayer2.Format
 import com.google.android.exoplayer2.SimpleExoPlayer
 import com.google.android.exoplayer2.ext.leanback.LeanbackPlayerAdapter
 import com.google.android.exoplayer2.ext.mediasession.MediaSessionConnector
 import com.google.android.exoplayer2.source.ExtractorMediaSource
+import com.google.android.exoplayer2.source.MergingMediaSource
+import com.google.android.exoplayer2.source.SingleSampleMediaSource
 import com.google.android.exoplayer2.trackselection.DefaultTrackSelector
 import com.google.android.exoplayer2.ui.SubtitleView
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory
+import com.google.android.exoplayer2.util.MimeTypes
 import com.google.android.exoplayer2.util.Util
+import com.masterwok.opensubtitlesandroid.OpenSubtitlesUrlBuilder
+import com.masterwok.opensubtitlesandroid.models.OpenSubtitleItem
+import com.masterwok.opensubtitlesandroid.services.OpenSubtitlesService
 import com.ratanparai.moviedog.R
 import com.ratanparai.moviedog.db.entity.Movie
 import com.ratanparai.moviedog.player.VideoPlayerGlue
 import com.ratanparai.moviedog.service.MovieService
 import com.ratanparai.moviedog.utilities.EXTRA_MOVIE_ID
 import com.ratanparai.moviedog.utilities.EXTRA_MOVIE_URL
+import java.io.File
 
 
 class PlaybackFragment: VideoSupportFragment() {
@@ -61,7 +70,6 @@ class PlaybackFragment: VideoSupportFragment() {
         movieService = MovieService(context!!)
 
         movie = movieService.getMovieById(movieId)
-
     }
 
 
@@ -125,6 +133,29 @@ class PlaybackFragment: VideoSupportFragment() {
         playMedia(movie!!)
     }
 
+    fun downloadSubtitle(): Uri? {
+        var imdbId = movie!!.imdbId.substringAfter("tt").toLong()
+        val url = OpenSubtitlesUrlBuilder()
+            .imdbId(imdbId)
+            .subLanguageId("en")
+            .build()
+
+        val service = OpenSubtitlesService()
+        try {
+            val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
+            StrictMode.setThreadPolicy(policy)
+            val searchResult: Array<OpenSubtitleItem> = service.search(OpenSubtitlesService.TemporaryUserAgent, url)
+            var subtitleItem = searchResult.first { item -> item.SubFormat == "srt" }
+            var fileUrl = Uri.fromFile(File(Uri.fromFile(context!!.cacheDir).path,subtitleItem.SubFileName))
+            service.downloadSubtitle(context!!, subtitleItem, fileUrl)
+            return fileUrl
+        } catch (e: Exception){
+            Log.e(TAG, "error", e)
+        }
+
+        return null;
+    }
+
     private fun playMedia(
         movie: Movie
     ) {
@@ -152,11 +183,31 @@ class PlaybackFragment: VideoSupportFragment() {
                 .createMediaSource(Uri.parse(movieUrl))
         }
 
+        var subtitleUri = downloadSubtitle()
 
-        exoPlayer.prepare(mediaSource)
+        var subtitleByteArray = context!!.contentResolver.openInputStream(subtitleUri)?.buffered()?.use { it.readBytes() }
+
+        if (subtitleByteArray == null)
+        {
+            exoPlayer.prepare(mediaSource)
+            return
+        }
+
+        var subtitleFormat = Format.createTextSampleFormat(
+                "test", MimeTypes.APPLICATION_SUBRIP, C.SELECTION_FLAG_FORCED, "en")
+        var subtitleSource = SingleSampleMediaSource.Factory(
+            CustomDataSourceFactory(
+                context!!,
+                subtitleByteArray!!))
+            .createMediaSource(Uri.parse(""), subtitleFormat, C.TIME_UNSET)
+
+        var mergingMediaSource = MergingMediaSource(mediaSource, subtitleSource)
+
+        exoPlayer.prepare(mergingMediaSource)
     }
 
     private fun releasePlayer() {
         exoPlayer.release()
     }
+
 }
