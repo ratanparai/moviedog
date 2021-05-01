@@ -118,7 +118,8 @@ class PlaybackFragment: VideoSupportFragment() {
             playerAdapter, 
             mediaSession.controller, 
             movieService, 
-            movieIdToPlay)
+            movieIdToPlay,
+            trackSelector!!)
         playerGlue.host = VideoSupportFragmentGlueHost(this)
         playerGlue.playWhenPrepared()
         playMedia(movie!!)
