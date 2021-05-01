@@ -13,10 +13,16 @@ import androidx.leanback.widget.Action
 import androidx.leanback.widget.ArrayObjectAdapter
 import androidx.leanback.widget.PlaybackControlsRow
 import com.ratanparai.moviedog.service.MovieService
+import com.ratanparai.moviedog.ui.PlaybackFragment
 import java.util.concurrent.TimeUnit
 
-class VideoPlayerGlue<T : PlayerAdapter>(context: Context, adapter: T, mediaController: MediaControllerCompat, val movieService: MovieService, val movieId: Int) :
-    PlaybackTransportControlGlue<T>(context, adapter) {
+class VideoPlayerGlue<T : PlayerAdapter>(
+    context: Context,
+    adapter: T,
+    mediaController: MediaControllerCompat,
+    val movieService: MovieService,
+    val movieId: Int) :
+        PlaybackTransportControlGlue<T>(context, adapter) {
 
     private val TAG = "VideoPlayerGlue"
 
@@ -29,6 +35,7 @@ class VideoPlayerGlue<T : PlayerAdapter>(context: Context, adapter: T, mediaCont
 
     private val fastForwardAction: PlaybackControlsRow.FastForwardAction = PlaybackControlsRow.FastForwardAction(context)
     private val rewindAction: PlaybackControlsRow.RewindAction = PlaybackControlsRow.RewindAction(context)
+    private val closedCaptionAction: PlaybackControlsRow.ClosedCaptioningAction = PlaybackControlsRow.ClosedCaptioningAction(context)
 
 
     override fun onKey(v: View?, keyCode: Int, event: KeyEvent?): Boolean {
@@ -85,14 +92,20 @@ class VideoPlayerGlue<T : PlayerAdapter>(context: Context, adapter: T, mediaCont
 
         primaryActionsAdapter?.add(rewindAction)
         primaryActionsAdapter?.add(fastForwardAction)
+        primaryActionsAdapter?.add(closedCaptionAction)
     }
 
     override fun onActionClicked(action: Action?) {
         when (action) {
             rewindAction -> rewind()
             fastForwardAction -> fastForward()
+            closedCaptionAction -> closedCaption()
             else -> super.onActionClicked(action) // Super class handles play/pause and delegates to abstract methods next()/previous().
         }
+    }
+
+    private fun closedCaption() {
+
     }
 
     private fun rewind(rewindTime: Long = TEN_SECONDS){

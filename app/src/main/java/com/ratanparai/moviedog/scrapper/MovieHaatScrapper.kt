@@ -15,7 +15,7 @@ class MovieHaatScrapper : Scrapper {
         val imdbId = getImdbId(url)
 
         var response = ApiServiceClients.GetOmdbServiceClient()
-            .getMovieInfo("API_KEY", imdbId)
+            .getMovieInfo(imdbId)
             .execute()
             .body()
 

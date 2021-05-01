@@ -6,9 +6,8 @@ import retrofit2.http.Query
 
 
 interface OmdbServiceClient {
-    @GET("/")
+    @GET("/?apikey=API_KEY")
     fun getMovieInfo(
-        @Query("apikey") apiKey: String,
         @Query("i") imdbId: String)
             : Call<OmdbMovieInfo?>
 }
