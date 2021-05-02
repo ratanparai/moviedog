@@ -46,8 +46,8 @@ class MovieHaatScrapperTests {
         Truth.assertThat(movie.title).isEqualTo("Harry Potter and the Chamber of Secrets")
         Truth.assertThat(movie.productionYear).isEqualTo(2002)
         Truth.assertThat(movie.duration).isEqualTo(9660000)
-        Truth.assertThat(movie.videoUrl).isEqualTo("http://45.123.41.54/Data/Disk1/Hollywood/2002/Harry%20Potter%20and%20the%20Chamber%20of%20Secrets%20(2002)/Harry%20Potter%20and%20the%20Chamber%20of%20Secrets%20(2002).mkv")
-        Truth.assertThat(movie.description).isEqualTo("Cars fly, trees fight back, and a mysterious house-elf comes to warn Harry Potter at the start of his second year at Hogwarts. Adventure and danger await when bloody writing on a wall announces: The Chamber Of Secrets Has Been Opened. To save Hogwarts will require all of Harry, Ron and Hermione’s magical abilities and courage.")
+        Truth.assertThat(movie.videoUrl).isEqualTo("http://cdn2.moviehaat.net:8080/Hollywood/Harry%20Potter%20and%20the%20Chamber%20of%20Secrets%20.mp4")
+        Truth.assertThat(movie.description).isEqualTo("An ancient prophecy seems to be coming true when a mysterious presence begins stalking the corridors of a school of magic and leaving its victims paralyzed.")
 
     }
 }
