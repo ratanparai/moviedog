@@ -8,6 +8,7 @@ import android.view.KeyEvent
 import android.view.View
 import android.view.WindowManager
 import android.widget.Toast
+import androidx.core.content.res.ResourcesCompat
 import androidx.leanback.media.PlaybackTransportControlGlue
 import androidx.leanback.media.PlayerAdapter
 import androidx.leanback.widget.Action
@@ -17,6 +18,7 @@ import com.google.android.exoplayer2.C
 import com.google.android.exoplayer2.source.TrackGroup
 import com.google.android.exoplayer2.source.TrackGroupArray
 import com.google.android.exoplayer2.trackselection.DefaultTrackSelector
+import com.ratanparai.moviedog.R
 import com.ratanparai.moviedog.service.MovieService
 import java.util.concurrent.TimeUnit
 
@@ -44,10 +46,14 @@ class VideoPlayerGlue<T : PlayerAdapter>(
     private val closedCaptionAction: PlaybackControlsRow.ClosedCaptioningAction = PlaybackControlsRow.ClosedCaptioningAction(context)
     private val audioAction = PlaybackControlsRow.MoreActions(context)
 
-    private var sutitleIndex: Int = -1
+    private var subtitleIndex: Int = -1
     private var audioIndex: Int = 0
 
     private var toast: Toast? = null
+
+    init {
+        audioAction.icon = ResourcesCompat.getDrawable(context.resources, R.drawable.ic_audiotrack, null)
+    }
 
     override fun onKey(v: View?, keyCode: Int, event: KeyEvent?): Boolean {
         if (event!!.action == KeyEvent.ACTION_DOWN) {
@@ -187,10 +193,11 @@ class VideoPlayerGlue<T : PlayerAdapter>(
             }
         }
 
-        val msg = StringBuilder()
-        if (++sutitleIndex < langList.size) {
 
-            val lang = langList[sutitleIndex]
+        val msg = StringBuilder()
+        if (++subtitleIndex < langList.size) {
+
+            val lang = langList[subtitleIndex]
 
             trackSelector.parameters = trackSelector
                 .buildUponParameters()
@@ -201,9 +208,9 @@ class VideoPlayerGlue<T : PlayerAdapter>(
                 .build()
 
             msg.append("Subtitle enabled.")
-            if (langList.size > 1) msg.append(" (").append(sutitleIndex + 1).append(")")
+            if (langList.size > 1) msg.append(" (").append(subtitleIndex + 1).append(")")
         } else {
-            sutitleIndex = -1
+            subtitleIndex = -1
             trackSelector.parameters = trackSelector
                 .buildUponParameters()
                 .setRendererDisabled(2, true)

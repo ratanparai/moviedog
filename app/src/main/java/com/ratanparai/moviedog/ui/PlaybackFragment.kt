@@ -10,15 +10,10 @@ import android.util.Log
 import androidx.leanback.app.VideoSupportFragment
 import androidx.leanback.app.VideoSupportFragmentGlueHost
 import androidx.leanback.media.PlaybackTransportControlGlue
-import com.google.android.exoplayer2.C
-import com.google.android.exoplayer2.ExoPlayerFactory
-import com.google.android.exoplayer2.Format
-import com.google.android.exoplayer2.SimpleExoPlayer
+import com.google.android.exoplayer2.*
 import com.google.android.exoplayer2.ext.leanback.LeanbackPlayerAdapter
 import com.google.android.exoplayer2.ext.mediasession.MediaSessionConnector
-import com.google.android.exoplayer2.source.ExtractorMediaSource
-import com.google.android.exoplayer2.source.MergingMediaSource
-import com.google.android.exoplayer2.source.SingleSampleMediaSource
+import com.google.android.exoplayer2.source.*
 import com.google.android.exoplayer2.trackselection.DefaultTrackSelector
 import com.google.android.exoplayer2.ui.SubtitleView
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory
@@ -34,6 +29,7 @@ import com.ratanparai.moviedog.service.MovieService
 import com.ratanparai.moviedog.utilities.EXTRA_MOVIE_ID
 import com.ratanparai.moviedog.utilities.EXTRA_MOVIE_URL
 import java.io.File
+import java.net.URI
 
 
 class PlaybackFragment: VideoSupportFragment() {
@@ -133,24 +129,55 @@ class PlaybackFragment: VideoSupportFragment() {
         playMedia(movie!!)
     }
 
-    fun downloadSubtitle(): Uri? {
+    fun downloadSubtitle(): ArrayList<Uri>? {
         var imdbId = movie!!.imdbId.substringAfter("tt").toLong()
         val url = OpenSubtitlesUrlBuilder()
             .imdbId(imdbId)
-            .subLanguageId("en")
+            .subLanguageId("eng")
             .build()
 
+        var subtitleUrls = ArrayList<Uri>()
         val service = OpenSubtitlesService()
         try {
             val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
             StrictMode.setThreadPolicy(policy)
             val searchResult: Array<OpenSubtitleItem> = service.search(OpenSubtitlesService.TemporaryUserAgent, url)
-            var subtitleItem = searchResult.first { item -> item.SubFormat == "srt" }
-            var fileUrl = Uri.fromFile(File(Uri.fromFile(context!!.cacheDir).path,subtitleItem.SubFileName))
-            service.downloadSubtitle(context!!, subtitleItem, fileUrl)
-            return fileUrl
+
+            for(result in searchResult)
+            {
+                try {
+                    if(subtitleUrls.size > 3)
+                    {
+                        break
+                    }
+
+                    if (result.SubFormat != "srt" || result.SubLanguageID != "eng")
+                    {
+                        continue
+                    }
+
+                    var fileUri = Uri.fromFile(File(Uri.fromFile(context!!.cacheDir).path,result.SubFileName))
+
+                    var file = File(URI.create(fileUri.toString()))
+                    if(file.exists())
+                    {
+                        Log.d(TAG, "subtitle file $fileUri already exits in cache")
+                        subtitleUrls.add(fileUri)
+                        continue
+                    }
+
+                    service.downloadSubtitle(context!!, result, fileUri)
+                    subtitleUrls.add(fileUri)
+                    Log.d(TAG, "Succesfully downloaded subtitle no. ${subtitleUrls.size}")
+
+                } catch (e: Exception){
+                    Log.e(TAG, e.message, e)
+                }
+            }
+
+            return subtitleUrls
         } catch (e: Exception){
-            Log.e(TAG, "error", e)
+            Log.e(TAG, e.message, e)
         }
 
         return null;
@@ -172,38 +199,46 @@ class PlaybackFragment: VideoSupportFragment() {
 
     private fun prepareMediaForPlaying(movie: Movie) {
         val userAgent = Util.getUserAgent(context!!, "MovieDog")
+        var dataSourceFactory = DefaultDataSourceFactory(context!!, userAgent)
 
         val mediaSource = if (movieUrl == null) {
-            ExtractorMediaSource
-                .Factory(DefaultDataSourceFactory(context!!, userAgent))
-                .createMediaSource(Uri.parse(movie.videoUrl))
+            ProgressiveMediaSource
+                .Factory(dataSourceFactory)
+                .createMediaSource(MediaItem.fromUri(movie.videoUrl))
         } else {
-            ExtractorMediaSource
-                .Factory(DefaultDataSourceFactory(context!!, userAgent))
-                .createMediaSource(Uri.parse(movieUrl))
+            ProgressiveMediaSource
+                .Factory(dataSourceFactory)
+                .createMediaSource(MediaItem.fromUri(movieUrl!!))
         }
 
-        var subtitleUri = downloadSubtitle()
+        var subtitleUris = downloadSubtitle()
 
-        var subtitleByteArray = context!!.contentResolver.openInputStream(subtitleUri)?.buffered()?.use { it.readBytes() }
-
-        if (subtitleByteArray == null)
+        if(subtitleUris == null)
         {
-            exoPlayer.prepare(mediaSource)
+            exoPlayer.setMediaSource(mediaSource)
+            exoPlayer.prepare()
             return
         }
 
-        var subtitleFormat = Format.createTextSampleFormat(
-                "test", MimeTypes.APPLICATION_SUBRIP, C.SELECTION_FLAG_FORCED, "en")
-        var subtitleSource = SingleSampleMediaSource.Factory(
-            CustomDataSourceFactory(
-                context!!,
-                subtitleByteArray!!))
-            .createMediaSource(Uri.parse(""), subtitleFormat, C.TIME_UNSET)
+        var subtitleMediaSources = ArrayList<MediaSource>()
+        for (subtitleUri in subtitleUris)
+        {
+            var subtitleByteArray = context!!.contentResolver.openInputStream(subtitleUri)?.buffered()?.use { it.readBytes() }
 
-        var mergingMediaSource = MergingMediaSource(mediaSource, subtitleSource)
+            var subtitleFormat = Format.createTextSampleFormat(
+                null, MimeTypes.APPLICATION_SUBRIP, C.SELECTION_FLAG_FORCED, "en")
+            var subtitleSource = SingleSampleMediaSource.Factory(
+                CustomDataSourceFactory(
+                    context!!,
+                    subtitleByteArray!!))
+                .createMediaSource(Uri.parse(""), subtitleFormat, C.TIME_UNSET)
+            subtitleMediaSources.add(subtitleSource)
+        }
 
-        exoPlayer.prepare(mergingMediaSource)
+        var mergingMediaSource = MergingMediaSource(mediaSource, *subtitleMediaSources.toTypedArray())
+
+        exoPlayer.setMediaSource(mergingMediaSource)
+        exoPlayer.prepare()
     }
 
     private fun releasePlayer() {

@@ -1,6 +1,6 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/android
 pool:
-  vmImage: 'macOS-10.13'
+  vmImage: 'macOS-latest'
 
 steps:
 - task: Gradle@2

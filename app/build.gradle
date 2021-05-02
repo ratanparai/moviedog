@@ -12,6 +12,10 @@ ext {
     coroutines = '0.26.1'
 }
 
+def apikeyPropertiesFile = rootProject.file("apikey.properties")
+def apikeyProperties = new Properties()
+apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
+
 android {
     compileSdkVersion 28
     compileOptions {
@@ -25,6 +29,8 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         versionCode 1
         versionName "1.0"
+
+        buildConfigField("String", "OMDB_KEY", apikeyProperties['OMDB_KEY'])
     }
     buildTypes {
         release {
