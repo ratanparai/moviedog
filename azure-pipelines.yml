@@ -3,6 +3,15 @@ pool:
   vmImage: 'macOS-latest'
 
 steps:
+
+# Download secure file
+# Download a secure file to the agent machine
+- task: DownloadSecureFile@1
+  name: mySecureFile # The name with which to reference the secure file's path on the agent, like $(mySecureFile.secureFilePath)
+  inputs:
+    secureFile: apikey.properties # The file name or GUID of the secure file
+    #retryCount: 5 # Optional
+
 - task: Gradle@2
   inputs:
     workingDirectory: ''
