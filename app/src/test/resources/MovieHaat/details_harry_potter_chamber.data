@@ -1,0 +1,1286 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Monoarul Islam">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="FX02e6zCO6R3C7xHYpFRzL6zTxWquqIMp922pQiV">
+
+    <title>Stream | Biggest FTP File Server</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://www.moviehaat.net/frontend/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="http://www.moviehaat.net/frontend/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="http://www.moviehaat.net/frontend/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="http://www.moviehaat.net/frontend/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="http://www.moviehaat.net/frontend/css/nouislider.min.css">
+    <link rel="stylesheet" href="http://www.moviehaat.net/frontend/css/ionicons.min.css">
+    <link rel="stylesheet" href="http://www.moviehaat.net/frontend/css/plyr.css">
+    <link rel="stylesheet" href="http://www.moviehaat.net/frontend/css/photoswipe.css">
+    <link rel="stylesheet" href="http://www.moviehaat.net/frontend/css/default-skin.css">
+    <link rel="stylesheet" href="http://www.moviehaat.net/frontend/css/main.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="icon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-touch-icon-144x144.png">
+</head>
+<body class="body">
+
+<!-- header -->
+<header class="header">
+    <div class="header__wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header__content">
+                        <!-- header logo -->
+                        <a href="http://www.moviehaat.net" class="header__logo">
+                            <img src="http://www.moviehaat.net/frontend/img/logo.png" alt="">
+                        </a>
+                        <!-- end header logo -->
+
+                        <!-- header nav -->
+                        <ul class="header__nav" id="mobile_menu">
+                            <!-- dropdown -->
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="http://www.moviehaat.net" role="button">Home</a>
+                            </li>
+                            <!-- end dropdown -->
+
+                            <!-- dropdown -->
+                            <li class="header__nav-item menu-item-has-children">
+                                <a class="header__nav-link" href="http://www.moviehaat.net/movies" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Movies</a>
+
+                                <ul class="dropdown-menu header__dropdown-menu scrollbar-dropdown movie__dropdown-menu" aria-labelledby="dropdownMenuCatalog">
+                                                                                                                    <li><a href="http://www.moviehaat.net/movies?category=Hollywood">Hollywood</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Bollywood">Bollywood</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Animation">Animation</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Foreign">Foreign</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Franch">Franch</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Chinese">Chinese</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Indianbangla">Indianbangla</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Italian">Italian</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=japanese">japanese</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Korean">Korean</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Malayalam">Malayalam</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Russia">Russia</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Tamil">Tamil</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Thailand">Thailand</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Turkey">Turkey</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Hong-Kong">Hong-Kong</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Portugese">Portugese</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Dutch">Dutch</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Germany">Germany</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=3D Movie">3D Movie</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Brazil">Brazil</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Persian">Persian</a></li>
+                                                                                <li><a href="http://www.moviehaat.net/movies?category=Hindi Dubbed">Hindi Dubbed</a></li>
+                                                                                                            </ul>
+                            </li>
+                            <!-- end dropdown -->
+                            <!-- dropdown -->
+
+
+
+
+
+
+
+
+
+
+
+                            <!-- end dropdown -->
+
+                            <li class="header__nav-item menu-item-has-children">
+                                <a class="header__nav-link" href="http://www.moviehaat.net/tv-series" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TV Shows</a>
+
+                                <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuCatalog">
+                                                                                                                <li><a href="http://www.moviehaat.net/tv-series?category=English_Tv_Series">English Tv Series</a></li>
+                                                                            <li><a href="http://www.moviehaat.net/tv-series?category=Korean_TV_Shows">Korean TV Shows</a></li>
+                                                                            <li><a href="http://www.moviehaat.net/tv-series?category=Hindi_TV_Shows">Hindi TV Shows</a></li>
+                                                                                                            </ul>
+                            </li>
+
+                            <li class="header__nav-item menu-item-has-children">
+                                <a class="header__nav-link" href="http://www.moviehaat.net/games" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Games</a>
+
+                                <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuCatalog">
+                                                                                                                        <li><a href="http://www.moviehaat.net/games?category=Pc_Games">Pc Games</a></li>
+                                                                                    <li><a href="http://www.moviehaat.net/games?category=Android_Games">Android Games</a></li>
+                                                                                    <li><a href="http://www.moviehaat.net/games?category=Console">Console</a></li>
+                                                                                                            </ul>
+                            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <!-- end dropdown -->
+                        </ul>
+                        <!-- end header nav -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- header auth -->
+                        <div class="header__auth">
+                            <button class="header__search-btn" type="button">
+                                <i class="icon ion-ios-search"></i>
+                            </button>
+
+
+
+
+
+                        </div>
+                        <!-- end header auth -->
+
+                        <!-- header menu btn -->
+                        <button class="header__btn" type="button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <!-- end header menu btn -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myOverlay" class="overlay frmSearch">
+        <span class="closebtn" title="Close Overlay">×</span>
+        <div class="overlay-content">
+            <form method="get" action="/search" class="header__search">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="header__search-content">
+                                <input type="text" id="header__search-input"  placeholder="Search for a movie, TV Series that you are looking for" name="q" autocomplete="off" required>
+
+                                <button type="submit">search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div id="suggesstion-box"></div>
+        </div>
+    </div>
+
+    <!-- header search -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- end header search -->
+</header>
+<!-- end header -->
+
+<!-- home -->
+    <section class="section details single__movie-page">
+        <!-- details background -->
+        <div class="details__bg"></div>
+        <!-- end details background -->
+
+        <!-- details content -->
+        <div class="container">
+            <div class="row" style="align-items: center; padding-bottom: 20px;">
+                <!-- title -->
+
+
+
+                <!-- end title -->
+            </div>
+            <div class="row" style="padding-bottom: 40px; justify-content: center;">
+                <div class="col-md-9 custom-col-md-9">
+                    <video id="player" poster="http://image.tmdb.org/t/p/original//avqzwKn89VetTEvAlBePt3Us6Al.jpg" preload="auto" style="width:100%; height: 100%;" playsinline controls>
+                        <source src="http://cdn2.moviehaat.net:8080/Hollywood/Harry%20Potter%20and%20the%20Chamber%20of%20Secrets%20.mp4" type="video/mp4">
+                        <track kind="captions" label="English" srclang="en" src="" default>
+                    </video>
+                </div>
+                <div class="col-3 hide-on-mobile" style="display: none;">
+                    <div class="card card--details">
+                        <div class="row">
+                            <!-- card cover -->
+                            <div class="col-11">
+                                <div class="card__cover">
+                                    <img src="/uploads/movies/d9FK-harry-potter-and-the-chamber-of-secrets.jpg" alt="">
+                                </div>
+                            </div>
+                            <!-- end card cover -->
+
+                            <!-- card content -->
+                            <div class="col-12">
+                                <div class="card__content">
+                                    <div class="card__wrap" style="margin-top: 15px;">
+                                        <span class="card__rate"><i class="icon ion-ios-star"></i>7.7</span>
+
+                                        <ul class="card__list">
+                                            <li>SD</li>
+                                            <li class="movie__download--btn"><a href="http://cdn2.moviehaat.net:8080/Hollywood/Harry%20Potter%20and%20the%20Chamber%20of%20Secrets%20.mp4">Download</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <ul class="card__meta">
+                                        <li><span>Genre:</span>
+
+                                                                                                                                                                                                        <a href="http://www.moviehaat.net/movies?geners=Adventure">Adventure</a>
+                                                                                                                                                                                            <a href="http://www.moviehaat.net/movies?geners=Fantasy">Fantasy</a>
+                                                                                                                                                                                            <a href="http://www.moviehaat.net/movies?geners=Family">Family</a>
+
+                                        <li><span>Release year:</span> 13/Nov/2002</li>
+                                        <li><span>Running time:</span> 02:41 hour</li>                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end card content -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row hide-on-desktop">
+                <div class="col-12">
+                    <div class="card card--details">
+                        <div class="row">
+                            <!-- card cover -->
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-2">
+                                <div class="card__cover">
+                                    <img src="/uploads/movies/d9FK-harry-potter-and-the-chamber-of-secrets.jpg" alt="">
+                                </div>
+                            </div>
+                            <!-- end card cover -->
+
+                            <!-- card content -->
+                            <div class="col-12 col-sm-8 col-md-8 col-lg-9 col-xl-10">
+                                <div class="card__content">
+                                    <div class="card__wrap">
+                                        <span class="card__rate"><i class="icon ion-ios-star"></i>7.7</span>
+
+                                        <ul class="card__list">
+                                            <li>SD</li>
+                                            <li class="movie__download--btn"><a href="http://cdn2.moviehaat.net:8080/Hollywood/Harry%20Potter%20and%20the%20Chamber%20of%20Secrets%20.mp4">Download</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <ul class="card__meta">
+                                        <li><span>Genre:</span>
+
+                                                                                                                                                                                                        <a href="http://www.moviehaat.net/movies?geners=Adventure">Adventure</a>
+                                                                                                                                                                                            <a href="http://www.moviehaat.net/movies?geners=Fantasy">Fantasy</a>
+                                                                                                                                                                                            <a href="http://www.moviehaat.net/movies?geners=Family">Family</a>
+
+                                        <li><span>Release year:</span> 13/Nov/2002</li>
+                                        <li><span>Running time:</span> 02:41 hour</li>
+                                    </ul>
+
+                                    <div class="card__description card__description--details">Ignoring threats to his life, Harry returns to Hogwarts to investigate â€“ aided by Ron and Hermione â€“ a mysterious series of attacks.</div>
+                                </div>
+                            </div>
+                            <!-- end card content -->
+                        </div>
+                    </div>
+                </div>
+                <!-- end content -->
+            </div>
+        </div>
+        <!-- end details content -->
+    </section>
+
+    <section class="content discover__section">
+        <div class="movie_content__head">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- content title -->
+                        <h2 class="content__title">You May Also Like</h2>
+                        <!-- end content title -->
+
+                        <!-- content tabs nav -->
+                        <ul class="nav nav-tabs content__tabs" id="content__tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Related Movies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true">Comments</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="true">Trailer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="true">Photos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-5" role="tab" aria-controls="tab-5" aria-selected="true">Cast</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-6" role="tab" aria-controls="tab-6" aria-selected="true">Crew</a>
+                            </li>
+                        </ul>
+                        <!-- end content tabs nav -->
+
+                        <!-- content mobile tabs nav -->
+                        <div class="content__mobile-tabs" id="content__mobile-tabs">
+                            <div class="content__mobile-tabs-btn dropdown-toggle" role="navigation" id="mobile-tabs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <input type="button" value="Related Movies">
+                                <span></span>
+                            </div>
+
+                            <div class="content__mobile-tabs-menu dropdown-menu" aria-labelledby="mobile-tabs">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item"><a class="nav-link active" id="1-tab" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Related Movies</a></li>
+
+                                    <li class="nav-item"><a class="nav-link" id="2-tab" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Comments</a></li>
+
+                                    <li class="nav-item"><a class="nav-link" id="3-tab" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">Trailer</a></li>
+
+                                    <li class="nav-item"><a class="nav-link" id="4-tab" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="false">Photos</a></li>
+
+                                    <li class="nav-item"><a class="nav-link" id="5-tab" data-toggle="tab" href="#tab-5" role="tab" aria-controls="tab-5" aria-selected="false">Cast</a></li>
+
+                                    <li class="nav-item"><a class="nav-link" id="6-tab" data-toggle="tab" href="#tab-6" role="tab" aria-controls="tab-6" aria-selected="false">Crew</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end content mobile tabs nav -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- content tabs -->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="1-tab">
+                            <div class="row">
+                                                                                                            <div class="col-6 col-sm-4 col-lg-2">
+                                            <div class="card">
+                                                <div class="card__cover">
+                                                    <a href="/movies/tt11707848" class="hover__effect">
+                                                        <img src="/uploads/movies/6yOn-skydog.jpg" alt="">
+                                                    </a>
+                                                </div> <div class="card__content">
+                                                    <h3 class="card__title"><a href="/movies/tt11707848">Skydog</a></h3>
+                                                    <span class="card__category">
+                                            <a href="#">Action,Drama</a>
+                                        </span>
+                                                    <span class="card__rate"><i class="icon ion-ios-star"></i>7</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                                                                                                <div class="col-6 col-sm-4 col-lg-2">
+                                            <div class="card">
+                                                <div class="card__cover">
+                                                    <a href="/movies/tt8356394" class="hover__effect">
+                                                        <img src="/uploads/movies/KUXF-the-dark-divide.jpg" alt="">
+                                                    </a>
+                                                </div> <div class="card__content">
+                                                    <h3 class="card__title"><a href="/movies/tt8356394">The Dark Divide</a></h3>
+                                                    <span class="card__category">
+                                            <a href="#">Adventure,Comedy</a>
+                                        </span>
+                                                    <span class="card__rate"><i class="icon ion-ios-star"></i>6.3</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                                                                                                <div class="col-6 col-sm-4 col-lg-2">
+                                            <div class="card">
+                                                <div class="card__cover">
+                                                    <a href="/movies/481848" class="hover__effect">
+                                                        <img src="/uploads/movies/PXdO-the-call-of-the-wild.jpg" alt="">
+                                                    </a>
+                                                </div> <div class="card__content">
+                                                    <h3 class="card__title"><a href="/movies/481848">The Call of the Wild</a></h3>
+                                                    <span class="card__category">
+                                            <a href="#">Drama,Adventure</a>
+                                        </span>
+                                                    <span class="card__rate"><i class="icon ion-ios-star"></i>7.5</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                                                                                                <div class="col-6 col-sm-4 col-lg-2">
+                                            <div class="card">
+                                                <div class="card__cover">
+                                                    <a href="/movies/tt7476822" class="hover__effect">
+                                                        <img src="/uploads/movies/R8jQ-temenggor.jpg" alt="">
+                                                    </a>
+                                                </div> <div class="card__content">
+                                                    <h3 class="card__title"><a href="/movies/tt7476822">Temenggor</a></h3>
+                                                    <span class="card__category">
+                                            <a href="#">Adventure,Fantasy</a>
+                                        </span>
+                                                    <span class="card__rate"><i class="icon ion-ios-star"></i>0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                                                                                                <div class="col-6 col-sm-4 col-lg-2">
+                                            <div class="card">
+                                                <div class="card__cover">
+                                                    <a href="/movies/tt4351684" class="hover__effect">
+                                                        <img src="/uploads/movies/VAB4-tar.jpg" alt="">
+                                                    </a>
+                                                </div> <div class="card__content">
+                                                    <h3 class="card__title"><a href="/movies/tt4351684">Tar</a></h3>
+                                                    <span class="card__category">
+                                            <a href="#">Horror,Adventure</a>
+                                        </span>
+                                                    <span class="card__rate"><i class="icon ion-ios-star"></i>5.8</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                                                                                                <div class="col-6 col-sm-4 col-lg-2">
+                                            <div class="card">
+                                                <div class="card__cover">
+                                                    <a href="/movies/644435" class="hover__effect">
+                                                        <img src="/uploads/movies/kO8E-my-adventures-with-santa.jpg" alt="">
+                                                    </a>
+                                                </div> <div class="card__content">
+                                                    <h3 class="card__title"><a href="/movies/644435">My Adventures with Santa</a></h3>
+                                                    <span class="card__category">
+                                            <a href="#">Family,Fantasy</a>
+                                        </span>
+                                                    <span class="card__rate"><i class="icon ion-ios-star"></i>4.7</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                                                                                                <div class="col-6 col-sm-4 col-lg-2">
+                                            <div class="card">
+                                                <div class="card__cover">
+                                                    <a href="/movies/tt4520988" class="hover__effect">
+                                                        <img src="/uploads/movies/lm5n-frozen-ii.jpg" alt="">
+                                                    </a>
+                                                </div> <div class="card__content">
+                                                    <h3 class="card__title"><a href="/movies/tt4520988">Frozen II</a></h3>
+                                                    <span class="card__category">
+                                            <a href="#">Family,Animation</a>
+                                        </span>
+                                                    <span class="card__rate"><i class="icon ion-ios-star"></i>7.3</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                                                                                                <div class="col-6 col-sm-4 col-lg-2">
+                                            <div class="card">
+                                                <div class="card__cover">
+                                                    <a href="/movies/tt10515852" class="hover__effect">
+                                                        <img src="/uploads/movies/ODro-steven-universe-the-movie.jpg" alt="">
+                                                    </a>
+                                                </div> <div class="card__content">
+                                                    <h3 class="card__title"><a href="/movies/tt10515852">Steven Universe: The Movie</a></h3>
+                                                    <span class="card__category">
+                                            <a href="#">Animation,Adventure</a>
+                                        </span>
+                                                    <span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                                                                                                <div class="col-6 col-sm-4 col-lg-2">
+                                            <div class="card">
+                                                <div class="card__cover">
+                                                    <a href="/movies/420809" class="hover__effect">
+                                                        <img src="/uploads/movies/wSdD-maleficent-mistress-of-evil.jpg" alt="">
+                                                    </a>
+                                                </div> <div class="card__content">
+                                                    <h3 class="card__title"><a href="/movies/420809">Maleficent: Mistress of Evil</a></h3>
+                                                    <span class="card__category">
+                                            <a href="#">Family,Fantasy</a>
+                                        </span>
+                                                    <span class="card__rate"><i class="icon ion-ios-star"></i>7.4</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                                                                                                <div class="col-6 col-sm-4 col-lg-2">
+                                            <div class="card">
+                                                <div class="card__cover">
+                                                    <a href="/movies/337401" class="hover__effect">
+                                                        <img src="/uploads/movies/4Lm6-mulan.jpg" alt="">
+                                                    </a>
+                                                </div> <div class="card__content">
+                                                    <h3 class="card__title"><a href="/movies/337401">Mulan</a></h3>
+                                                    <span class="card__category">
+                                            <a href="#">Adventure,Fantasy</a>
+                                        </span>
+                                                    <span class="card__rate"><i class="icon ion-ios-star"></i>7.1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                                                                                                <div class="col-6 col-sm-4 col-lg-2">
+                                            <div class="card">
+                                                <div class="card__cover">
+                                                    <a href="/movies/431693" class="hover__effect">
+                                                        <img src="/uploads/movies/yqfX-spies-in-disguise.jpg" alt="">
+                                                    </a>
+                                                </div> <div class="card__content">
+                                                    <h3 class="card__title"><a href="/movies/431693">Spies in Disguise</a></h3>
+                                                    <span class="card__category">
+                                            <a href="#">Animation,Action</a>
+                                        </span>
+                                                    <span class="card__rate"><i class="icon ion-ios-star"></i>7.8</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                                                </div>
+                        </div>
+                        <div class="tab-pane fade show" id="tab-2" role="tabpanel" aria-labelledby="2-tab">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div id="disqus_thread"></div>
+<script>
+
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://moviewala.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="3-tab">
+                            <div class="row">
+                                                                                                            <div class="col col-sm-12 col-xl-4" style="padding-bottom: 10px;">
+                                            <iframe width="320" height="240" src="https://www.youtube.com/embed/uU-ET1FAv3Y,_kUcETcW51k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                                                                                </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="4-tab">
+                            <!-- project gallery -->
+                            <div class="gallery" itemscope>
+                                <div class="row">
+                                    <!-- gallery item -->
+                                                                                                                        <figure class="col-3 col-sm-3 col-xl-3" itemprop="associatedMedia" itemscope>
+                                                <a href="http://image.tmdb.org/t/p/w342//lryNn7sNkvQIg45KwgeKnMxSSRX.jpg" itemprop="contentUrl">
+                                                    <img src="http://image.tmdb.org/t/p/w342//lryNn7sNkvQIg45KwgeKnMxSSRX.jpg" itemprop="thumbnail" alt="Image description" />
+                                                </a>
+                                                <figcaption itemprop="caption description">Some image caption 1</figcaption>
+                                            </figure>
+                                                                                                                                                        <figure class="col-3 col-sm-3 col-xl-3" itemprop="associatedMedia" itemscope>
+                                                <a href="http://image.tmdb.org/t/p/w342//ygsu82q2YSrIdePnM2GLGjsFFjr.jpg" itemprop="contentUrl">
+                                                    <img src="http://image.tmdb.org/t/p/w342//ygsu82q2YSrIdePnM2GLGjsFFjr.jpg" itemprop="thumbnail" alt="Image description" />
+                                                </a>
+                                                <figcaption itemprop="caption description">Some image caption 1</figcaption>
+                                            </figure>
+                                                                                                                                                        <figure class="col-3 col-sm-3 col-xl-3" itemprop="associatedMedia" itemscope>
+                                                <a href="http://image.tmdb.org/t/p/w342//n6zpzAOoGx3kYrEzgAMHQZyF5cE.jpg" itemprop="contentUrl">
+                                                    <img src="http://image.tmdb.org/t/p/w342//n6zpzAOoGx3kYrEzgAMHQZyF5cE.jpg" itemprop="thumbnail" alt="Image description" />
+                                                </a>
+                                                <figcaption itemprop="caption description">Some image caption 1</figcaption>
+                                            </figure>
+                                                                                                                                                        <figure class="col-3 col-sm-3 col-xl-3" itemprop="associatedMedia" itemscope>
+                                                <a href="http://image.tmdb.org/t/p/w342//zQnbo17AgOMZl6Fb7RUpgDAHbyV.jpg" itemprop="contentUrl">
+                                                    <img src="http://image.tmdb.org/t/p/w342//zQnbo17AgOMZl6Fb7RUpgDAHbyV.jpg" itemprop="thumbnail" alt="Image description" />
+                                                </a>
+                                                <figcaption itemprop="caption description">Some image caption 1</figcaption>
+                                            </figure>
+                                                                                                                                                        <figure class="col-3 col-sm-3 col-xl-3" itemprop="associatedMedia" itemscope>
+                                                <a href="http://image.tmdb.org/t/p/w342//bhCfAzeMMg7GyLDT11yVM2i1NPh.jpg" itemprop="contentUrl">
+                                                    <img src="http://image.tmdb.org/t/p/w342//bhCfAzeMMg7GyLDT11yVM2i1NPh.jpg" itemprop="thumbnail" alt="Image description" />
+                                                </a>
+                                                <figcaption itemprop="caption description">Some image caption 1</figcaption>
+                                            </figure>
+                                                                                                                                                        <figure class="col-3 col-sm-3 col-xl-3" itemprop="associatedMedia" itemscope>
+                                                <a href="http://image.tmdb.org/t/p/w342//oJdOAzqzWQrRTVjg3XrQOoI0Q8H.jpg" itemprop="contentUrl">
+                                                    <img src="http://image.tmdb.org/t/p/w342//oJdOAzqzWQrRTVjg3XrQOoI0Q8H.jpg" itemprop="thumbnail" alt="Image description" />
+                                                </a>
+                                                <figcaption itemprop="caption description">Some image caption 1</figcaption>
+                                            </figure>
+                                                                                                                                                        <figure class="col-3 col-sm-3 col-xl-3" itemprop="associatedMedia" itemscope>
+                                                <a href="http://image.tmdb.org/t/p/w342//sKNBaJIbYA4uPn7Jj57Tvw1aptP.jpg" itemprop="contentUrl">
+                                                    <img src="http://image.tmdb.org/t/p/w342//sKNBaJIbYA4uPn7Jj57Tvw1aptP.jpg" itemprop="thumbnail" alt="Image description" />
+                                                </a>
+                                                <figcaption itemprop="caption description">Some image caption 1</figcaption>
+                                            </figure>
+                                                                                                                                                        <figure class="col-3 col-sm-3 col-xl-3" itemprop="associatedMedia" itemscope>
+                                                <a href="http://image.tmdb.org/t/p/w342//o8nKMrvRr8MaK7Y7d68IprD9npf.jpg" itemprop="contentUrl">
+                                                    <img src="http://image.tmdb.org/t/p/w342//o8nKMrvRr8MaK7Y7d68IprD9npf.jpg" itemprop="thumbnail" alt="Image description" />
+                                                </a>
+                                                <figcaption itemprop="caption description">Some image caption 1</figcaption>
+                                            </figure>
+                                                                                                                                                        <figure class="col-3 col-sm-3 col-xl-3" itemprop="associatedMedia" itemscope>
+                                                <a href="http://image.tmdb.org/t/p/w342//hr3Pf2ZW9ZOrNjqzCiQlKYmZ0wv.jpg" itemprop="contentUrl">
+                                                    <img src="http://image.tmdb.org/t/p/w342//hr3Pf2ZW9ZOrNjqzCiQlKYmZ0wv.jpg" itemprop="thumbnail" alt="Image description" />
+                                                </a>
+                                                <figcaption itemprop="caption description">Some image caption 1</figcaption>
+                                            </figure>
+                                                                                                                                                        <figure class="col-3 col-sm-3 col-xl-3" itemprop="associatedMedia" itemscope>
+                                                <a href="http://image.tmdb.org/t/p/w342//811j0Jf2D0mK1U6RxXJoZgOB29n.jpg" itemprop="contentUrl">
+                                                    <img src="http://image.tmdb.org/t/p/w342//811j0Jf2D0mK1U6RxXJoZgOB29n.jpg" itemprop="thumbnail" alt="Image description" />
+                                                </a>
+                                                <figcaption itemprop="caption description">Some image caption 1</figcaption>
+                                            </figure>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <!-- end gallery item -->
+                                </div>
+                            </div>
+                            <!-- end project gallery -->
+                        </div>
+
+                        <div class="tab-pane fade" id="tab-5" role="tabpanel" aria-labelledby="5-tab">
+                            <div class="row">
+                                <!-- cast item -->
+                                                                                                            <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//kMSMa5tR43TLMR14ahU1neFVytz.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/10980/Daniel Radcliffe">Daniel Radcliffe</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//dFVVJufva2zUSP6WS0pFfR7g8uN.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/10989/Rupert Grint">Rupert Grint</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//58UevsJN7ZuyIK6hR8CaeSjmQp6.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/10990/Emma Watson">Emma Watson</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//51wDHVFNqrYgvUBMOcACAt4sJU9.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/194/Richard Harris">Richard Harris</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//zOJgiaztnrnB7TSdGYU3uwpgivl.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/4566/Alan Rickman">Alan Rickman</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//5hb2kKBYhpQRyWslJWzaDr5G1op.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/10993/Tom Felton">Tom Felton</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//bmpGjbqvAVNOK3ggiuET2Jl96tZ.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/11181/Kenneth Branagh">Kenneth Branagh</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//u07QKPs7wvXxzjXi1UUBSGjjmQm.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/1923/Robbie Coltrane">Robbie Coltrane</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//8OtS7JhL12Qa8QzSuZZAzNRbFnu.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/10978/Maggie Smith">Maggie Smith</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//5BPFRv4io7U1zxkYHtKaE9a8FDD.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/11180/David Bradley">David Bradley</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//1QzCiWSbESJVANYGHA1RwqZpzD0.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/10991/Bonnie Wright">Bonnie Wright</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//v9Ow0JEtJZCaKDMvdKXNnzEzmy1.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/96841/Matthew Lewis">Matthew Lewis</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//1GtGhAJz1JloqHARqc2xMsq5rG4.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/11355/Jason Isaacs">Jason Isaacs</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//dxVvLjGNKVMl5lDXXInJ7xWpCvl.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/1834/Shirley Henderson">Shirley Henderson</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//eOZe7EZ0Ojq8PaIn1HLVex5dZwc.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/13014/Toby Jones">Toby Jones</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//9HaWV5c8Dvraicjjc9N4Z1nyWsm.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/96851/James Phelps">James Phelps</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//kTvYxfFxkyXtljCxTxB6q6OYOY4.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/140368/Oliver Phelps">Oliver Phelps</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//EuV0DyZ5nBh3ZAUWjEqdWlt8sK.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/10983/Richard Griffiths">Richard Griffiths</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//dbNqgCaBZAfcICh5lLkmGCvEN4H.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/10981/Fiona Shaw">Fiona Shaw</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//pecqrci8S0yROqyd80K5s8LTaAR.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/10982/Harry Melling">Harry Melling</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//kg63gNYQtGPi2fSNIvCnVAclCbi.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/8930/John Cleese">John Cleese</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//AqzmmXnlMervwvb9pHlvOZbC1xs.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/477/Julie Walters">Julie Walters</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//mDcipTHC41LIHMx0UJxpF6YOQGw.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/20999/Mark Williams">Mark Williams</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//nvw2IgN2BcpT2MczUuwSaTYuqZK.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/956224/Jamie Waylett">Jamie Waylett</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//hebwDG5XsbfMaEaWJ0X6OrvlXwW.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/11212/Josh Herdman">Josh Herdman</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//eEVvPHmxRBcEGqtoTujncmwNDhR.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/234923/Alfred Enoch">Alfred Enoch</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//pDbBXnpL6XjlPHDO1UzpX53voI0.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/234922/Devon Murray">Devon Murray</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//6g9cQWg3ikD3xboDtyF8qKdpmgl.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/11179/Sean Biggerstaff">Sean Biggerstaff</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//wGYTO8bgMXFddLCXZZ5Gtz1aHoT.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/1364032/Hugh Mitchell">Hugh Mitchell</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//3HEK2yr0YOEE7A5qf0SGs3VhUNz.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/10992/Chris Rankin">Chris Rankin</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//4LjgmjD9nKOgL3gGRhIS5EkI0a.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/11184/Warwick Davis">Warwick Davis</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//y6NTr4kw3mNQnPmvhs4XMiFT8v5.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/23076/Robert Hardy">Robert Hardy</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//6TJwVMMoGzAfvb0G0s8gNBrlAST.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/6199/Miriam Margolyes">Miriam Margolyes</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//wjuIVHJV9WtGB723gMQESb9or3H.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/9138/Gemma Jones">Gemma Jones</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//dfbirdWAL0deUUtIV7GD1T1PGWp.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/8444/Christian Coulson">Christian Coulson</a></figcaption>
+                                        </figure>
+                                                                                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//qm6S495NgpU1ptchMWS88WYhbY5.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/871100/Luke Youngblood">Luke Youngblood</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//faUiKSCt5oeXHvtn6DkdsQGivVl.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/11183/Eleanor Columbus">Eleanor Columbus</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//4853h7KAujPtQcZ6ck8EUPDVnOP.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/1090782/Louis Doyle">Louis Doyle</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//njNcJyRU1I7Kbye01VywmBPUB58.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/11185/Emily Dale">Emily Dale</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//8Ko1ZXWe6SZPKWVxKSjCynH1lxC.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/11186/Rochelle Douglas">Rochelle Douglas</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//A1vO83wMO5eG0AxRvBwwQwu5NCg.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/10655/Leslie Phillips">Leslie Phillips</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//2sQWrB4of8O2k7DGwJ3OdGJi2Mj.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/740/Julian Glover">Julian Glover</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//h14uj9f3EAJAgWqNSFzWN93ZxEQ.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/11177/Martin Bayfield">Martin Bayfield</a></figcaption>
+                                        </figure>
+                                                                                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//j1vSVgSWCizFtdaSOJWCiYeP45M.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/1796502/Danielle Tabor">Danielle Tabor</a></figcaption>
+                                        </figure>
+                                                                                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//ukHczA8ykX3HNRB3CxpZwMtw4xM.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/1090783/Charlotte Skeoch">Charlotte Skeoch</a></figcaption>
+                                        </figure>
+                                                                                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//mD25b2UmlSNyW5q5yz5BCXEY9u.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/58778/Nina Young">Nina Young</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//G0PGZqTjenuVTAQiib4ScU7vAI.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/1643/Adrian Rawlins">Adrian Rawlins</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//fgPi5cmDbJbMmQIA7AE901jhB3x.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/10988/Geraldine Somerville">Geraldine Somerville</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//s6HeAK1mnqTiy3V12jRxnw1jxcw.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/14950/Jim Norton">Jim Norton</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//n7k6VtGBZpWUHuDvMdNOKPKia6D.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/11182/Veronica Clifford">Veronica Clifford</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//9IiyoWvIoKE6nMzqD4FQxF1p4Ro.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/11178/Heather Bleasdale">Heather Bleasdale</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//WXka0PHeq6Ugn0D7anilbYGtRM.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/203538/Tom Knight">Tom Knight</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//nw7ksvq5B4ZWz3R2i9S734R18s0.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/10986/Ben Borowiecki">Ben Borowiecki</a></figcaption>
+                                        </figure>
+                                                                                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//xuqiPV4UnMYB2RcNDN7EKRBv28Q.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/105823/Alfred Burke">Alfred Burke</a></figcaption>
+                                        </figure>
+                                                                                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//xvPF5FP3qvw6T8yGTtiwf0rA8YP.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/1507605/Violet Columbus">Violet Columbus</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//tJVi0TZbqUxOHHDUaV2eExKyykC.jpg" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/1815748/Harry Taylor">Harry Taylor</a></figcaption>
+                                        </figure>
+                                                                                        <!-- end cast item -->
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="tab-6" role="tabpanel" aria-labelledby="6-tab">
+                            <div class="row">
+                                <!-- cast item -->
+                                                                                                            <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//2fHN78oumrJRM84UydgfVzj0YEl.jpg" class="img-fluid" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/10965/Chris Columbus">Director/Chris Columbus</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//gZXoZrYxcn4d3XDcVcRE39RFZmL.jpg" class="img-fluid" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/10966/J.K. Rowling">Novel/J.K. Rowling</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//nhHzMwSiVse15WF1Qi7xfVBoo7A.jpg" class="img-fluid" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/10967/Steve Kloves">Screenplay/Steve Kloves</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//1Vvlw01hls1ctuuwActyrLRnAJK.jpg" class="img-fluid" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/10968/David Heyman">Producer/David Heyman</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//2Ats98PB1SH2yfEPikiLdhRuXZm.jpg" class="img-fluid" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/491/John Williams">Original Music Composer/John Williams</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//5a4fQyqEo5Mqq1QROrBxTy7urv1.jpg" class="img-fluid" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/293/Roger Pratt">Director of Photography/Roger Pratt</a></figcaption>
+                                        </figure>
+                                                                                                                                                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//iI9F5WDkTrkxMHlAdq9XVXkfP3i.jpg" class="img-fluid" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/5491/Stuart Craig">Production Design/Stuart Craig</a></figcaption>
+                                        </figure>
+                                                                                                                                                                                                                                                                                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//8DiTuVH0dysJ6j1psjXE0XQ4BKR.jpg" class="img-fluid" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/10714/Lindy Hemming">Costume Design/Lindy Hemming</a></figcaption>
+                                        </figure>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//2fHN78oumrJRM84UydgfVzj0YEl.jpg" class="img-fluid" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/10965/Chris Columbus">Executive Producer/Chris Columbus</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//1jXjMIPGdcyTzGtVgGmlMIYMDnD.jpg" class="img-fluid" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/11222/Mark Radcliffe">Executive Producer/Mark Radcliffe</a></figcaption>
+                                        </figure>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//puBh7leRbL0RIfqQGUUgUYPOjTo.jpg" class="img-fluid" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/38887/Peter Pedrero">Utility Stunts/Peter Pedrero</a></figcaption>
+                                        </figure>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//mEt351uRPcGWbMD1DOuDCE1c8TV.jpg" class="img-fluid" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/1393351/Simon Rhodes">Scoring Mixer/Simon Rhodes</a></figcaption>
+                                        </figure>
+                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//gENCvbLHHHtxeZcPJIHcSq6Y4BW.jpg" class="img-fluid" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/42267/Randy Thom">Sound Designer/Randy Thom</a></figcaption>
+                                        </figure>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//y7MpmVGaZknYvVRT9QdRKrJ9lxf.jpg" class="img-fluid" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/1404221/Tim Burke">Visual Effects Supervisor/Tim Burke</a></figcaption>
+                                        </figure>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <figure class="col-6 col-sm-4 col-xl-2" itemprop="associatedMedia" itemscope>
+                                            <a href="javascript:void(0)" itemprop="contentUrl">
+                                                <img src="http://image.tmdb.org/t/p/w342//dDWPhRbouxsTuwnUsmXvHnTDQOT.jpg" class="img-fluid" itemprop="thumbnail" alt="Image description" width="160px"/>
+                                            </a>
+                                            <figcaption itemprop="caption description" style="text-align: center; color: #fff;"><a href="/person/16589/Peter MacDonald">Second Unit Director/Peter MacDonald</a></figcaption>
+                                        </figure>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <!-- end cast item -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end content tabs -->
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- end partners -->
+
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="footer-widget">
+                    <div class="footer-menu footer-menu--1">
+                        <h4 class="footer-widget-title">Movie Categories</h4>
+                        <ul style="column-count: 2;">
+                            <li>
+                                <a href="http://moviehaat.net/movies?geners=Action">Action Movies</a>
+                            </li>
+                            <li>
+                                <a href="http://moviehaat.net/movies?geners=Drama">Drama Movies</a>
+                            </li>
+                            <li>
+                                <a href="http://moviehaat.net/movies?geners=Animation">Animation Movies</a>
+                            </li>
+                            <li>
+                                <a href="http://moviehaat.net/movies?geners=Comedy">Comedy Movies</a>
+                            </li>
+                            <li>
+                                <a href="http://moviehaat.net/movies?geners=Action">Adventure</a>
+                            </li>
+                            <li>
+                                <a href="http://moviehaat.net/movies?geners=Action">Crime Movies</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end /.footer-menu -->
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+                <div class="footer-widget">
+                    <div class="footer-menu">
+                        <h4 class="footer-widget-title">Tv Series</h4>
+                        <ul>
+                            <li>
+                                <a href="http://moviehaat.net/tv-series?category=English_Tv_Series">English Tv Series</a>
+                            </li>
+                            <li>
+                                <a href="http://moviehaat.net/tv-series?category=Hindi_Tv_Series">Hindi Tv Series</a>
+                            </li>
+                            <li>
+                                <a href="http://moviehaat.net/tv-series?category=Korean_Tv_Series">Korean Tv Series</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end /.footer-menu -->
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+                <div class="footer-widget">
+                    <div class="footer-menu">
+                        <h4 class="footer-widget-title">Games</h4>
+                        <ul>
+                            <li>
+                                <a href="http://moviehaat.net/games?category=Pc_Games">PC Games</a>
+                            </li>
+                            <li>
+                                <a href="http://moviehaat.net/games?category=Android_Games">Android Games</a>
+                            </li>
+                            <li>
+                                <a href="http://moviehaat.net/games?category=Console">Console</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end /.footer-menu -->
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="footer-widget">
+                    <div class="footer-menu">
+                        <div class="footer-logo">
+                            <a href="http://www.moviehaat.net" class="">
+                                <img src="http://www.moviehaat.net/frontend/img/logo.png" alt="" width="200px">
+                            </a>
+                        </div>
+                        <div class="copyright-text">
+                            <p style="color: #131722; font-size: 14px;">Copyright © 2019 MovieWala | All rights reserved</p>
+                        </div>
+                    </div>
+                    <!-- end /.footer-menu -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</footer>
+<!-- end footer -->
+<!-- end footer -->
+
+<!-- JS -->
+<script src="http://www.moviehaat.net/frontend/js/jquery-3.3.1.min.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/inview.min.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/bootstrap.bundle.min.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/jquery.pjax.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/owl.carousel.min.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/jquery.mousewheel.min.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/jquery.mCustomScrollbar.min.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/wNumb.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/nouislider.min.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/plyr.min.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/customPlyr.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/jquery.morelines.min.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/photoswipe.min.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/photoswipe-ui-default.min.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/bootstrap-multiselect.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/main.js"></script>
+<script src="http://www.moviehaat.net/frontend/js/sendEmail.js"></script>
+<!-- <script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script> -->
+
+</body>
+
+</html>

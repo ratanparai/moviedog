@@ -1,8 +1,25 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/android
 pool:
-  vmImage: 'macOS-10.13'
+  vmImage: 'macOS-latest'
 
 steps:
+
+# Download secure file
+# Download a secure file to the agent machine
+- task: DownloadSecureFile@1
+  name: mySecureFile # The name with which to reference the secure file's path on the agent, like $(mySecureFile.secureFilePath)
+  inputs:
+    secureFile: apikey.properties # The file name or GUID of the secure file
+    #retryCount: 5 # Optional
+
+# - task: CopyFiles@2
+#   inputs:
+#     contents: '$(mySecureFile.secureFilePath)'
+#     targetFolder: $(Agent.BuildDirectory)
+
+- script: |
+    cp $(mySecureFile.secureFilePath) $(Build.SourcesDirectory)
+
 - task: Gradle@2
   inputs:
     workingDirectory: ''

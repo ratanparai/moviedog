@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copied from android source so that we can add the subtitle view
+-->
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/playback_fragment_root"
+        android:layout_width="match_parent"
+        android:transitionGroup="false"
+        android:layout_height="match_parent">
+
+    <androidx.leanback.widget.NonOverlappingFrameLayout
+            android:id="@+id/playback_fragment_background"
+            android:transitionGroup="false"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_height="180dp"/>
+
+    <androidx.leanback.widget.NonOverlappingFrameLayout
+            android:id="@+id/playback_controls_dock"
+            android:transitionGroup="true"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+    <com.google.android.exoplayer2.ui.AspectRatioFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+        <com.google.android.exoplayer2.ui.SubtitleView
+                android:id="@+id/leanback_subtitles"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+    </com.google.android.exoplayer2.ui.AspectRatioFrameLayout>
+
+</FrameLayout>

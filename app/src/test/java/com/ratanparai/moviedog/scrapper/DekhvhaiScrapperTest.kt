@@ -91,7 +91,7 @@ class DekhvhaiScrapperTest {
     @Test
     fun shouldGetMovieFromUrl() {
         val scrapper = DekhvhaiScrapper()
-        val movie = scrapper.getMovie(deathlyHalos)
+        val movie = scrapper.getMovie(deathlyHalos, "")
 
         assertThat(movie).isNotNull()
         assertThat(movie.title).isEqualTo("Harry Potter and the Deathly Hallows: Part 2")

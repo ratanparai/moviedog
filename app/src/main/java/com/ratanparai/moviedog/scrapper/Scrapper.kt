@@ -15,7 +15,7 @@ interface Scrapper {
 
     fun getSearchUrl(query: String): String
 
-    fun getMovie(document: Document): Movie
+    fun getMovie(document: Document, url: String): Movie
 
     fun getListOfMovieLinksFromSearchResult(document: Document): List<String>
 }

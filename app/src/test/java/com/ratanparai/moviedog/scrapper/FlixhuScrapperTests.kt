@@ -41,7 +41,7 @@ class FlixhuScrapperTests {
     @Test
     fun shouldGetMovieFromUrl() {
         val scrapper = FlixhubScrapper()
-        val movie = scrapper.getMovie(movieDoc)
+        val movie = scrapper.getMovie(movieDoc, "")
 
         Truth.assertThat(movie).isNotNull()
         Truth.assertThat(movie.title).isEqualTo("Harry Potter and the Chamber of Secrets")

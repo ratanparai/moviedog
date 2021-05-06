@@ -14,7 +14,7 @@ class DekhvhaiScrapper: Scrapper {
         return String.format(DEKHVHAI_SEARCH_URL, query)
     }
 
-    override fun getMovie(document: Document): Movie {
+    override fun getMovie(document: Document, url: String): Movie {
 
         val imdbId = getImdbId(document)
 

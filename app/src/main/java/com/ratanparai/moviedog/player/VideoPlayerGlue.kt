@@ -7,16 +7,30 @@ import android.util.Log
 import android.view.KeyEvent
 import android.view.View
 import android.view.WindowManager
+import android.widget.Toast
+import androidx.core.content.res.ResourcesCompat
 import androidx.leanback.media.PlaybackTransportControlGlue
 import androidx.leanback.media.PlayerAdapter
 import androidx.leanback.widget.Action
 import androidx.leanback.widget.ArrayObjectAdapter
 import androidx.leanback.widget.PlaybackControlsRow
+import com.google.android.exoplayer2.C
+import com.google.android.exoplayer2.source.TrackGroup
+import com.google.android.exoplayer2.source.TrackGroupArray
+import com.google.android.exoplayer2.trackselection.DefaultTrackSelector
+import com.ratanparai.moviedog.R
 import com.ratanparai.moviedog.service.MovieService
 import java.util.concurrent.TimeUnit
 
-class VideoPlayerGlue<T : PlayerAdapter>(context: Context, adapter: T, mediaController: MediaControllerCompat, val movieService: MovieService, val movieId: Int) :
-    PlaybackTransportControlGlue<T>(context, adapter) {
+
+class VideoPlayerGlue<T : PlayerAdapter>(
+    context: Context,
+    adapter: T,
+    mediaController: MediaControllerCompat,
+    val movieService: MovieService,
+    val movieId: Int,
+    val trackSelector: DefaultTrackSelector) :
+        PlaybackTransportControlGlue<T>(context, adapter) {
 
     private val TAG = "VideoPlayerGlue"
 
@@ -29,7 +43,17 @@ class VideoPlayerGlue<T : PlayerAdapter>(context: Context, adapter: T, mediaCont
 
     private val fastForwardAction: PlaybackControlsRow.FastForwardAction = PlaybackControlsRow.FastForwardAction(context)
     private val rewindAction: PlaybackControlsRow.RewindAction = PlaybackControlsRow.RewindAction(context)
+    private val closedCaptionAction: PlaybackControlsRow.ClosedCaptioningAction = PlaybackControlsRow.ClosedCaptioningAction(context)
+    private val audioAction = PlaybackControlsRow.MoreActions(context)
 
+    private var subtitleIndex: Int = -1
+    private var audioIndex: Int = 0
+
+    private var toast: Toast? = null
+
+    init {
+        audioAction.icon = ResourcesCompat.getDrawable(context.resources, R.drawable.ic_audiotrack, null)
+    }
 
     override fun onKey(v: View?, keyCode: Int, event: KeyEvent?): Boolean {
         if (event!!.action == KeyEvent.ACTION_DOWN) {
@@ -85,14 +109,122 @@ class VideoPlayerGlue<T : PlayerAdapter>(context: Context, adapter: T, mediaCont
 
         primaryActionsAdapter?.add(rewindAction)
         primaryActionsAdapter?.add(fastForwardAction)
+        primaryActionsAdapter?.add(closedCaptionAction)
+        primaryActionsAdapter?.add(audioAction)
     }
 
     override fun onActionClicked(action: Action?) {
         when (action) {
             rewindAction -> rewind()
             fastForwardAction -> fastForward()
+            closedCaptionAction -> closedCaption()
+            audioAction -> ChangeAudio()
             else -> super.onActionClicked(action) // Super class handles play/pause and delegates to abstract methods next()/previous().
         }
+    }
+
+    private fun ChangeAudio() {
+        var mappedTrackInfo = trackSelector.currentMappedTrackInfo
+        var trackGroupArray: TrackGroupArray? = mappedTrackInfo?.getTrackGroups(1) ?: return
+
+        val langList: ArrayList<String> = ArrayList()
+
+        var ix = -1
+        var iy = -1
+        run {
+            ix = 0
+            while (ix < trackGroupArray!!.length) {
+                val tg: TrackGroup = trackGroupArray.get(ix)
+                iy = 0
+                while (iy < tg.length) {
+                    val fmt = tg.getFormat(iy)
+                    langList.add(fmt.language!!)
+                    iy++
+                }
+                ix++
+            }
+        }
+
+        val msg = StringBuilder()
+
+        if(++audioIndex > langList.size-1)
+        {
+            audioIndex = 0
+        }
+
+        val lang = langList[audioIndex]
+
+        trackSelector.parameters = trackSelector
+            .buildUponParameters()
+            .setPreferredAudioLanguage(lang)
+            .build()
+
+        msg.append("Audio changed")
+        msg.append(" (").append(lang).append(")")
+
+
+        if (toast != null) toast?.cancel()
+        toast = Toast.makeText(
+            context,
+            msg, Toast.LENGTH_LONG
+        )
+        toast?.show()
+    }
+
+    private fun closedCaption() {
+        var mappedTrackInfo = trackSelector.currentMappedTrackInfo
+        var trackGroupArray: TrackGroupArray? = mappedTrackInfo?.getTrackGroups(2) ?: return
+
+        val langList: ArrayList<String> = ArrayList()
+
+        var ix = -1
+        var iy = -1
+        run {
+            ix = 0
+            while (ix < trackGroupArray!!.length) {
+                val tg: TrackGroup = trackGroupArray.get(ix)
+                iy = 0
+                while (iy < tg.length) {
+                    val fmt = tg.getFormat(iy)
+                    langList.add(fmt.language!!)
+                    iy++
+                }
+                ix++
+            }
+        }
+
+
+        val msg = StringBuilder()
+        if (++subtitleIndex < langList.size) {
+
+            val lang = langList[subtitleIndex]
+
+            trackSelector.parameters = trackSelector
+                .buildUponParameters()
+                .setPreferredTextLanguage(lang)
+                .setSelectUndeterminedTextLanguage(true)
+                .setDisabledTextTrackSelectionFlags(C.SELECTION_FLAG_FORCED)
+                .setRendererDisabled(2, false)
+                .build()
+
+            msg.append("Subtitle enabled.")
+            if (langList.size > 1) msg.append(" (").append(subtitleIndex + 1).append(")")
+        } else {
+            subtitleIndex = -1
+            trackSelector.parameters = trackSelector
+                .buildUponParameters()
+                .setRendererDisabled(2, true)
+                .build()
+
+            msg.append("Subtitle disabled.")
+        }
+
+        if (toast != null) toast?.cancel()
+        toast = Toast.makeText(
+            context,
+            msg, Toast.LENGTH_LONG
+        )
+        toast?.show()
     }
 
     private fun rewind(rewindTime: Long = TEN_SECONDS){

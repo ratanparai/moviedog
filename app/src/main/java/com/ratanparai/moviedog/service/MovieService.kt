@@ -23,6 +23,7 @@ class MovieService(private val context: Context) {
         val bdPlexScrapper = BdPlexScrapper()
         val wowMovieZoneScrapper = WowMovieZoneScrapper()
         var flixhubScrapper = FlixhubScrapper()
+        var movieHaatScrapper = MovieHaatScrapper()
 
         val searchHashDao = AppDatabase.getInstance(context).searchHashDao()
         val movieDao = AppDatabase.getInstance(context).movieDao()
@@ -33,6 +34,7 @@ class MovieService(private val context: Context) {
 //        scrapMovies(dekhvhaiScrapper, query, searchHashDao, movieDao, scrappedDao, movieUrlDao, "Dekhvhai")
         //scrapMovies(wowMovieZoneScrapper, query, searchHashDao, movieDao, scrappedDao, movieUrlDao, "WoW Movie")
         scrapMovies(flixhubScrapper, query, searchHashDao, movieDao, scrappedDao, movieUrlDao, "FlexHub")
+        scrapMovies(movieHaatScrapper, query, searchHashDao, movieDao, scrappedDao, movieUrlDao, "MovieHaat")
 
         return movieDao.searchByTitle(query)
     }
@@ -70,7 +72,7 @@ class MovieService(private val context: Context) {
 
                 try {
                     val movieDoc = scrapper.getDocument(link)
-                    val movie = scrapper.getMovie(movieDoc)
+                    val movie = scrapper.getMovie(movieDoc, link)
                     Log.d(TAG, "Scrapped movie: $movie for search URL $searchUrl ")
 
                     scrappedDao.insert(scrapped)
