@@ -23,7 +23,9 @@ import com.masterwok.opensubtitlesandroid.OpenSubtitlesUrlBuilder
 import com.masterwok.opensubtitlesandroid.models.OpenSubtitleItem
 import com.masterwok.opensubtitlesandroid.services.OpenSubtitlesService
 import com.ratanparai.moviedog.R
+import com.ratanparai.moviedog.db.AppDatabase
 import com.ratanparai.moviedog.db.entity.Movie
+import com.ratanparai.moviedog.db.entity.Subtitle
 import com.ratanparai.moviedog.player.VideoPlayerGlue
 import com.ratanparai.moviedog.service.MovieService
 import com.ratanparai.moviedog.utilities.EXTRA_MOVIE_ID
@@ -63,7 +65,7 @@ class PlaybackFragment: VideoSupportFragment() {
             throw IllegalArgumentException("Invalid movieId $movieId")
         }
 
-        movieService = MovieService(context!!)
+        movieService = MovieService(requireContext())
 
         movie = movieService.getMovieById(movieId)
     }
@@ -87,12 +89,12 @@ class PlaybackFragment: VideoSupportFragment() {
     }
 
     private fun initializePlayer() {
-        val mediaSession = MediaSessionCompat(context!!, TAG).apply {
+        val mediaSession = MediaSessionCompat(requireContext(), TAG).apply {
             isActive = true
             MediaControllerCompat.setMediaController(context as Activity, controller)
         }
 
-        trackSelector = DefaultTrackSelector(context!!)
+        trackSelector = DefaultTrackSelector(requireContext())
 
         trackSelector?.parameters = trackSelector!!
             .buildUponParameters()
@@ -101,7 +103,7 @@ class PlaybackFragment: VideoSupportFragment() {
             .setRendererDisabled(2, false)
             .build()
 
-        exoPlayer = ExoPlayerFactory.newSimpleInstance(context!!, trackSelector!!)
+        exoPlayer = ExoPlayerFactory.newSimpleInstance(requireContext(), trackSelector!!)
 
         MediaSessionConnector(mediaSession).apply {
             setPlayer(exoPlayer)
@@ -115,10 +117,10 @@ class PlaybackFragment: VideoSupportFragment() {
             textComponent.addTextOutput(subtitles)
         }
 
-        val playerAdapter = LeanbackPlayerAdapter(context!!, exoPlayer, 500)
+        val playerAdapter = LeanbackPlayerAdapter(requireContext(), exoPlayer, 500)
 
         playerGlue = VideoPlayerGlue(
-            context!!, 
+            requireContext(),
             playerAdapter, 
             mediaSession.controller, 
             movieService, 
@@ -129,7 +131,13 @@ class PlaybackFragment: VideoSupportFragment() {
         playMedia(movie!!)
     }
 
-    fun downloadSubtitle(): ArrayList<Uri>? {
+    fun downloadSubtitle(): List<Uri>? {
+        var subtitleDao = AppDatabase.getInstance(requireContext()).subtitleDao()
+        var subtitles = subtitleDao.getSubtitles(movie!!.id)
+        if(subtitles.isNotEmpty())
+        {
+            return subtitles.map { s -> Uri.parse(s.subtitleUrl) }
+        }
         var imdbId = movie!!.imdbId.substringAfter("tt").toLong()
         val url = OpenSubtitlesUrlBuilder()
             .imdbId(imdbId)
@@ -141,7 +149,17 @@ class PlaybackFragment: VideoSupportFragment() {
         try {
             val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
             StrictMode.setThreadPolicy(policy)
-            val searchResult: Array<OpenSubtitleItem> = service.search(OpenSubtitlesService.TemporaryUserAgent, url)
+            var searchResult: Array<OpenSubtitleItem> = service.search(OpenSubtitlesService.TemporaryUserAgent, url)
+
+            if (searchResult.isEmpty())
+            {
+                val titleUrl = OpenSubtitlesUrlBuilder()
+                    .query(movie!!.title)
+                    .subLanguageId("eng")
+                    .build()
+
+                searchResult = service.search(OpenSubtitlesService.TemporaryUserAgent, titleUrl)
+            }
 
             for(result in searchResult)
             {
@@ -156,7 +174,7 @@ class PlaybackFragment: VideoSupportFragment() {
                         continue
                     }
 
-                    var fileUri = Uri.fromFile(File(Uri.fromFile(context!!.cacheDir).path,result.SubFileName))
+                    var fileUri = Uri.fromFile(File(Uri.fromFile(requireContext().cacheDir).path,result.SubFileName))
 
                     var file = File(URI.create(fileUri.toString()))
                     if(file.exists())
@@ -166,7 +184,7 @@ class PlaybackFragment: VideoSupportFragment() {
                         continue
                     }
 
-                    service.downloadSubtitle(context!!, result, fileUri)
+                    service.downloadSubtitle(requireContext(), result, fileUri)
                     subtitleUrls.add(fileUri)
                     Log.d(TAG, "Succesfully downloaded subtitle no. ${subtitleUrls.size}")
 
@@ -174,7 +192,8 @@ class PlaybackFragment: VideoSupportFragment() {
                     Log.e(TAG, e.message, e)
                 }
             }
-
+            var subtitleToStore = subtitleUrls.map { s -> Subtitle(movieId = movie!!.id, subtitleUrl = s.toString()) }
+            subtitleDao.insertSubtitle(subtitleToStore)
             return subtitleUrls
         } catch (e: Exception){
             Log.e(TAG, e.message, e)
@@ -198,8 +217,8 @@ class PlaybackFragment: VideoSupportFragment() {
     }
 
     private fun prepareMediaForPlaying(movie: Movie) {
-        val userAgent = Util.getUserAgent(context!!, "MovieDog")
-        var dataSourceFactory = DefaultDataSourceFactory(context!!, userAgent)
+        val userAgent = Util.getUserAgent(requireContext(), "MovieDog")
+        var dataSourceFactory = DefaultDataSourceFactory(requireContext(), userAgent)
 
         val mediaSource = if (movieUrl == null) {
             ProgressiveMediaSource
@@ -223,13 +242,13 @@ class PlaybackFragment: VideoSupportFragment() {
         var subtitleMediaSources = ArrayList<MediaSource>()
         for (subtitleUri in subtitleUris)
         {
-            var subtitleByteArray = context!!.contentResolver.openInputStream(subtitleUri)?.buffered()?.use { it.readBytes() }
+            var subtitleByteArray = requireContext().contentResolver.openInputStream(subtitleUri)?.buffered()?.use { it.readBytes() }
 
             var subtitleFormat = Format.createTextSampleFormat(
                 null, MimeTypes.APPLICATION_SUBRIP, C.SELECTION_FLAG_FORCED, "en")
             var subtitleSource = SingleSampleMediaSource.Factory(
                 CustomDataSourceFactory(
-                    context!!,
+                    requireContext(),
                     subtitleByteArray!!))
                 .createMediaSource(Uri.parse(""), subtitleFormat, C.TIME_UNSET)
             subtitleMediaSources.add(subtitleSource)
