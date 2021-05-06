@@ -12,10 +12,13 @@ steps:
     secureFile: apikey.properties # The file name or GUID of the secure file
     #retryCount: 5 # Optional
 
-- task: CopyFiles@2
-  inputs:
-    contents: '$(mySecureFile.secureFilePath)'
-    targetFolder: $(Agent.BuildDirectory)
+# - task: CopyFiles@2
+#   inputs:
+#     contents: '$(mySecureFile.secureFilePath)'
+#     targetFolder: $(Agent.BuildDirectory)
+
+- script: |
+  cp $(mySecureFile.secureFilePath) $(Agent.BuildDirectory)
 
 - task: Gradle@2
   inputs:
