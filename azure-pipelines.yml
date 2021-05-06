@@ -18,7 +18,7 @@ steps:
 #     targetFolder: $(Agent.BuildDirectory)
 
 - script: |
-  cp $(mySecureFile.secureFilePath) $(Agent.BuildDirectory)
+    cp $(mySecureFile.secureFilePath) $(Agent.BuildDirectory)
 
 - task: Gradle@2
   inputs:
