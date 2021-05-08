@@ -4,12 +4,16 @@ import android.content.Context
 import android.net.Uri
 import android.os.StrictMode
 import android.util.Log
+import android.widget.Toast
 import com.masterwok.opensubtitlesandroid.OpenSubtitlesUrlBuilder
 import com.masterwok.opensubtitlesandroid.models.OpenSubtitleItem
 import com.masterwok.opensubtitlesandroid.services.OpenSubtitlesService
 import com.ratanparai.moviedog.db.AppDatabase
 import com.ratanparai.moviedog.db.entity.Movie
 import com.ratanparai.moviedog.db.entity.Subtitle
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import java.io.File
 import java.net.URI
 
@@ -17,12 +21,13 @@ class SubtitleService(
     private val context: Context) {
 
     private val _tag = "SubtitleService"
+    val subtitleDao = AppDatabase.getInstance(context).subtitleDao()
 
     fun downloadSubtitle(movie: Movie): List<Uri>? {
-        val subtitleDao = AppDatabase.getInstance(context).subtitleDao()
         val subtitles = subtitleDao.getSubtitles(movie.id)
         if(subtitles.isNotEmpty())
         {
+            Log.d(_tag, "Loaded ${subtitles.size} from database")
             return subtitles.map { s -> Uri.parse(s.subtitleUrl) }
         }
         val imdbId = movie.imdbId.substringAfter("tt").toLong()
@@ -82,11 +87,29 @@ class SubtitleService(
                 }
             }
             val subtitleToStore = subtitleUrls.map { s -> Subtitle(movieId = movie.id, subtitleUrl = s.toString()) }
-            subtitleDao.insertSubtitle(subtitleToStore)
+            tryInsertIntoDb(subtitleToStore)
             return subtitleUrls
         } catch (e: Exception){
             Log.e(_tag, e.message, e)
         }
         return null
+    }
+
+    private fun tryInsertIntoDb(subtitleToStore: List<Subtitle>) {
+        subtitleToStore.forEach { s ->
+            run {
+                try {
+                    subtitleDao.insertSubtitle(s)
+                } catch (e: Exception) {
+                    Log.e(_tag, e.message, e)
+                }
+            }
+        }
+    }
+
+    fun backgroundSubtitleDownload(movie: Movie){
+        GlobalScope.launch(Dispatchers.IO) {
+            downloadSubtitle(movie)
+        }
     }
 }

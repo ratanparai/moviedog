@@ -8,7 +8,7 @@ import com.ratanparai.moviedog.db.entity.Subtitle
 @Dao
 interface SubtitleDao {
     @Insert
-    fun insertSubtitle(subtitles: List<Subtitle>)
+    fun insertSubtitle(subtitles: Subtitle)
 
     @Query("SELECT * FROM subtitle WHERE movieId = :id")
     fun getSubtitles(id: Int): List<Subtitle>

@@ -1,0 +1,1212 @@
+
+
+
+<!doctype html>
+<html class="no-js" lang="en-US">
+<head>
+
+	<!-- meta -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1">
+
+	<!-- Uncomment the meta tags you are going to use! Be relevant and don't spam! -->
+
+    <meta name="keywords" content="Action Movies,Animation,crime,comedy" />
+	<meta name="description" content="Hollywood , Animation , Bollywood genre Movies">
+    <meta name="author" content="Kamruddin bivob (bivob172)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- Title -->
+	<title>spider-man | ftpmedia.net</title>
+
+
+	<!--  Desktop Favicons  -->
+	<link rel="icon" type="image/png" href="images/favicons/favicon.ico" sizes="16x16">
+	<!-- <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32"> -->
+	<!-- <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96"> -->
+
+	<!-- Google Fonts CSS Stylesheet // More here http://www.google.com/fonts#UsePlace:use/Collection:Open+Sans -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,600italic,700,800,800italic" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+	<!-- ***** Boostrap Custom / Addons Stylesheets ***** -->
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
+	<!-- Required CSS file for iCarousel element -->
+	<link rel="stylesheet" href="css/sliders/icarousel/icarousel.css" type="text/css" media="all" />
+	<!-- ***** Main + Responsive & Base sizing CSS Stylesheet ***** -->
+	<link rel="stylesheet" href="css/template.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/base-sizing.css" type="text/css" media="all">
+
+	<!-- Custom CSS Stylesheet (where you should add your own css rules) -->
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+
+	<link rel="stylesheet" type="text/css" href="css/search.css" />
+
+	<!-- Modernizr Library -->
+	<script type="text/javascript" src="js/modernizr.min.js"></script>
+
+	<!-- jQuery Library -->
+
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="js/script-search.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<style>.bg-white {
+    background-color: #2c0707!important;
+    }.myfont{color:#dfb3b3;}.tabs_style2>ul.nav>li.active>a, .tabs_style2>ul.nav>li>a:hover {
+    color: #dfb3b3;
+}.style3 .action_box_inner:before {
+background: radial-gradient(#2c0707, #700707);}.style3 .action_box_inner {
+background: radial-gradient(#2c0707, #700707);}
+
+
+@media only screen and (min-width: 1200px)
+.kl-icarousel-container {
+    top: 55%;
+}
+	</style>
+	<style>
+	@media only screen and (min-width: 768px) {
+		.kl-slideshow.uh_zn_def_header_style, .kl-slideshow.zn_def_header_style, .page-subheader.uh_zn_def_header_style, .page-subheader.zn_def_header_style, .uh_zn_def_header_style, .zn_def_header_style {
+    height: 319px;
+}
+	}
+	.ptop-80 {
+    padding-top: 130px!important;
+}
+	</style>
+
+</head>
+
+<body class="">
+
+
+	<!-- Support Panel -->
+     	<!--/ Support Panel -->
+
+
+	<!-- Page Wrapper -->
+	<div id="page_wrapper">
+
+		<!-- Header style 1 -->
+
+<header id="header" class="site-header style5  cta_button dark-transparent" data-header-style="7">
+			<!-- siteheader-container -->
+			<div class="container siteheader-container header--oldstyles">
+				<!-- Logo container-->
+				<div class="logo-container logosize--yes">
+					<!-- Logo -->
+					<h1 class="site-logo logo" id="logo">
+						<a href="http://10.1.1.1/" title="">
+
+
+					<img src="logo.png" class="logo-img" alt="ftpmedia.net logo" title="ftpmedia.net Logo" />
+
+						</a>
+					</h1>
+					<!--/ Logo -->
+
+				</div>
+
+				<!--/ Logo container-->
+
+				<!-- separator for responsive header -->
+				<div class="separator site-header-separator visible-xs"></div>
+				<!--/ separator for responsive header -->
+
+				<!-- header-links-container
+				<div class="header-links-container">
+
+					<ul class="topnav navRight topnav">
+
+						<li>
+							<label for="support_p" class="spanel-label">
+		                		<i class="glyphicon glyphicon-info-sign icon-white support-info visible-xs xs-icon"></i>
+								<span class="hidden-xs">NOTICE</span>
+							</label>
+						</li>
+
+						<li>
+							<a class="popup-with-form" href="#login_panel">
+								<i class="glyphicon glyphicon-log-in visible-xs xs-icon"></i>
+								<span class="hidden-xs">Login</span>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				<!--/ header-links-container -->
+
+				<!-- separator for responsive header -->
+				<div class="separator site-header-separator visible-xs"></div>
+				<!--/ separator for responsive header -->
+
+				<!-- header search -->
+<div id="search" class="header-search">
+	<a href="#" class="searchBtn "><span class="glyphicon glyphicon-search icon-white"></span></a>
+	<div class="search-container" style="width: 340px;padding: 5px;" >
+		<form action="msearch.php" id="s" method="get" autocomplete="on" class="header-searchform" >
+		<input type="hidden" id="qo" name="q"/>
+			<input  maxlength="40" class="inputbox" type="text" name="searchquery" size="20" id="inputString" onkeyup="lookup(this.value);"value="SEARCH ..." onblur="if (this.value=='') this.value='SEARCH ...';" onfocus="if (this.value=='SEARCH ...') this.value='';">
+			<input type="hidden" id="q" name="q" value="M" />
+			<button type="submit" id="searchsubmit" class="searchsubmit glyphicon glyphicon-search icon-white"></button>
+		</form>
+	</div>
+	<div id="suggestions" style="margin-left:10px;"></div>
+</div>
+				<!--/ header search -->
+
+
+
+
+				<!--/ Call to action ribbon Free Quote -->
+
+
+				<!-- responsive menu trigger -->
+				<div id="zn-res-menuwrapper">
+					<a href="#" class="zn-res-trigger zn-header-icon"></a>
+				</div>
+				<!--/ responsive menu trigger -->
+
+				<!-- main menu -->
+				<div id="main-menu" class="main-nav zn_mega_wrapper " style="margin-right:3%;margin-top:5px;">
+
+					<ul id="menu-main-menu" class="main-menu zn_mega_menu">
+						<li class="menu-item-has-children" style="" ><a href="allmovies.php?page=1&entries=64&sort=DESC&w=grid">Movies</a>
+							<ul class="sub-menu clearfix">
+								 <li><a href="allmovies.php?page=1&entries=64&Category=Hollywood&sort=DESC&w=grid">Hollywood</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Bollywood&sort=DESC&w=grid">Bollywood</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Animation&sort=DESC&w=grid">Animation</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Chinese&sort=DESC&w=grid">Chinese</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Indian Bangla&sort=DESC&w=grid">Indian Bangla</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Korean&sort=DESC&w=grid">Korean</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Malayalam&sort=DESC&w=grid">Malayalam</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Tamil&sort=DESC&w=grid">Tamil</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Turkey&sort=DESC&w=grid">Turkey</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Pakistani&sort=DESC&w=grid">Pakistani</a>
+			</li><li><a href="allmovies.php?page=1&entries=64&Category=Hindi Dubbed&sort=DESC&w=grid">Hindi Dubbed</a>
+			</li>							</ul>
+						</li>
+						<li class="menu-item-has-children" style=""><a href="#">Genre</a>
+							<ul class="sub-menu clearfix">
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Action&sort=DESC&w=grid">Action</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Adventure&sort=DESC&w=grid">Adventure</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Animation&sort=DESC&w=grid">Animation</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Comedy&sort=DESC&w=grid">Comedy</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Documentary&sort=DESC&w=grid">Documentary</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Thriller&sort=DESC&w=grid">Thriller</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Drama&sort=DESC&w=grid">Drama</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Family&sort=DESC&w=grid">Family</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Fantasy&sort=DESC&w=grid">Fantasy</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Foreign&sort=DESC&w=grid">Foreign</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=History&sort=DESC&w=grid">History</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=War&sort=DESC&w=grid">War</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Horror&sort=DESC&w=grid">Horror</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Music&sort=DESC&w=grid">Music</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Mystery&sort=DESC&w=grid">Mystery</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Romance&sort=DESC&w=grid">Romance</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Science fiction&sort=DESC&w=grid">Science fiction</a></li>
+			<li><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Western&sort=DESC&w=grid">Western</a></li>
+
+							</ul>
+						</li>
+		<!--li class="menu-item-has-children" style=""><a href="tv-series.php?page=1&Category=all&sort=DESC&w=grid">Tv Series</a></li-->
+		<li class="menu-item-has-children" style=""><a href="http://10.1.1.2/cdn6">Tv Series</a>
+			<ul class="sub-menu clearfix">
+			<li><a href="http://10.1.1.2/cdn6" target="_blank">Tv Series 1</a></li>
+			<li><a href="http://10.1.1.2/cdn7" target="_blank">Tv Series 2</a></li>
+
+			<!--?php
+				menuChange('Tv Series');
+			?-->
+			</ul>
+		</li>
+
+						<!--li class="menu-item-has-children" style=""><a href="games.php?page=1&entries=24&sort=DESC&w=block">Games</a-->
+
+						<li class="menu-item-has-children" style=""><a href="http://10.1.1.1/Data/Games/">Games</a>
+
+						</li>
+
+						<li class="menu-item-has-children" style=""><a href="http://10.1.1.1/Data/Software/">Software</a>
+
+						</li>
+
+
+						<li class="menu-item-has-children" style=""><a href="#">Partner FTP</a>
+
+		<!-- MOVIE SERVER -->
+		<ul class="sub-menu clearfix">
+				<li><a href="http://10.1.1.1/Data/" target="_blank">Server 1</a></li>
+				<li><a href="http://12.1.1.3/" target="_blank">Server 2</a></li>
+				<li><a href="http://172.16.50.4/" target="_blank">Server 3</a></li>
+
+
+		</ul>
+		</li>
+		<!-- LLIVTV -->
+		<li class="menu-item-has-children" style=""><a href="#" target="_blank">Live TV</a>
+			<ul class="sub-menu clearfix">
+				<li><a href="http://amrbd.com/" target="_blank">Live Tv 1</a></li>
+				<li><a href="http://10.1.1.3/" target="_blank">Live Tv 2</a></li>
+				<li><a href="http://tv.ebox.live/" target="_blank">Live Tv 3</a></li>
+		</ul>
+		</li>
+
+<li class="menu-item-has-children" s><a href="#login_panel" target="_blank" class="popup-with-form kl-cart-button" style="color:#fff;" ><img alt="" src="images/noavatar.jpg" onerror="this.src='images/noavatar.jpg'"  style="border-radius: 150px;width: 23px;margin-top: -6px;margin-right: 0px;"/> &nbsp; Login</a>
+
+</li>
+
+
+
+
+				<!--/ main menu -->
+			</div>
+			<!--/ siteheader-container -->
+		</header><style>#_wpk-custom-bar{display:none;}</style>
+		<!-- / Header style 1 -->
+
+
+		<!-- Page sub-header + Bottom mask style 5 -->
+		<div id="page_header" class="page-subheader site-subheader-cst uh_flat_dark_blue maskcontainer--mask5">
+			<div class="bgback"></div>
+
+			<!-- Background -->
+			<div class="kl-bg-source">
+				<!-- Gradient overlay -->
+				<div class="kl-bg-source__overlay" style="background:rgba(186,3,3,1); background: -moz-linear-gradient(left, rgba(186,3,3,1) 0%, rgba(53,53,53,0.85) 100%); background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(186,3,3,1)), color-stop(100%,rgba(53,53,53,0.85))); background: -webkit-linear-gradient(left, rgba(186,3,3,1) 0%,rgba(53,53,53,0.85) 100%); background: -o-linear-gradient(left, rgba(186,3,3,1) 0%,rgba(53,53,53,0.85) 100%); background: -ms-linear-gradient(left, rgba(186,3,3,1) 0%,rgba(53,53,53,0.85) 100%); background: linear-gradient(to right, rgba(186,3,3,1) 0%,rgba(53,53,53,0.85) 100%);">
+				</div>
+				<!--/ Gradient overlay -->
+			</div>
+			<!--/ Background -->
+
+
+			<!-- Animated Sparkles -->
+			<div class="th-sparkles"></div>
+			<!--/ Animated Sparkles -->
+
+			<!-- Sub-Header content wrapper -->
+			<div class="ph-content-wrap">
+				<div class="ph-content-v-center ptop-80">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-6">
+								<!-- Breadcrumbs -->
+								<ul class="breadcrumbs fixclear">
+									<li><a href="index.php">Home</a></li>
+									<li>spider-man</li>
+								</ul>
+								<!-- Breadcrumbs -->
+
+								<!-- Current date -->
+								<span id="current-date" class="subheader-currentdate">August 25, 2016</span>
+								<!--/ Current date -->
+
+								<div class="clearfix"></div>
+							</div>
+							<!--/ col-sm-6 -->
+
+							<div class="col-sm-8">
+								<!-- Sub-header titles -->
+								<div class="subheader-titles">
+									<h2 class="subheader-maintitle">Search Movies , Tv Series , Games , Software and Posts</h2>
+									<h4 class="subheader-subtitle">You can search by Movie name ,keword, year, actor name and genre</h4>
+								</div>
+								<!--/ Sub-header titles -->
+							</div>
+							<!--/ col-sm-6 -->
+						</div>
+						<!--/ row -->
+					</div>
+					<!--/ container -->
+				</div>
+				<!--/ .ph-content-v-center -->
+			</div>
+			<!--/ Sub-Header content wrapper -->
+
+			<!-- Sub-header Bottom mask style 5 -->
+			<div class="kl-bottommask kl-bottommask--mask5">
+				<svg width="2700px" height="64px" class="svgmask" viewBox="0 0 2700 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				    <defs>
+				        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-mask5">
+				            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+				            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetInner1" result="shadowBlurInner1"></feGaussianBlur>
+				            <feComposite in="shadowBlurInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+				            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.45 0" in="shadowInnerInner1" type="matrix" result="shadowMatrixInner1"></feColorMatrix>
+				            <feMerge>
+				                <feMergeNode in="SourceGraphic"></feMergeNode>
+				                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+				            </feMerge>
+				        </filter>
+				    </defs>
+				    <path d="M1892,0 L2119,44.993 L2701,45 L2701.133,63.993 L-0.16,63.993 L1.73847048e-12,45 L909,44.993 L1892,0 Z" class="bmask-bgfill" fill="#2c0707" filter="url(#filter-mask5)"></path>
+				    <path d="M2216,44.993 L2093,55 L1882,6 L995,62 L966,42 L1892,0 L2118,44.993 L2216,44.993 L2216,44.993 Z" fill="#cd2122" class="bmask-customfill" filter="url(#filter-mask5)"></path>
+				</svg>
+			</div>
+			<!--/ Sub-header Bottom mask style 5 -->
+		</div>
+        <!--/ Page sub-header + Bottom mask style 5 -->
+
+
+        <!-- Tabs section with custom paddings -->
+        <section class="hg_section pbottom-80" style="background-color: #000000">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+
+						<!-- Tabs element style 5 -->
+						<div class="tabbable tabs_style5">
+							<!-- Navigation menu -->
+							<ul class="nav fixclear">
+								<!-- Tab #1 -->
+								<li class="active"><a href="#tabs_i2-pane1" data-toggle="tab">Movies</a></li>
+								<!--/ Tab #1 -->
+
+								<!-- Tab #2 -->
+								<li class=""><a href="#tabs_i2-pane2" data-toggle="tab">Games</a></li>
+								<!--/ Tab #2 -->
+
+								<!-- Tab #3 -->
+								<li class=""><a href="#tabs_i2-pane3" data-toggle="tab">Tv Series</a></li>
+								<!--/ Tab #3 -->
+
+								<!-- Tab #4 -->
+								<li class=""><a href="#tabs_i2-pane4" data-toggle="tab">Software</a></li>
+								<!--/ Tab #4 -->
+
+								<!-- Tab #4 -->
+								<li class=""><a href="#tabs_i2-pane5" data-toggle="tab">Posts</a></li>
+								<!--/ Tab #4 -->
+							</ul>
+							<!--/ Navigation menu -->
+
+							<!-- Tabs content -->
+							<div class="tab-content">
+								<!-- Tab #1 -->
+								<div class="tab-pane active" id="tabs_i2-pane1">
+									<!-- Title -->
+									<h4>Movies</h4>
+									<!-- Title -->
+									<!-- Description -->
+									<p>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs1-8 col-xs-12">
+   <a href="movie.php?imdbid=tt0145487&cat=Hollywood" class="thumb hoverBorder plus boxHov1" onmouseover="document.getElementById('divtt0145487').style.display = 'block';" onMouseOut="document.getElementById('divtt0145487').style.display = 'none';" style="margin-bottom:0px;">
+
+        <span class="hoverBorderWrapper">
+
+            <img src="http://10.1.1.1/Admin/main/images/tt0145487/poster/rZd0y1X1Gw4t5B3f01Qzj8DYY66.jpg" onerror="this.src='http://image.tmdb.org/t/p/w500/rZd0y1X1Gw4t5B3f01Qzj8DYY66.jpg" class="img-responsive offer-banners-img" alt="" title="" style="height:auto;width:100%">
+
+             <span class="MovieQuality">1080p BluRay</span><span class="theHoverBorder"></span>
+        </span>
+
+    </a>
+    <div class="post-details" style="line-height:1.2em;margin-bottom:15px;">
+        <p class="MovieTitle">
+        <a href="movie.php?imdbid=tt0145487&cat=Hollywood" title="Spider-Man" >Spider-Man</a>
+        <a  href="movie.php?imdbid=tt0145487&cat=Hollywood" title="Spider-Man" style="padding: 1px 4px;font-size: 11px;margin-right: 6%;float:right;">
+        <span>2002</span>
+        <span class="MovieRatings">7.2</span>
+
+        </p>
+    </div>
+
+    <div class="displayHover1 BoxCss" id="divtt0145487" style="" onmouseover="document.getElementById('divtt0145487').style.display = 'block';" onMouseOut="document.getElementById('divtt0145487').style.display = 'none';">
+        <div class="arrow_box"></div>
+        <div class="headBox">
+          <ul>
+           <li style="margin-left: -17px;"><font style="font-size:16px;color:#fff;">7.2</font> <br><img src="images/imdb_logo.jpg" style="width:28px;margin-top:-15px;" /></li>
+           <li style="margin-left: 19px;"><font style="font-size:16px;color:#fff;">2002</font> <br>
+           <div style="margin-top: -7px;color: #fff;">YEAR</div></li>
+           <li style="margin-left: 19px;"><font style="font-size:14px;color:#fff;margin-left:0px;">1080p BluRay</font> <br>
+           <div style="margin-top: -7px;color: #fff;">Quality</div></li>
+           <li style="margin-left: 20px;margin-top: 6px;"><a href="#" class="flove" title="add to favourite list"><span class="grid-ibx__icon glyphicon glyphicon-heart-empty"></span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-9" style="clear:left;background:-color:#fff;"><div style="font-size: 21px;margin-top: 10px;margin-bottom: -27px;">Hollywood</div><br><div style="font-size: 10px;"><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Fantasy&sort=DESC&w=grid">Fantasy</a> ,<a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Action&sort=DESC&w=grid">Action</a>, </div></div>
+        <div class="col-md-2" style="margin-top: 10px;border: 1px solid #000;border-radius: 50px;height: 50px;width: 50px;"><div style="text-align:center;font-size:14px;font-weight: bold;margin-top: 5px;margin-left: -3px;">121</div> <div style="margin-top: -10px;margin-left: -2px;">min</div></div>
+        <div class="col-md-12" style="font-size: 16px;
+font-weight: bold;margin-top: 8px;line-height: 15px;">Spider-Man</div>
+        <div class="col-md-12" style="line-height: 13px;margin-top: 10px;
+"> After being bitten by a genetically altered spider, nerdy high school student Peter Parker is endowed with amazing powers to become the Amazing superh...<a href="movie.php?imdbid=tt0145487&cat=Hollywood">More</a>. <br>
+<a class="btn-element btn btn-fullcolor btn-sm " href="http://www.youtube.com/watch?v=O7zvehDxttM" data-lightbox="iframe" title="Watch Trailer" style="margin:5px 5px 5px 0;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Trailer</span></a>
+
+<a class="btn-element btn btn-lined lined-dark btn-sm " href="movie.php?imdbid=tt0145487&cat=Hollywood" title="Play Now" style="margin: 5px 0px 4px -4px;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Watch Now</span></a>
+
+<a class="btn-element btn btn-success lined-dark btn-sm " href="#" title="Add to Playlist" style="margin: 1px 0px 0px 1px;"><span><i class="grid-ibx__icon glyphicon glyphicon-plus"  style="font-size:11px;" ></i></span></a>
+</div>
+
+    </div>
+    </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs1-8 col-xs-12">
+   <a href="movie.php?imdbid=tt0316654&cat=Hollywood" class="thumb hoverBorder plus boxHov1" onmouseover="document.getElementById('divtt0316654').style.display = 'block';" onMouseOut="document.getElementById('divtt0316654').style.display = 'none';" style="margin-bottom:0px;">
+
+        <span class="hoverBorderWrapper">
+
+            <img src="http://10.1.1.1/Admin/main/images/tt0316654/poster/olxpyq9kJAZ2NU1siLshhhXEPR7.jpg" onerror="this.src='http://image.tmdb.org/t/p/w500/olxpyq9kJAZ2NU1siLshhhXEPR7.jpg" class="img-responsive offer-banners-img" alt="" title="" style="height:auto;width:100%">
+
+             <span class="MovieQuality">1080p BluRay</span><span class="theHoverBorder"></span>
+        </span>
+
+    </a>
+    <div class="post-details" style="line-height:1.2em;margin-bottom:15px;">
+        <p class="MovieTitle">
+        <a href="movie.php?imdbid=tt0316654&cat=Hollywood" title="Spider-Man 2" >Spider-Man 2</a>
+        <a  href="movie.php?imdbid=tt0316654&cat=Hollywood" title="Spider-Man 2" style="padding: 1px 4px;font-size: 11px;margin-right: 6%;float:right;">
+        <span>2004</span>
+        <span class="MovieRatings">7.1</span>
+
+        </p>
+    </div>
+
+    <div class="displayHover1 BoxCss" id="divtt0316654" style="" onmouseover="document.getElementById('divtt0316654').style.display = 'block';" onMouseOut="document.getElementById('divtt0316654').style.display = 'none';">
+        <div class="arrow_box"></div>
+        <div class="headBox">
+          <ul>
+           <li style="margin-left: -17px;"><font style="font-size:16px;color:#fff;">7.1</font> <br><img src="images/imdb_logo.jpg" style="width:28px;margin-top:-15px;" /></li>
+           <li style="margin-left: 19px;"><font style="font-size:16px;color:#fff;">2004</font> <br>
+           <div style="margin-top: -7px;color: #fff;">YEAR</div></li>
+           <li style="margin-left: 19px;"><font style="font-size:14px;color:#fff;margin-left:0px;">1080p BluRay</font> <br>
+           <div style="margin-top: -7px;color: #fff;">Quality</div></li>
+           <li style="margin-left: 20px;margin-top: 6px;"><a href="#" class="flove" title="add to favourite list"><span class="grid-ibx__icon glyphicon glyphicon-heart-empty"></span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-9" style="clear:left;background:-color:#fff;"><div style="font-size: 21px;margin-top: 10px;margin-bottom: -27px;">Hollywood</div><br><div style="font-size: 10px;"><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Action&sort=DESC&w=grid">Action</a> ,<a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Adventure&sort=DESC&w=grid">Adventure</a>, <a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Fantasy&sort=DESC&w=grid">Fantasy</a>, </div></div>
+        <div class="col-md-2" style="margin-top: 10px;border: 1px solid #000;border-radius: 50px;height: 50px;width: 50px;"><div style="text-align:center;font-size:14px;font-weight: bold;margin-top: 5px;margin-left: -3px;">127</div> <div style="margin-top: -10px;margin-left: -2px;">min</div></div>
+        <div class="col-md-12" style="font-size: 16px;
+font-weight: bold;margin-top: 8px;line-height: 15px;">Spider-Man 2</div>
+        <div class="col-md-12" style="line-height: 13px;margin-top: 10px;
+"> Peter Parker is going through a major identity crisis. Burned out from being Spider-Man, he decides to shelve his superhero alter ego, which leaves th...<a href="movie.php?imdbid=tt0316654&cat=Hollywood">More</a>. <br>
+<a class="btn-element btn btn-fullcolor btn-sm " href="http://www.youtube.com/watch?v=3jBFwltrxJw" data-lightbox="iframe" title="Watch Trailer" style="margin:5px 5px 5px 0;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Trailer</span></a>
+
+<a class="btn-element btn btn-lined lined-dark btn-sm " href="movie.php?imdbid=tt0316654&cat=Hollywood" title="Play Now" style="margin: 5px 0px 4px -4px;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Watch Now</span></a>
+
+<a class="btn-element btn btn-success lined-dark btn-sm " href="#" title="Add to Playlist" style="margin: 1px 0px 0px 1px;"><span><i class="grid-ibx__icon glyphicon glyphicon-plus"  style="font-size:11px;" ></i></span></a>
+</div>
+
+    </div>
+    </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs1-8 col-xs-12">
+   <a href="movie.php?imdbid=tt0413300&cat=Hollywood" class="thumb hoverBorder plus boxHov1" onmouseover="document.getElementById('divtt0413300').style.display = 'block';" onMouseOut="document.getElementById('divtt0413300').style.display = 'none';" style="margin-bottom:0px;">
+
+        <span class="hoverBorderWrapper">
+
+            <img src="http://10.1.1.1/Admin/main/images/tt0413300/poster/2N9lhZg6VtVJoGCZDjXVC3a81Ea.jpg" onerror="this.src='http://image.tmdb.org/t/p/w500/2N9lhZg6VtVJoGCZDjXVC3a81Ea.jpg" class="img-responsive offer-banners-img" alt="" title="" style="height:auto;width:100%">
+
+             <span class="MovieQuality">1080p BluRay</span><span class="theHoverBorder"></span>
+        </span>
+
+    </a>
+    <div class="post-details" style="line-height:1.2em;margin-bottom:15px;">
+        <p class="MovieTitle">
+        <a href="movie.php?imdbid=tt0413300&cat=Hollywood" title="Spider-Man 3" >Spider-Man 3</a>
+        <a  href="movie.php?imdbid=tt0413300&cat=Hollywood" title="Spider-Man 3" style="padding: 1px 4px;font-size: 11px;margin-right: 6%;float:right;">
+        <span>2007</span>
+        <span class="MovieRatings">6.3</span>
+
+        </p>
+    </div>
+
+    <div class="displayHover1 BoxCss" id="divtt0413300" style="" onmouseover="document.getElementById('divtt0413300').style.display = 'block';" onMouseOut="document.getElementById('divtt0413300').style.display = 'none';">
+        <div class="arrow_box"></div>
+        <div class="headBox">
+          <ul>
+           <li style="margin-left: -17px;"><font style="font-size:16px;color:#fff;">6.3</font> <br><img src="images/imdb_logo.jpg" style="width:28px;margin-top:-15px;" /></li>
+           <li style="margin-left: 19px;"><font style="font-size:16px;color:#fff;">2007</font> <br>
+           <div style="margin-top: -7px;color: #fff;">YEAR</div></li>
+           <li style="margin-left: 19px;"><font style="font-size:14px;color:#fff;margin-left:0px;">1080p BluRay</font> <br>
+           <div style="margin-top: -7px;color: #fff;">Quality</div></li>
+           <li style="margin-left: 20px;margin-top: 6px;"><a href="#" class="flove" title="add to favourite list"><span class="grid-ibx__icon glyphicon glyphicon-heart-empty"></span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-9" style="clear:left;background:-color:#fff;"><div style="font-size: 21px;margin-top: 10px;margin-bottom: -27px;">Hollywood</div><br><div style="font-size: 10px;"><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Fantasy&sort=DESC&w=grid">Fantasy</a> ,<a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Action&sort=DESC&w=grid">Action</a>, <a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Adventure&sort=DESC&w=grid">Adventure</a>, </div></div>
+        <div class="col-md-2" style="margin-top: 10px;border: 1px solid #000;border-radius: 50px;height: 50px;width: 50px;"><div style="text-align:center;font-size:14px;font-weight: bold;margin-top: 5px;margin-left: -3px;">139</div> <div style="margin-top: -10px;margin-left: -2px;">min</div></div>
+        <div class="col-md-12" style="font-size: 16px;
+font-weight: bold;margin-top: 8px;line-height: 15px;">Spider-Man 3</div>
+        <div class="col-md-12" style="line-height: 13px;margin-top: 10px;
+"> The seemingly invincible Spider-Man goes up against an all-new crop of villains—including the shape-shifting Sandman. While Spider-Man’s superpowe...<a href="movie.php?imdbid=tt0413300&cat=Hollywood">More</a>. <br>
+<a class="btn-element btn btn-fullcolor btn-sm " href="http://www.youtube.com/watch?v=wPosLpgMtTY" data-lightbox="iframe" title="Watch Trailer" style="margin:5px 5px 5px 0;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Trailer</span></a>
+
+<a class="btn-element btn btn-lined lined-dark btn-sm " href="movie.php?imdbid=tt0413300&cat=Hollywood" title="Play Now" style="margin: 5px 0px 4px -4px;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Watch Now</span></a>
+
+<a class="btn-element btn btn-success lined-dark btn-sm " href="#" title="Add to Playlist" style="margin: 1px 0px 0px 1px;"><span><i class="grid-ibx__icon glyphicon glyphicon-plus"  style="font-size:11px;" ></i></span></a>
+</div>
+
+    </div>
+    </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs1-8 col-xs-12">
+   <a href="movie.php?imdbid=tt0948470&cat=Hollywood" class="thumb hoverBorder plus boxHov1" onmouseover="document.getElementById('divtt0948470').style.display = 'block';" onMouseOut="document.getElementById('divtt0948470').style.display = 'none';" style="margin-bottom:0px;">
+
+        <span class="hoverBorderWrapper">
+
+            <img src="http://10.1.1.1/Admin/main/images/tt0948470/poster/eA2D86Y6VPWuUzZyatiLBwpTilQ.jpg" onerror="this.src='http://image.tmdb.org/t/p/w500/eA2D86Y6VPWuUzZyatiLBwpTilQ.jpg" class="img-responsive offer-banners-img" alt="" title="" style="height:auto;width:100%">
+
+             <span class="MovieQuality">1080p BluRay</span><span class="theHoverBorder"></span>
+        </span>
+
+    </a>
+    <div class="post-details" style="line-height:1.2em;margin-bottom:15px;">
+        <p class="MovieTitle">
+        <a href="movie.php?imdbid=tt0948470&cat=Hollywood" title="The Amazing S.." >The Amazing S..</a>
+        <a  href="movie.php?imdbid=tt0948470&cat=Hollywood" title="The Amazing S.." style="padding: 1px 4px;font-size: 11px;margin-right: 6%;float:right;">
+        <span>2012</span>
+        <span class="MovieRatings">6.6</span>
+
+        </p>
+    </div>
+
+    <div class="displayHover1 BoxCss" id="divtt0948470" style="" onmouseover="document.getElementById('divtt0948470').style.display = 'block';" onMouseOut="document.getElementById('divtt0948470').style.display = 'none';">
+        <div class="arrow_box"></div>
+        <div class="headBox">
+          <ul>
+           <li style="margin-left: -17px;"><font style="font-size:16px;color:#fff;">6.6</font> <br><img src="images/imdb_logo.jpg" style="width:28px;margin-top:-15px;" /></li>
+           <li style="margin-left: 19px;"><font style="font-size:16px;color:#fff;">2012</font> <br>
+           <div style="margin-top: -7px;color: #fff;">YEAR</div></li>
+           <li style="margin-left: 19px;"><font style="font-size:14px;color:#fff;margin-left:0px;">1080p BluRay</font> <br>
+           <div style="margin-top: -7px;color: #fff;">Quality</div></li>
+           <li style="margin-left: 20px;margin-top: 6px;"><a href="#" class="flove" title="add to favourite list"><span class="grid-ibx__icon glyphicon glyphicon-heart-empty"></span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-9" style="clear:left;background:-color:#fff;"><div style="font-size: 21px;margin-top: 10px;margin-bottom: -27px;">Hollywood</div><br><div style="font-size: 10px;"><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Action&sort=DESC&w=grid">Action</a> ,<a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Adventure&sort=DESC&w=grid">Adventure</a>, <a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Fantasy&sort=DESC&w=grid">Fantasy</a>, </div></div>
+        <div class="col-md-2" style="margin-top: 10px;border: 1px solid #000;border-radius: 50px;height: 50px;width: 50px;"><div style="text-align:center;font-size:14px;font-weight: bold;margin-top: 5px;margin-left: -3px;">136</div> <div style="margin-top: -10px;margin-left: -2px;">min</div></div>
+        <div class="col-md-12" style="font-size: 16px;
+font-weight: bold;margin-top: 8px;line-height: 15px;">The Amazing Spider-Man</div>
+        <div class="col-md-12" style="line-height: 13px;margin-top: 10px;
+"> Peter Parker is an outcast high schooler abandoned by his parents as a boy, leaving him to be raised by his Uncle Ben and Aunt May. Like most teenager...<a href="movie.php?imdbid=tt0948470&cat=Hollywood">More</a>. <br>
+<a class="btn-element btn btn-fullcolor btn-sm " href="http://www.youtube.com/watch?v=-tnxzJ0SSOw" data-lightbox="iframe" title="Watch Trailer" style="margin:5px 5px 5px 0;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Trailer</span></a>
+
+<a class="btn-element btn btn-lined lined-dark btn-sm " href="movie.php?imdbid=tt0948470&cat=Hollywood" title="Play Now" style="margin: 5px 0px 4px -4px;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Watch Now</span></a>
+
+<a class="btn-element btn btn-success lined-dark btn-sm " href="#" title="Add to Playlist" style="margin: 1px 0px 0px 1px;"><span><i class="grid-ibx__icon glyphicon glyphicon-plus"  style="font-size:11px;" ></i></span></a>
+</div>
+
+    </div>
+    </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs1-8 col-xs-12">
+   <a href="movie.php?imdbid=tt1872181&cat=Hollywood" class="thumb hoverBorder plus boxHov1" onmouseover="document.getElementById('divtt1872181').style.display = 'block';" onMouseOut="document.getElementById('divtt1872181').style.display = 'none';" style="margin-bottom:0px;">
+
+        <span class="hoverBorderWrapper">
+
+            <img src="http://10.1.1.1/Admin/main/images/tt1872181/poster/mUjWof8LHDgCZC9mFp0UYKBf1Dm.jpg" onerror="this.src='http://image.tmdb.org/t/p/w500/mUjWof8LHDgCZC9mFp0UYKBf1Dm.jpg" class="img-responsive offer-banners-img" alt="" title="" style="height:auto;width:100%">
+
+             <span class="MovieQuality">1080p BluRay</span><span class="theHoverBorder"></span>
+        </span>
+
+    </a>
+    <div class="post-details" style="line-height:1.2em;margin-bottom:15px;">
+        <p class="MovieTitle">
+        <a href="movie.php?imdbid=tt1872181&cat=Hollywood" title="The Amazing S.." >The Amazing S..</a>
+        <a  href="movie.php?imdbid=tt1872181&cat=Hollywood" title="The Amazing S.." style="padding: 1px 4px;font-size: 11px;margin-right: 6%;float:right;">
+        <span>2014</span>
+        <span class="MovieRatings">6.4</span>
+
+        </p>
+    </div>
+
+    <div class="displayHover1 BoxCss" id="divtt1872181" style="" onmouseover="document.getElementById('divtt1872181').style.display = 'block';" onMouseOut="document.getElementById('divtt1872181').style.display = 'none';">
+        <div class="arrow_box"></div>
+        <div class="headBox">
+          <ul>
+           <li style="margin-left: -17px;"><font style="font-size:16px;color:#fff;">6.4</font> <br><img src="images/imdb_logo.jpg" style="width:28px;margin-top:-15px;" /></li>
+           <li style="margin-left: 19px;"><font style="font-size:16px;color:#fff;">2014</font> <br>
+           <div style="margin-top: -7px;color: #fff;">YEAR</div></li>
+           <li style="margin-left: 19px;"><font style="font-size:14px;color:#fff;margin-left:0px;">1080p BluRay</font> <br>
+           <div style="margin-top: -7px;color: #fff;">Quality</div></li>
+           <li style="margin-left: 20px;margin-top: 6px;"><a href="#" class="flove" title="add to favourite list"><span class="grid-ibx__icon glyphicon glyphicon-heart-empty"></span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-9" style="clear:left;background:-color:#fff;"><div style="font-size: 21px;margin-top: 10px;margin-bottom: -27px;">Hollywood</div><br><div style="font-size: 10px;"><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Action&sort=DESC&w=grid">Action</a> ,<a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Adventure&sort=DESC&w=grid">Adventure</a>, <a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Fantasy&sort=DESC&w=grid">Fantasy</a>, </div></div>
+        <div class="col-md-2" style="margin-top: 10px;border: 1px solid #000;border-radius: 50px;height: 50px;width: 50px;"><div style="text-align:center;font-size:14px;font-weight: bold;margin-top: 5px;margin-left: -3px;">142</div> <div style="margin-top: -10px;margin-left: -2px;">min</div></div>
+        <div class="col-md-12" style="font-size: 16px;
+font-weight: bold;margin-top: 8px;line-height: 15px;">The Amazing Spider-Man 2</div>
+        <div class="col-md-12" style="line-height: 13px;margin-top: 10px;
+"> For Peter Parker, life is busy. Between taking out the bad guys as Spider-Man and spending time with the person he loves, Gwen Stacy, high school grad...<a href="movie.php?imdbid=tt1872181&cat=Hollywood">More</a>. <br>
+<a class="btn-element btn btn-fullcolor btn-sm " href="http://www.youtube.com/watch?v=DlM2CWNTQ84" data-lightbox="iframe" title="Watch Trailer" style="margin:5px 5px 5px 0;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Trailer</span></a>
+
+<a class="btn-element btn btn-lined lined-dark btn-sm " href="movie.php?imdbid=tt1872181&cat=Hollywood" title="Play Now" style="margin: 5px 0px 4px -4px;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Watch Now</span></a>
+
+<a class="btn-element btn btn-success lined-dark btn-sm " href="#" title="Add to Playlist" style="margin: 1px 0px 0px 1px;"><span><i class="grid-ibx__icon glyphicon glyphicon-plus"  style="font-size:11px;" ></i></span></a>
+</div>
+
+    </div>
+    </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs1-8 col-xs-12">
+   <a href="movie.php?imdbid=tt2250912&cat=Hollywood" class="thumb hoverBorder plus boxHov1" onmouseover="document.getElementById('divtt2250912').style.display = 'block';" onMouseOut="document.getElementById('divtt2250912').style.display = 'none';" style="margin-bottom:0px;">
+
+        <span class="hoverBorderWrapper">
+
+            <img src="http://10.1.1.1/Admin/main/images/tt2250912/poster/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg" onerror="this.src='http://image.tmdb.org/t/p/w500/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg" class="img-responsive offer-banners-img" alt="" title="" style="height:auto;width:100%">
+
+             <span class="MovieQuality">1080p BluRay</span><span class="theHoverBorder"></span>
+        </span>
+
+    </a>
+    <div class="post-details" style="line-height:1.2em;margin-bottom:15px;">
+        <p class="MovieTitle">
+        <a href="movie.php?imdbid=tt2250912&cat=Hollywood" title="Spider-Man: H.." >Spider-Man: H..</a>
+        <a  href="movie.php?imdbid=tt2250912&cat=Hollywood" title="Spider-Man: H.." style="padding: 1px 4px;font-size: 11px;margin-right: 6%;float:right;">
+        <span>2017</span>
+        <span class="MovieRatings">7.4</span>
+
+        </p>
+    </div>
+
+    <div class="displayHover1 BoxCss" id="divtt2250912" style="" onmouseover="document.getElementById('divtt2250912').style.display = 'block';" onMouseOut="document.getElementById('divtt2250912').style.display = 'none';">
+        <div class="arrow_box"></div>
+        <div class="headBox">
+          <ul>
+           <li style="margin-left: -17px;"><font style="font-size:16px;color:#fff;">7.4</font> <br><img src="images/imdb_logo.jpg" style="width:28px;margin-top:-15px;" /></li>
+           <li style="margin-left: 19px;"><font style="font-size:16px;color:#fff;">2017</font> <br>
+           <div style="margin-top: -7px;color: #fff;">YEAR</div></li>
+           <li style="margin-left: 19px;"><font style="font-size:14px;color:#fff;margin-left:0px;">1080p BluRay</font> <br>
+           <div style="margin-top: -7px;color: #fff;">Quality</div></li>
+           <li style="margin-left: 20px;margin-top: 6px;"><a href="#" class="flove" title="add to favourite list"><span class="grid-ibx__icon glyphicon glyphicon-heart-empty"></span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-9" style="clear:left;background:-color:#fff;"><div style="font-size: 21px;margin-top: 10px;margin-bottom: -27px;">Hollywood</div><br><div style="font-size: 10px;"><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Action&sort=DESC&w=grid">Action</a> ,<a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Adventure&sort=DESC&w=grid">Adventure</a>, <a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Science Fiction&sort=DESC&w=grid">Science Fiction</a>, <a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Drama&sort=DESC&w=grid">Drama</a></div></div>
+        <div class="col-md-2" style="margin-top: 10px;border: 1px solid #000;border-radius: 50px;height: 50px;width: 50px;"><div style="text-align:center;font-size:14px;font-weight: bold;margin-top: 5px;margin-left: -3px;">133</div> <div style="margin-top: -10px;margin-left: -2px;">min</div></div>
+        <div class="col-md-12" style="font-size: 16px;
+font-weight: bold;margin-top: 8px;line-height: 15px;">Spider-Man: Homecoming</div>
+        <div class="col-md-12" style="line-height: 13px;margin-top: 10px;
+"> Following the events of Captain America: Civil War, Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary hig...<a href="movie.php?imdbid=tt2250912&cat=Hollywood">More</a>. <br>
+<a class="btn-element btn btn-fullcolor btn-sm " href="http://www.youtube.com/watch?v=rk-dF1lIbIg" data-lightbox="iframe" title="Watch Trailer" style="margin:5px 5px 5px 0;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Trailer</span></a>
+
+<a class="btn-element btn btn-lined lined-dark btn-sm " href="movie.php?imdbid=tt2250912&cat=Hollywood" title="Play Now" style="margin: 5px 0px 4px -4px;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Watch Now</span></a>
+
+<a class="btn-element btn btn-success lined-dark btn-sm " href="#" title="Add to Playlist" style="margin: 1px 0px 0px 1px;"><span><i class="grid-ibx__icon glyphicon glyphicon-plus"  style="font-size:11px;" ></i></span></a>
+</div>
+
+    </div>
+    </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs1-8 col-xs-12">
+   <a href="movie.php?imdbid=tt6320628&cat=Hollywood" class="thumb hoverBorder plus boxHov1" onmouseover="document.getElementById('divtt6320628').style.display = 'block';" onMouseOut="document.getElementById('divtt6320628').style.display = 'none';" style="margin-bottom:0px;">
+
+        <span class="hoverBorderWrapper">
+
+            <img src="http://10.1.1.1/Admin/main/images/tt6320628/poster/4q2NNj4S5dG2RLF9CpXsej7yXl.jpg" onerror="this.src='http://image.tmdb.org/t/p/w500/4q2NNj4S5dG2RLF9CpXsej7yXl.jpg" class="img-responsive offer-banners-img" alt="" title="" style="height:auto;width:100%">
+
+             <span class="MovieQuality">1080p BluRay</span><span class="theHoverBorder"></span>
+        </span>
+
+    </a>
+    <div class="post-details" style="line-height:1.2em;margin-bottom:15px;">
+        <p class="MovieTitle">
+        <a href="movie.php?imdbid=tt6320628&cat=Hollywood" title="Spider-Man: F.." >Spider-Man: F..</a>
+        <a  href="movie.php?imdbid=tt6320628&cat=Hollywood" title="Spider-Man: F.." style="padding: 1px 4px;font-size: 11px;margin-right: 6%;float:right;">
+        <span>2019</span>
+        <span class="MovieRatings">7.5</span>
+
+        </p>
+    </div>
+
+    <div class="displayHover1 BoxCss" id="divtt6320628" style="" onmouseover="document.getElementById('divtt6320628').style.display = 'block';" onMouseOut="document.getElementById('divtt6320628').style.display = 'none';">
+        <div class="arrow_box"></div>
+        <div class="headBox">
+          <ul>
+           <li style="margin-left: -17px;"><font style="font-size:16px;color:#fff;">7.5</font> <br><img src="images/imdb_logo.jpg" style="width:28px;margin-top:-15px;" /></li>
+           <li style="margin-left: 19px;"><font style="font-size:16px;color:#fff;">2019</font> <br>
+           <div style="margin-top: -7px;color: #fff;">YEAR</div></li>
+           <li style="margin-left: 19px;"><font style="font-size:14px;color:#fff;margin-left:0px;">1080p BluRay</font> <br>
+           <div style="margin-top: -7px;color: #fff;">Quality</div></li>
+           <li style="margin-left: 20px;margin-top: 6px;"><a href="#" class="flove" title="add to favourite list"><span class="grid-ibx__icon glyphicon glyphicon-heart-empty"></span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-9" style="clear:left;background:-color:#fff;"><div style="font-size: 21px;margin-top: 10px;margin-bottom: -27px;">Hollywood</div><br><div style="font-size: 10px;"><a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Action&sort=DESC&w=grid">Action</a> ,<a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Adventure&sort=DESC&w=grid">Adventure</a>, <a href="allmovies.php?page=1&entries=24&Category=Hollywood&Genre=Science Fiction&sort=DESC&w=grid">Science Fiction</a>, </div></div>
+        <div class="col-md-2" style="margin-top: 10px;border: 1px solid #000;border-radius: 50px;height: 50px;width: 50px;"><div style="text-align:center;font-size:14px;font-weight: bold;margin-top: 5px;margin-left: -3px;">129</div> <div style="margin-top: -10px;margin-left: -2px;">min</div></div>
+        <div class="col-md-12" style="font-size: 16px;
+font-weight: bold;margin-top: 8px;line-height: 15px;">Spider-Man: Far From Home</div>
+        <div class="col-md-12" style="line-height: 13px;margin-top: 10px;
+"> Peter Parker and his friends go on a summer trip to Europe. However, they will hardly be able to rest - Peter will have to agree to help Nick Fury unc...<a href="movie.php?imdbid=tt6320628&cat=Hollywood">More</a>. <br>
+<a class="btn-element btn btn-fullcolor btn-sm " href="http://www.youtube.com/watch?v=DYYtuKyMtY8" data-lightbox="iframe" title="Watch Trailer" style="margin:5px 5px 5px 0;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Trailer</span></a>
+
+<a class="btn-element btn btn-lined lined-dark btn-sm " href="movie.php?imdbid=tt6320628&cat=Hollywood" title="Play Now" style="margin: 5px 0px 4px -4px;"><span><i class="grid-ibx__icon glyphicon glyphicon-play"  style="font-size:11px;" ></i> Watch Now</span></a>
+
+<a class="btn-element btn btn-success lined-dark btn-sm " href="#" title="Add to Playlist" style="margin: 1px 0px 0px 1px;"><span><i class="grid-ibx__icon glyphicon glyphicon-plus"  style="font-size:11px;" ></i></span></a>
+</div>
+
+    </div>
+    </div>
+
+
+									</p>
+									<!--/ Description -->
+
+								</div>
+								<!--/ Tab #1 -->
+
+								<!-- Tab #2 -->
+								<div class="tab-pane " id="tabs_i2-pane2">
+									<!-- Title -->
+									<h4>Games</h4>
+									<!--/ Title -->
+
+									<!-- Description -->
+									<p>
+
+									</p>
+
+									<!--/ Description -->
+								</div>
+								<!--/ Tab #2 -->
+
+								<!-- Tab #3 -->
+								<div class="tab-pane " id="tabs_i2-pane3">
+									<!-- Title -->
+									<h4>Tv Series</h4>
+									<!--/ Title -->
+
+									<!-- Description -->
+									<p>
+
+
+	<div class="alert alert-error" style="background:#ef5454;">
+		Sorry, but nothing matched your search criteria. Please try again with some different keywords.
+		<span class="close"></span>
+	</div>
+
+
+									</p>
+									<!--/ Description -->
+								</div>
+								<!--/ Tab #3 -->
+
+								<!-- Tab #4 -->
+								<div class="tab-pane " id="tabs_i2-pane4">
+									<!-- Title -->
+									<h4>Software</h4>
+									<!--/ Title -->
+
+									<!-- Description -->
+									<p>
+										Authoritatively parallel task team building models via leveraged initiatives. Competently disintermediate e-business strategic theme areas whereas open-source products. Monotonectally matrix integrated intellectual capital for premier mindshare. Rapidiously revolutionize web-enabled products whereas alternative ideas. Completely transform resource sucking supply chains via error-free content.<br>
+										Energistically foster client-centric solutions for market-driven infrastructures. Phosfluorescently whiteboard prospective action items whereas enabled leadership skills. Credibly synthesize premier e-business whereas diverse action items. Rapidiously leverage other's equity invested channels and long-term high-impact value. Continually myocardinate high standards in testing procedures and interactive opportunities.
+									</p>
+									<!--/ Description -->
+								</div>
+								<!--/ Tab #4 -->
+
+								<!-- Tab #5 -->
+								<div class="tab-pane " id="tabs_i2-pane5">
+									<!-- Title -->
+									<h4>Posts</h4>
+									<!--/ Title -->
+
+									<!-- Description -->
+									<p>
+										Authoritatively parallel task team building models via leveraged initiatives. Competently disintermediate e-business strategic theme areas whereas open-source products. Monotonectally matrix integrated intellectual capital for premier mindshare. Rapidiously revolutionize web-enabled products whereas alternative ideas. Completely transform resource sucking supply chains via error-free content.<br>
+										Energistically foster client-centric solutions for market-driven infrastructures. Phosfluorescently whiteboard prospective action items whereas enabled leadership skills. Credibly synthesize premier e-business whereas diverse action items. Rapidiously leverage other's equity invested channels and long-term high-impact value. Continually myocardinate high standards in testing procedures and interactive opportunities.
+									</p>
+									<!--/ Description -->
+								</div>
+								<!--/ Tab #5 -->
+
+							</div>
+							<!--/ Tabs content -->
+						</div>
+						<!--/ Tabs element style 5 -->
+					</div>
+					<!--/ col-md-12 col-sm-12 -->
+				</div>
+				<!--/ row -->
+			</div>
+			<!--/ container -->
+		</section>
+		<!--/ Tabs section with custom paddings -->
+
+
+
+		<!-- Call to action (Info box v3) full width section with background -->
+		<section class="hg_section hg_section--relative p-0">
+			<!-- Background -->
+			<div class="kl-bg-source">
+				<!-- Background image -->
+				<div class="kl-bg-source__bgimage" style="background-image:url(images/bg_01.jpg); background-repeat:no-repeat; background-attachment:scroll; background-position-x:center; background-position-y:center; background-size:cover;">
+				</div>
+				<!--/ Background image -->
+
+				<!-- Color overlay -->
+				<div class="kl-bg-source__overlay" style="background-color:rgba(53,53,53,0.5)">
+				</div>
+				<!--/ Color overlay -->
+			</div>
+			<!--/ Background -->
+
+              <!--/ container -->
+			<div class="container" style="display:none;">
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<!-- Info box v3 element-->
+						<div class="infobox3" style="background-repeat:repeat; background-size:auto; background-position:left top; background-attachment:scroll;">
+							<div class="row">
+								<!-- Info box v3 content - light text -->
+								<div class="ib-content infobox3--light col-sm-12 col-lg-12">
+									<!-- Content title -->
+									<h3 class="ib-content__title m_title">Impressed by the new Movie Template?</h3>
+									<!--/ Content title -->
+
+									<!-- Info box Button #1 lined style -->
+									<div class="ib-button ib-button-1">
+										<a href="#" target="_self" class="ib-button-1 btn btn-lined">Purchase now</a>
+									</div>
+									<!--/ Info box Button #1 lined style -->
+								</div>
+								<!--/ Info box v3 content - light text -->
+							</div>
+							<!--/ row -->
+						</div>
+						<!--/ Info box v3 element-->
+					</div>
+					<!--/ col-md-12 col-sm-12 -->
+				</div>
+				<!--/ row -->
+			</div>
+			<!--/ container -->
+
+
+		</section>
+		<!--/ Call to action (Info box v3) full width section with background -->
+
+		<!-- Footer - Default Style -->
+		<footer id="footer" style="padding:0px;background: #04060e;">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-sm-12">
+						<div class="bottom clearfix">
+							<!-- social-icons -->
+							<ul class="social-icons sc--clean clearfix">
+								<li class="title">GET SOCIAL</li>
+
+								     <li><a href="https://www.facebook.com/bottolacybernet/" target="_blank" class="icon-facebook" title="Facebook"></a></li>
+								     <li><a href="#" target="_blank" class="icon-youtube" title="Youtube"></a></li>
+
+
+							</ul>
+							<!--/ social-icons -->
+
+							<!-- copyright -->
+							<div class="copyright">
+								<a href="index.php">
+
+								     <img src="logo.png" alt="ftpmedia.net" style="width:149px;margin-top: -9px;">
+
+								</a>
+								<p>© 2021 All rights reserved </a>@ Powered By <a href="http://10.1.1.1">FTPmedia.net</a></p>
+							</div>
+							<!--/ copyright -->
+						</div>
+						<!--/ bottom -->
+					</div>
+					<!--/ col-sm-12 -->
+				</div>
+				<!--/ row -->
+			</div>
+			<!--/ container -->
+		</footer>
+
+
+		<a href="#Learn_more_panel" class="popup-with-form" ><img src="images/live-chat-button.png" class="ContentImg" style="position: fixed;bottom: 1px;right: 10px;width:60px;" ></a>
+		<!--/ Footer - Default Style -->
+
+	</div>
+	<!--/ Page Wrapper -->
+
+
+	<!-- Login Panel content -->
+
+
+<div id="login_panel" class="mfp-hide loginbox-popup auth-popup">
+		<div class="inner-container login-panel auth-popup-panel">
+			<h3 class="m_title m_title_ext text-custom auth-popup-title tcolor">SIGN IN YOUR ACCOUNT TO HAVE ACCESS TO DIFFERENT FEATURES</h3>
+			<p id="message3"></p>
+			<form class="login_panel" name="login_form" method="post" action="">
+				<div class="form-group kl-fancy-form">
+					<input type="text" id="lusername" name="lusername" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="eg: james_smith">
+					<label class="kl-font-alt kl-fancy-form-label">USERNAME</label>
+				</div>
+				<div class="form-group kl-fancy-form">
+					<input type="password" id="lpassword" name="lpassword" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="type password">
+					<label class="kl-font-alt kl-fancy-form-label">PASSWORD</label>
+				</div>
+				<label class="auth-popup-remember" for="kl-rememberme"><input type="checkbox" name="rememberme" id="kl-rememberme" value="forever" class="auth-popup-remember-chb"> Remember Me </label>
+				<input type="submit" id="submit" name="submit" class="btn zn_sub_button btn-block btn-fullcolor btn-md" value="LOGIN NOW" onclick="insertData3()">
+				<input type="hidden" value="login" class="" name="form_action"><input type="hidden" value="login" class="" name="action" />
+				<input type="hidden" value="#" class="" name="submit">
+				<div class="links auth-popup-links">
+					<a href="#register_panel" class="create_account auth-popup-createacc kl-login-box auth-popup-link">CREATE AN ACCOUNT</a><span class="sep auth-popup-sep"></span><a href="#forgot_panel" class="kl-login-box auth-popup-link">FORGOT YOUR PASSWORD?</a>
+				</div>
+			</form>
+		</div>
+		<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+	</div>
+	<div id="register_panel" class="mfp-hide loginbox-popup auth-popup">
+		<div class="inner-container register-panel auth-popup-panel">
+			<h3 class="m_title m_title_ext text-custom auth-popup-title">CREATE ACCOUNT</h3>
+			<p id="message2"></p>
+			<form class="register_panel" name="login_form" method="post" action="">
+				<div class="form-group kl-fancy-form ">
+					<input type="text" id="Rusername" name="Rusername" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="type desired username"><label class="kl-font-alt kl-fancy-form-label">USERNAME</label>
+				</div>
+				<div class="form-group kl-fancy-form">
+					<input type="text" id="Reemail" name="Reemail" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="your-email@website.com"><label class="kl-font-alt kl-fancy-form-label">EMAIL</label>
+				</div>
+				<div class="form-group kl-fancy-form">
+					<input type="password" id="Rpass" name="Rpass" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="*****"><label class="kl-font-alt kl-fancy-form-label">PASSWORD</label>
+				</div>
+				<div class="form-group kl-fancy-form">
+					<input type="password" id="Rrepass" name="Rrepass" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="*****"><label class="kl-font-alt kl-fancy-form-label">CONFIRM PASSWORD</label>
+				</div>
+				<div class="form-group">
+					<input type="submit" id="submit2" name="submit" class="btn zn_sub_button btn-block btn-fullcolor btn-md" value="CREATE MY ACCOUNT" onclick="insertData2()">
+				</div>
+				<div class="links auth-popup-links">
+					<a href="#login_panel" class="kl-login-box auth-popup-link">ALREADY HAVE AN ACCOUNT?</a>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+<!--This code is for username validation-->
+
+
+
+
+
+<div id="forgot_panel" class="mfp-hide loginbox-popup auth-popup forgot-popup">
+		<div class="inner-container forgot-panel auth-popup-panel">
+			<h3 class="m_title m_title_ext text-custom auth-popup-title">FORGOT YOUR DETAILS?</h3><p id="message3"></p>
+			<form class="forgot_form" name="login_form" method="post" action="">
+				<div class="form-group kl-fancy-form">
+					<input type="text" id="forgotemail" name="forgotemail" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="...">
+					<label class="kl-font-alt kl-fancy-form-label">USERNAME OR EMAIL</label>
+				</div>
+				<div class="form-group">
+					<input type="submit" id="recover" name="submit" class="btn btn-block zn_sub_button btn-fullcolor btn-md" value="SEND MY DETAILS!" onclick="insertData4()">
+				</div>
+				<div class="links auth-popup-links">
+					<a href="#login_panel" class="kl-login-box auth-popup-link">AAH, WAIT, I REMEMBER NOW!</a>
+				</div>
+			</form>
+		</div>
+		<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+	</div>
+	<div id="Learn_more_panel" class="mfp-hide loginbox-popup auth-popup forgot-popup">
+		<div class="inner-container login-panel auth-popup-panel">
+			<h3 class="m_title m_title_ext text-custom auth-popup-title tcolor">Request Your Content or report about Content</h3>
+
+			<form class="login_panel" name="req_form" method="post" action="">
+				<div class="form-group kl-fancy-form">
+				<select class="form-control kl-fancy-form-select kl-fw-input" name="Rcate" id="Rcate">
+                    <option value="Movie" selected="">Movie</option>
+                    <option value="Games">Games</option>
+                    <option value="Tv">Tv Series</option>
+                    <option value="Software">Software</option>
+                    <option value="Link">Link Broken</option>
+                    <option value="Wrong">Wrong Content</option>
+                </select>
+					<label class="kl-font-alt kl-fancy-form-label">ISSUE</label>
+				</div>
+				<div class="form-group kl-fancy-form">
+					<input type="text"  id="Rname" name="Rname" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="type Your Name">
+					<label class="kl-font-alt kl-fancy-form-label">Your Name</label>
+				</div>
+				<div class="form-group kl-fancy-form">
+					<input type="text" id="Remail" name="Remail" pattern="^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$" required="required" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="your-email@website.com"><label class="kl-font-alt kl-fancy-form-label">EMAIL</label>
+				</div>
+
+				<div class="form-group kl-fancy-form">
+									<textarea name="Rtext" id="Rtext" class="form-control" cols="20" rows="10" placeholder="Your Request,Complain,Link Broken... etc" tabindex="4" required=""></textarea>
+									<label class="control-label">MESSAGE</label>
+								</div>
+
+				<input type="submit" id="insert-data" name="insert-data" class="btn zn_sub_button btn-fullcolor btn-md"  onclick="insertData()" value="SUBMIT" />
+				<input type="hidden" value="login" class="" name="form_action"><input type="hidden" value="login" class="" name="action">
+				<input type="hidden" value="#" class="" name="submit">
+				<p id="message"></p>
+				<div class="links auth-popup-links">
+					<a href="#register_panel" class="create_account auth-popup-createacc kl-login-box auth-popup-link">CREATE AN ACCOUNT</a><span class="sep auth-popup-sep"></span><a href="#login_panel" class="kl-login-box auth-popup-link">LOGIN</a>
+				</div>
+			</form>
+
+
+		</div>
+		<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+	</div>	<!--/ Login Panel content -->
+
+
+	<!-- ToTop trigger -->
+	<a href="#" id="totop">TOP</a>
+	<!--/ ToTop trigger -->
+
+
+
+
+
+	<!-- JS FILES // These should be loaded in every page -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/kl-plugins.js"></script>
+
+	<!-- JS FILES // Loaded on this page -->
+	<!-- Required js scripts files for iCarousel slider element -->
+	<script type="text/javascript" src="js/plugins/_sliders/icarousel/icarousel.packed.js"></script>
+	<script type="text/javascript" src="js/plugins/_sliders/icarousel/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="js/plugins/_sliders/icarousel/raphael-min.js"></script>
+
+
+
+
+
+	<!-- Custom user JS codes -->
+	<script type="text/javascript" src="js/kl-custom.js"></script>
+
+	<!-- Modernizr script -->
+	<script type="text/javascript">
+		//use the modernizr load to load up external scripts. This will load the scripts asynchronously, but the order listed matters. Although it will load all scripts in parallel, it will execute them in the order listed
+		Modernizr.load([
+			{
+				// test for media query support, if not load respond.js
+				test : Modernizr.mq('only all'),
+				// If not, load the respond.js file
+				nope : '//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js'
+			}
+		]);
+	</script>
+
+
+
+
+	<!-- CarouFredSel required js script for Partner / Featured products carousel elements -->
+	<script type="text/javascript" src="js/plugins/_sliders/caroufredsel/jquery.carouFredSel-packed.js"></script>
+
+
+	<!-- Custom Kallyas JS codes -->
+	<script type="text/javascript" src="js/kl-scripts.js"></script>
+
+	<!-- Required js trigger for Recent Work Carousel style 3 element -->
+	<script type="text/javascript" src="js/trigger/kl-recent-work-carousel3.js"></script>
+
+
+	<!-- Required js script file for Animated sparkles element -->
+	<script type="text/javascript" src="js/plugins/sparkles.js"></script>
+	<!-- Required jQuery migrate plugin for Animated sparkles element -->
+	<script type="text/javascript" src="js/jquery-migrate.min.js"></script>
+
+	<script type="text/javascript" src="js/plugins/_sliders/caroufredsel/jquery.carouFredSel-packed.js"></script>
+	<script type="text/javascript" src="js/trigger/slider/caroufredsel/circular-catalogue/kl-circular-catalogue.js"></script>
+
+
+	<!-- Required script for sorting (masonry) elements - Isotope filter -->
+	<script type="text/javascript" src="js/plugins/jquery.isotope.min.js"></script>
+	<!-- Required js trigger for Portfolio sortable element -->
+	<script type="text/javascript" src="js/trigger/kl-portfolio-sortable.js"></script>
+
+
+<script type="text/javascript">
+
+  function insertData() {
+    var Rcate=$("#Rcate").val();
+    var Rname=$("#Rname").val();
+    var Remail=$("#Remail").val();
+    var Rtext=$("#Rtext").val();
+
+
+// AJAX code to send data to php file.
+        $.ajax({
+            type: "POST",
+            url: "insert-data.php",
+            data: {Rcate:Rcate,Rname:Rname,Remail:Remail,Rtext:Rtext},
+            dataType: "JSON",
+            success: function(data) {
+            $("#message").html(data);
+            $("#message").addClass("alert alert-success");
+            },
+            error: function(err) {
+            alert(err);
+            }
+        });
+$('form').submit(function() {
+  return false;
+});
+}
+
+</script>
+<script type="text/javascript">
+
+  function insertData2() {
+    var Rusername =$("#Rusername").val();
+    var Reemail =$("#Reemail").val();
+    var Rpass =$("#Rpass").val();
+    var Rrepass =$("#Rrepass").val();
+
+
+// AJAX code to send data to php file.
+        $.ajax({
+            type: "POST",
+            url: "signup.php",
+            data: {Rusername:Rusername,Reemail:Reemail,Rpass:Rpass,Rrepass:Rrepass},
+            dataType: JSON,
+            success: function(data){
+            $("#message2").html(data);
+            //$("#message2").addClass("alert alert-danger");
+            },
+            error: function(err) {
+            alert(err);
+            }
+        });
+$('form').submit(function() {
+  return false;
+});
+}
+
+
+  function insertData3() {
+    var lusername =$("#lusername").val();
+    var lpassword =$("#lpassword").val();
+// AJAX code to send data to php file.
+        $.ajax({
+            type: "POST",
+            url: "login.php",
+            data: {lusername:lusername,lpassword:lpassword},
+            dataType: "JSON",
+            success: function(data){
+			if(data === '"success"' || data === 'success'){
+				window.location.href = "profile.php?user="+lusername;
+			}else{
+				$("#message3").html(data);
+			}
+            },
+            error: function(err) {
+            alert(err);
+            }
+        });
+
+$('form').submit(function() {
+  return false;
+});
+}
+
+
+  function insertData4() {
+    var forgotemail =$("#forgotemail").val();
+// AJAX code to send data to php file.
+        $.ajax({
+            type: "POST",
+            url: "forgotmail.php",
+            data: {forgotemail:forgotemail},
+            dataType: JSON,
+            success: function(data){
+            $("#message3").html(data);
+            //$("#message2").addClass("alert alert-danger");
+            },
+            error: function(err) {
+			$("#message3").html(err);
+            }
+        });
+$('form').submit(function() {
+  return false;
+});
+}
+</script>
+
+
+</body>
+</html>

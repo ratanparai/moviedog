@@ -13,17 +13,20 @@ import com.ratanparai.moviedog.db.entity.Scrapped
 import com.ratanparai.moviedog.db.entity.SearchHash
 import com.ratanparai.moviedog.scrapper.*
 import com.ratanparai.moviedog.utilities.MD5
+import kotlinx.coroutines.async
+import kotlinx.coroutines.runBlocking
 
 class MovieService(private val context: Context) {
 
     private val TAG = "MovieService"
 
-    fun search(query: String): List<Movie> {
+    fun search(query: String): List<Movie> = runBlocking{
         val dekhvhaiScrapper = DekhvhaiScrapper()
         val bdPlexScrapper = BdPlexScrapper()
         val wowMovieZoneScrapper = WowMovieZoneScrapper()
-        var flixhubScrapper = FlixhubScrapper()
-        var movieHaatScrapper = MovieHaatScrapper()
+        val flixhubScrapper = FlixhubScrapper()
+        val movieHaatScrapper = MovieHaatScrapper()
+        val ftpMediaScrapper = FtpMediaScrapper()
 
         val searchHashDao = AppDatabase.getInstance(context).searchHashDao()
         val movieDao = AppDatabase.getInstance(context).movieDao()
@@ -33,13 +36,40 @@ class MovieService(private val context: Context) {
 //        scrapMovies(bdPlexScrapper, query, searchHashDao, movieDao, scrappedDao, movieUrlDao, "BDPlex")
 //        scrapMovies(dekhvhaiScrapper, query, searchHashDao, movieDao, scrappedDao, movieUrlDao, "Dekhvhai")
         //scrapMovies(wowMovieZoneScrapper, query, searchHashDao, movieDao, scrappedDao, movieUrlDao, "WoW Movie")
-        scrapMovies(flixhubScrapper, query, searchHashDao, movieDao, scrappedDao, movieUrlDao, "FlexHub")
-        scrapMovies(movieHaatScrapper, query, searchHashDao, movieDao, scrappedDao, movieUrlDao, "MovieHaat")
 
-        return movieDao.searchByTitle(query)
+        val task2 = async { scrapMovies(
+            movieHaatScrapper,
+            query,
+            searchHashDao,
+            movieDao,
+            scrappedDao,
+            movieUrlDao,
+            "MovieHaat") }
+        val task3 = async { scrapMovies(
+            ftpMediaScrapper,
+            query,
+            searchHashDao,
+            movieDao,
+            scrappedDao,
+            movieUrlDao,
+            "FtpMedia") }
+        val task1 = async { scrapMovies(
+            flixhubScrapper,
+            query,
+            searchHashDao,
+            movieDao,
+            scrappedDao,
+            movieUrlDao,
+            "FlexHub")}
+
+        task1.await()
+        task2.await()
+        task3.await()
+
+        movieDao.searchByTitle(query)
     }
 
-    private fun scrapMovies(scrapper: Scrapper, query: String, searchHashDao: SearchHashDao, movieDao: MovieDao, scrappedDao: ScrappedDao, movieUrlDao: MovieUrlDao, serviceName: String) {
+    private suspend fun scrapMovies(scrapper: Scrapper, query: String, searchHashDao: SearchHashDao, movieDao: MovieDao, scrappedDao: ScrappedDao, movieUrlDao: MovieUrlDao, serviceName: String) {
         try {
             val searchUrl = scrapper.getSearchUrl(query)
             val document = scrapper.getDocument(searchUrl)
@@ -81,6 +111,11 @@ class MovieService(private val context: Context) {
                     if (movieFromDao == null) {
                         Log.d(TAG, "The movie is not in database. Inserting movie info and first video link")
                         val movieId = movieDao.insertMovie(movie).toInt()
+
+                        val subtitleService = SubtitleService(context)
+                        val movieWithId = movie.copy(movieId)
+                        subtitleService.backgroundSubtitleDownload(movieWithId)
+
                         val movieUrl = MovieUrl(movieId = movieId, movieUrl = movie.videoUrl, serviceName = serviceName)
                         movieUrlDao.insertMovieUrl(movieUrl)
                     } else {

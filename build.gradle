@@ -7,7 +7,7 @@ buildscript {
         roomVersion = '1.1.1'
         archLifecycleVersion = '1.1.1'
         coroutines = '0.26.1'
-        lifecycleVersion = '2.1.0-alpha04'
+        lifecycleVersion = '2.2.0'
         espressoVersion = '3.1.0-alpha4'
     }
     repositories {
@@ -16,7 +16,7 @@ buildscript {
 
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.1'
+        classpath 'com.android.tools.build:gradle:4.2.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files

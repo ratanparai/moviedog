@@ -129,6 +129,7 @@ class PlaybackFragment: VideoSupportFragment() {
             trackSelector!!)
         playerGlue.host = VideoSupportFragmentGlueHost(this)
         playerGlue.playWhenPrepared()
+        playerGlue.isControlsOverlayAutoHideEnabled = true
         playMedia(movie!!)
     }
 

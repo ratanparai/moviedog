@@ -9,6 +9,7 @@ import android.view.View
 import android.view.WindowManager
 import android.widget.Toast
 import androidx.core.content.res.ResourcesCompat
+import androidx.leanback.media.PlaybackGlueHost
 import androidx.leanback.media.PlaybackTransportControlGlue
 import androidx.leanback.media.PlayerAdapter
 import androidx.leanback.widget.Action
@@ -38,6 +39,8 @@ class VideoPlayerGlue<T : PlayerAdapter>(
     private val THIRTY_SECONDS = TimeUnit.SECONDS.toMillis(30)
     private val ONE_MINUTES = TimeUnit.MINUTES.toMillis(1)
     private val FIVE_MINUTES = TimeUnit.MINUTES.toMillis(5)
+
+    private var _firstTimePlay = true
 
     private val transportControls: MediaControllerCompat.TransportControls = mediaController.transportControls
 
@@ -90,6 +93,7 @@ class VideoPlayerGlue<T : PlayerAdapter>(
         super.onPlayStateChanged()
         if(isPlaying) {
             (context as Activity).window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+
         } else {
             (context as Activity).window.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
         }
@@ -97,6 +101,12 @@ class VideoPlayerGlue<T : PlayerAdapter>(
 
     override fun onUpdateProgress() {
         super.onUpdateProgress()
+        if(_firstTimePlay){
+            if(closedCaption()){
+                _firstTimePlay = false
+            }
+
+        }
         movieService.updateMovieProgress(movieId, currentPosition)
     }
 
@@ -123,9 +133,9 @@ class VideoPlayerGlue<T : PlayerAdapter>(
         }
     }
 
-    private fun ChangeAudio() {
+    private fun ChangeAudio(): Boolean {
         var mappedTrackInfo = trackSelector.currentMappedTrackInfo
-        var trackGroupArray: TrackGroupArray? = mappedTrackInfo?.getTrackGroups(1) ?: return
+        var trackGroupArray: TrackGroupArray? = mappedTrackInfo?.getTrackGroups(1) ?: return false
 
         val langList: ArrayList<String> = ArrayList()
 
@@ -169,11 +179,12 @@ class VideoPlayerGlue<T : PlayerAdapter>(
             msg, Toast.LENGTH_LONG
         )
         toast?.show()
+        return true
     }
 
-    private fun closedCaption() {
+    private fun closedCaption(): Boolean {
         var mappedTrackInfo = trackSelector.currentMappedTrackInfo
-        var trackGroupArray: TrackGroupArray? = mappedTrackInfo?.getTrackGroups(2) ?: return
+        var trackGroupArray: TrackGroupArray? = mappedTrackInfo?.getTrackGroups(2) ?: return false
 
         val langList: ArrayList<String> = ArrayList()
 
@@ -225,6 +236,7 @@ class VideoPlayerGlue<T : PlayerAdapter>(
             msg, Toast.LENGTH_LONG
         )
         toast?.show()
+        return true
     }
 
     private fun rewind(rewindTime: Long = TEN_SECONDS){
