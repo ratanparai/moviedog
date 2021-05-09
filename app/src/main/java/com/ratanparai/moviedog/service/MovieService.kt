@@ -13,8 +13,7 @@ import com.ratanparai.moviedog.db.entity.Scrapped
 import com.ratanparai.moviedog.db.entity.SearchHash
 import com.ratanparai.moviedog.scrapper.*
 import com.ratanparai.moviedog.utilities.MD5
-import kotlinx.coroutines.async
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.*
 
 class MovieService(private val context: Context) {
 
@@ -86,55 +85,53 @@ class MovieService(private val context: Context) {
 
             Log.d(TAG, "Scrapping ${movieLinks.size} movies!")
 
-
-            for (link in movieLinks) {
-
-                if (alreadyScrappedMovie(link, scrappedDao)) {
-                    Log.d(TAG, "Movie is already scrapped for URL: $link")
-                    continue
-                }
-
-                Log.d(TAG, "First time scrapping movie for URL: $link")
-
-                val scrapped = Scrapped(
-                    url = link
-                )
-
-                try {
-                    val movieDoc = scrapper.getDocument(link)
-                    val movie = scrapper.getMovie(movieDoc, link)
-                    Log.d(TAG, "Scrapped movie: $movie for search URL $searchUrl ")
-
-                    scrappedDao.insert(scrapped)
-
-                    val movieFromDao = movieDao.getMovieByTitle(movie.title)
-                    if (movieFromDao == null) {
-                        Log.d(TAG, "The movie is not in database. Inserting movie info and first video link")
-                        val movieId = movieDao.insertMovie(movie).toInt()
-
-                        val subtitleService = SubtitleService(context)
-                        val movieWithId = movie.copy(movieId)
-                        subtitleService.backgroundSubtitleDownload(movieWithId)
-
-                        val movieUrl = MovieUrl(movieId = movieId, movieUrl = movie.videoUrl, serviceName = serviceName)
-                        movieUrlDao.insertMovieUrl(movieUrl)
-                    } else {
-                        Log.d(TAG, "Movie is already in database. Adding new video urls")
-                        val movieUrl = MovieUrl(
-                            movieId = movieFromDao.id,
-                            movieUrl = movie.videoUrl,
-                            serviceName = serviceName
-                        )
-
-                        movieUrlDao.insertMovieUrl(movieUrl)
+            coroutineScope {
+                movieLinks.map { link -> async(Dispatchers.IO) {
+                    if (alreadyScrappedMovie(link, scrappedDao)) {
+                        Log.d(TAG, "Movie is already scrapped for URL: $link")
+                        return@async
                     }
 
-                } catch (ex: Exception) {
-                    Log.d("MovieService", ex.message)
-                }
+                    Log.d(TAG, "First time scrapping movie for URL: $link")
 
+                    val scrapped = Scrapped(
+                        url = link
+                    )
+
+                    try {
+                        val movieDoc = scrapper.getDocument(link)
+                        val movie = scrapper.getMovie(movieDoc, link)
+                        Log.d(TAG, "Scrapped movie: $movie for search URL $searchUrl ")
+
+                        scrappedDao.insert(scrapped)
+
+                        val movieFromDao = movieDao.getMovieByTitle(movie.title)
+                        if (movieFromDao == null) {
+                            Log.d(TAG, "The movie is not in database. Inserting movie info and first video link")
+                            val movieId = movieDao.insertMovie(movie).toInt()
+
+                            val subtitleService = SubtitleService(context)
+                            val movieWithId = movie.copy(movieId)
+                            subtitleService.backgroundSubtitleDownload(movieWithId)
+
+                            val movieUrl = MovieUrl(movieId = movieId, movieUrl = movie.videoUrl, serviceName = serviceName)
+                            movieUrlDao.insertMovieUrl(movieUrl)
+                        } else {
+                            Log.d(TAG, "Movie is already in database. Adding new video urls")
+                            val movieUrl = MovieUrl(
+                                movieId = movieFromDao.id,
+                                movieUrl = movie.videoUrl,
+                                serviceName = serviceName
+                            )
+
+                            movieUrlDao.insertMovieUrl(movieUrl)
+                        }
+
+                    } catch (ex: Exception) {
+                        Log.d("MovieService", ex.message)
+                    }
+                } }.awaitAll()
             }
-
 
             if (sHash == null) {
                 val searchHash = SearchHash(url = searchUrl, md5hash = md5Hex)
