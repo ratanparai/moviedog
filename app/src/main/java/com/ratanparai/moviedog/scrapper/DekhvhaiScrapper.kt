@@ -6,7 +6,7 @@ import org.jsoup.nodes.Document
 import java.io.IOException
 import java.util.concurrent.TimeUnit
 
-class DekhvhaiScrapper: Scrapper {
+open class DekhvhaiScrapper: Scrapper {
 
     val DEKHVHAI_SEARCH_URL = "http://dekhvhai.com/msearch.php?q=&searchquery=%s&q=M"
 

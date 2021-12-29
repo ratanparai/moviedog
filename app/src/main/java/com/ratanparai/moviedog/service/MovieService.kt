@@ -26,6 +26,7 @@ class MovieService(private val context: Context) {
         val flixhubScrapper = FlixhubScrapper()
         val movieHaatScrapper = MovieHaatScrapper()
         val ftpMediaScrapper = FtpMediaScrapper()
+        val shebaItScrapper = ShebaItScrapper()
 
         val searchHashDao = AppDatabase.getInstance(context).searchHashDao()
         val movieDao = AppDatabase.getInstance(context).movieDao()
@@ -52,6 +53,14 @@ class MovieService(private val context: Context) {
             scrappedDao,
             movieUrlDao,
             "FtpMedia") }
+        val task4 = async { scrapMovies(
+            shebaItScrapper,
+            query,
+            searchHashDao,
+            movieDao,
+            scrappedDao,
+            movieUrlDao,
+            "ShebaIT") }
         val task1 = async { scrapMovies(
             flixhubScrapper,
             query,
@@ -64,6 +73,7 @@ class MovieService(private val context: Context) {
         task1.await()
         task2.await()
         task3.await()
+        task4.await()
 
         movieDao.searchByTitle(query)
     }
@@ -128,7 +138,7 @@ class MovieService(private val context: Context) {
                         }
 
                     } catch (ex: Exception) {
-                        Log.d("MovieService", ex.message)
+                        Log.d("MovieService", ex.message, ex)
                     }
                 } }.awaitAll()
             }
@@ -140,7 +150,7 @@ class MovieService(private val context: Context) {
                 searchHashDao.updateHash(sHash.id, md5Hex)
             }
         } catch (e: Exception){
-            Log.e(TAG, e.message)
+            Log.e(TAG, e.message, e)
         }
 
     }

@@ -1,0 +1,2 @@
+# Please get your OMDB key, set it and rename the file to apikey.properties.
+OMDB_KEY="<your_omdb_key>"
